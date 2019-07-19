@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController, UIScrollViewDelegate {
+class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
@@ -30,15 +30,15 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     func createSlides() -> [Slide] {
         
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide1.imageView.image = UIImage(named: "logo")
+        slide1.imageView.image = UIImage(named: "logoWithName")
         slide1.labelDesc.text = "Class aptent taciti sociosqu ad litora torquent per conubia nostra"
         
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide2.imageView.image = UIImage(named: "logo")
+        slide2.imageView.image = UIImage(named: "logoWithName")
         slide2.labelDesc.text = "Proin nisi mi, accumsan nec posuere et, aliquam ultricies neque. Vestibulum et sem ac ante mollis auctor scelerisque at nibh."
         
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide3.imageView.image = UIImage(named: "logo")
+        slide3.imageView.image = UIImage(named: "logoWithName")
         slide3.labelDesc.text = "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
         
         return [slide1, slide2, slide3]
