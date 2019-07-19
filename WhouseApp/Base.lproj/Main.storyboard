@@ -39,17 +39,15 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                             </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="vn4-oc-Orq">
-                                <rect key="frame" x="187.5" y="765" width="39" height="37"/>
+                                <rect key="frame" x="187.5" y="805" width="39" height="37"/>
                                 <color key="pageIndicatorTintColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LPn-bS-6Ln">
-                                <rect key="frame" x="340" y="84" width="34" height="31"/>
+                                <rect key="frame" x="332" y="84" width="42" height="31"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
-                                <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="SKIP">
+                                <state key="normal" title="Saltar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="CR8-RG-Rhi" kind="show" id="E8a-GE-SWk"/>
@@ -59,7 +57,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="0Is-ee-o2x" firstAttribute="trailing" secondItem="LPn-bS-6Ln" secondAttribute="trailing" constant="40" id="0yC-Yf-q6G"/>
-                            <constraint firstItem="0Is-ee-o2x" firstAttribute="bottom" secondItem="vn4-oc-Orq" secondAttribute="bottom" constant="60" id="2sE-1n-agR"/>
+                            <constraint firstItem="0Is-ee-o2x" firstAttribute="bottom" secondItem="vn4-oc-Orq" secondAttribute="bottom" constant="20" id="2sE-1n-agR"/>
                             <constraint firstItem="cQc-q9-j8H" firstAttribute="centerY" secondItem="0Is-ee-o2x" secondAttribute="centerY" id="LTe-Lq-sEV"/>
                             <constraint firstItem="cQc-q9-j8H" firstAttribute="centerX" secondItem="0Is-ee-o2x" secondAttribute="centerX" id="Lnf-4G-MGP"/>
                             <constraint firstItem="cQc-q9-j8H" firstAttribute="height" secondItem="0Is-ee-o2x" secondAttribute="height" id="Q71-B4-caa"/>
@@ -82,7 +80,7 @@
         <!--Login View Controller-->
         <scene sceneID="hr1-bI-xBO">
             <objects>
-                <viewController id="CR8-RG-Rhi" customClass="LoginViewController" customModule="WhouseApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="CR8-RG-Rhi" customClass="LoginViewController" customModule="WhouseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uAA-Ep-tmM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

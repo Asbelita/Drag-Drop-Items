@@ -50,15 +50,29 @@
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circlesBG" translatesAutoresizingMaskIntoConstraints="NO" id="qbO-qa-mRE">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
                         </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dNk-fD-58g" customClass="DesignableUIButton" customModule="WhouseApp" customModuleProvider="target">
+                            <rect key="frame" x="40" y="599" width="334" height="40"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="31e-5Z-980"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
+                        <constraint firstItem="dNk-fD-58g" firstAttribute="top" secondItem="L2K-m1-Ae8" secondAttribute="bottom" constant="40" id="12o-k4-mtU"/>
                         <constraint firstItem="L2K-m1-Ae8" firstAttribute="centerX" secondItem="fsl-sj-2cW" secondAttribute="centerX" id="80L-gB-A5E"/>
                         <constraint firstAttribute="bottom" secondItem="qbO-qa-mRE" secondAttribute="bottom" id="dfW-eH-f97"/>
                         <constraint firstItem="qbO-qa-mRE" firstAttribute="leading" secondItem="fsl-sj-2cW" secondAttribute="leading" id="dnk-3s-BRE"/>
                         <constraint firstAttribute="trailing" secondItem="qbO-qa-mRE" secondAttribute="trailing" id="fHX-p2-m9y"/>
+                        <constraint firstItem="dNk-fD-58g" firstAttribute="leading" secondItem="fsl-sj-2cW" secondAttribute="leading" constant="40" id="ia9-DE-T3n"/>
                         <constraint firstItem="L2K-m1-Ae8" firstAttribute="centerY" secondItem="fsl-sj-2cW" secondAttribute="centerY" id="kYN-qa-SXN"/>
                         <constraint firstItem="L2K-m1-Ae8" firstAttribute="width" secondItem="fsl-sj-2cW" secondAttribute="width" id="ke6-kT-S2B"/>
+                        <constraint firstAttribute="trailing" secondItem="dNk-fD-58g" secondAttribute="trailing" constant="40" id="pjs-cV-OfM"/>
                         <constraint firstItem="qbO-qa-mRE" firstAttribute="top" secondItem="fsl-sj-2cW" secondAttribute="top" id="x4Q-Ba-MZA"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
@@ -86,6 +100,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="continueButton" destination="dNk-fD-58g" id="w5A-Vd-0ag"/>
                 <outlet property="imageView" destination="3Lm-8j-AnF" id="KR7-V7-wyY"/>
                 <outlet property="labelDesc" destination="ZGx-be-PDM" id="nU5-ja-4Cd"/>
             </connections>
