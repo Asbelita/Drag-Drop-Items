@@ -18,7 +18,6 @@
 		199E8AA922DFCBE20065E423 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E8AA822DFCBE20065E423 /* Slide.swift */; };
 		199E8AAB22DFCC700065E423 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199E8AAA22DFCC700065E423 /* Slide.xib */; };
 		19A6FF7122E0D53600D3B41E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6FF7022E0D53600D3B41E /* LoginViewController.swift */; };
-		19A6FF7322E16E8B00D3B41E /* DesignableUITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6FF7222E16E8B00D3B41E /* DesignableUITextField.swift */; };
 		19A6FF7522E1852800D3B41E /* DesignableUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6FF7422E1852800D3B41E /* DesignableUIButton.swift */; };
 		19A6FF8A22E18EB500D3B41E /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19A6FF7722E18EB500D3B41E /* Montserrat-LightItalic.ttf */; };
 		19A6FF8B22E18EB500D3B41E /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19A6FF7822E18EB500D3B41E /* Montserrat-Medium.ttf */; };
@@ -42,6 +41,8 @@
 		19A6FFB422E18EC900D3B41E /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19A6FFA722E18EC900D3B41E /* Roboto-Bold.ttf */; };
 		19A6FFB522E18EC900D3B41E /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19A6FFA822E18EC900D3B41E /* Roboto-Thin.ttf */; };
 		19A6FFB722E18EC900D3B41E /* Roboto-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19A6FFAA22E18EC900D3B41E /* Roboto-RegularItalic.ttf */; };
+		19A6FFBB22E22FB300D3B41E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6FFBA22E22FB300D3B41E /* UIViewController+Extension.swift */; };
+		19A6FFBF22E248CF00D3B41E /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6FFBE22E248CF00D3B41E /* DesignableTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +59,6 @@
 		199E8AA822DFCBE20065E423 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		199E8AAA22DFCC700065E423 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		19A6FF7022E0D53600D3B41E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		19A6FF7222E16E8B00D3B41E /* DesignableUITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUITextField.swift; sourceTree = "<group>"; };
 		19A6FF7422E1852800D3B41E /* DesignableUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUIButton.swift; sourceTree = "<group>"; };
 		19A6FF7722E18EB500D3B41E /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
 		19A6FF7822E18EB500D3B41E /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
@@ -82,6 +82,8 @@
 		19A6FFA722E18EC900D3B41E /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		19A6FFA822E18EC900D3B41E /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		19A6FFAA22E18EC900D3B41E /* Roboto-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-RegularItalic.ttf"; sourceTree = "<group>"; };
+		19A6FFBA22E22FB300D3B41E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		19A6FFBE22E248CF00D3B41E /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		1953C36A22DF6F43008D2FD4 /* WhouseApp */ = {
 			isa = PBXGroup;
 			children = (
+				19A6FFB922E22F7200D3B41E /* Extensions */,
 				19A6FFB822E18FCC00D3B41E /* fonts */,
 				199E8AAC22DFCF520065E423 /* Slides */,
 				1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */,
@@ -126,10 +129,10 @@
 				1953C36F22DF6F43008D2FD4 /* Main.storyboard */,
 				1953C37222DF6F44008D2FD4 /* Assets.xcassets */,
 				1953C37422DF6F44008D2FD4 /* LaunchScreen.storyboard */,
-				199E8AA622DFB93C0065E423 /* GradientView.swift */,
-				19A6FF7222E16E8B00D3B41E /* DesignableUITextField.swift */,
-				19A6FF7422E1852800D3B41E /* DesignableUIButton.swift */,
 				1953C37722DF6F44008D2FD4 /* Info.plist */,
+				199E8AA622DFB93C0065E423 /* GradientView.swift */,
+				19A6FF7422E1852800D3B41E /* DesignableUIButton.swift */,
+				19A6FFBE22E248CF00D3B41E /* DesignableTextField.swift */,
 			);
 			path = WhouseApp;
 			sourceTree = "<group>";
@@ -186,6 +189,14 @@
 				19A6FF7622E18EB500D3B41E /* Montserrat */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		19A6FFB922E22F7200D3B41E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				19A6FFBA22E22FB300D3B41E /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,10 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19A6FFBF22E248CF00D3B41E /* DesignableTextField.swift in Sources */,
+				19A6FFBB22E22FB300D3B41E /* UIViewController+Extension.swift in Sources */,
 				1953C36E22DF6F43008D2FD4 /* OnboardingViewController.swift in Sources */,
 				1953C36C22DF6F43008D2FD4 /* AppDelegate.swift in Sources */,
 				199E8AA722DFB93C0065E423 /* GradientView.swift in Sources */,
-				19A6FF7322E16E8B00D3B41E /* DesignableUITextField.swift in Sources */,
 				19A6FF7522E1852800D3B41E /* DesignableUIButton.swift in Sources */,
 				19A6FF7122E0D53600D3B41E /* LoginViewController.swift in Sources */,
 				199E8AA922DFCBE20065E423 /* Slide.swift in Sources */,

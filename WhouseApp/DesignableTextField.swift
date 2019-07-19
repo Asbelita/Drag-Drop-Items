@@ -1,16 +1,16 @@
 //
-//  DesignableUITextField.swift
+//  DesignableTextField.swift
 //  WhouseApp
 //
-//  Created by Manuel Bueno on 7/18/19.
+//  Created by Manuel Bueno on 7/19/19.
 //  Copyright © 2019 Nelumbo. All rights reserved.
 //
 
 import UIKit
 
 @IBDesignable
-class DesignableUITextField: UITextField {
-
+class DesignableTextField: UITextField {
+    
     // Provides left padding for images
     override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
         var textRect = super.leftViewRect(forBounds: bounds)
@@ -70,6 +70,6 @@ class DesignableUITextField: UITextField {
             leftView = nil
         }
     }
-
-
+    
+    
 }
