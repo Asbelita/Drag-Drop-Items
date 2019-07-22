@@ -14,6 +14,8 @@
 		1953C37622DF6F44008D2FD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1953C37422DF6F44008D2FD4 /* LaunchScreen.storyboard */; };
 		1953C38022DF72B8008D2FD4 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1953C37E22DF72B8008D2FD4 /* Crashlytics.framework */; };
 		1953C38122DF72B8008D2FD4 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1953C37F22DF72B8008D2FD4 /* Fabric.framework */; };
+		197181AD22E638FA009161BE /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 197181AC22E638FA009161BE /* AlertView.xib */; };
+		197181AF22E63CF6009161BE /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197181AE22E63CF6009161BE /* AlertView.swift */; };
 		199E8AA722DFB93C0065E423 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E8AA622DFB93C0065E423 /* GradientView.swift */; };
 		199E8AA922DFCBE20065E423 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E8AA822DFCBE20065E423 /* Slide.swift */; };
 		199E8AAB22DFCC700065E423 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199E8AAA22DFCC700065E423 /* Slide.xib */; };
@@ -58,6 +60,8 @@
 		1953C37722DF6F44008D2FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1953C37E22DF72B8008D2FD4 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		1953C37F22DF72B8008D2FD4 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		197181AC22E638FA009161BE /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		197181AE22E63CF6009161BE /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		199E8AA622DFB93C0065E423 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		199E8AA822DFCBE20065E423 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		199E8AAA22DFCC700065E423 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
@@ -129,8 +133,9 @@
 		1953C36A22DF6F43008D2FD4 /* WhouseApp */ = {
 			isa = PBXGroup;
 			children = (
+				197181AB22E638D6009161BE /* Alerts */,
 				19A6FFB922E22F7200D3B41E /* Extensions */,
-				19A6FFB822E18FCC00D3B41E /* fonts */,
+				19A6FFB822E18FCC00D3B41E /* Fonts */,
 				199E8AAC22DFCF520065E423 /* Slides */,
 				1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */,
 				1953C36D22DF6F43008D2FD4 /* OnboardingViewController.swift */,
@@ -145,6 +150,15 @@
 				19A6FFBE22E248CF00D3B41E /* DesignableTextField.swift */,
 			);
 			path = WhouseApp;
+			sourceTree = "<group>";
+		};
+		197181AB22E638D6009161BE /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				197181AC22E638FA009161BE /* AlertView.xib */,
+				197181AE22E63CF6009161BE /* AlertView.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 		199E8AAC22DFCF520065E423 /* Slides */ = {
@@ -192,13 +206,13 @@
 			path = Roboto;
 			sourceTree = "<group>";
 		};
-		19A6FFB822E18FCC00D3B41E /* fonts */ = {
+		19A6FFB822E18FCC00D3B41E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				19A6FF9D22E18EC900D3B41E /* Roboto */,
 				19A6FF7622E18EB500D3B41E /* Montserrat */,
 			);
-			path = fonts;
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		19A6FFB922E22F7200D3B41E /* Extensions */ = {
@@ -295,6 +309,7 @@
 				1953C37122DF6F43008D2FD4 /* Main.storyboard in Resources */,
 				19A6FFAE22E18EC900D3B41E /* Roboto-MediumItalic.ttf in Resources */,
 				19A6FFAB22E18EC900D3B41E /* Roboto-Medium.ttf in Resources */,
+				197181AD22E638FA009161BE /* AlertView.xib in Resources */,
 				19A6FF8D22E18EB500D3B41E /* Montserrat-Light.ttf in Resources */,
 				19A6FFAD22E18EC900D3B41E /* Roboto-Regular.ttf in Resources */,
 				19A6FFB222E18EC900D3B41E /* LICENSE.txt in Resources */,
@@ -370,6 +385,7 @@
 				19A6FFC122E2659F00D3B41E /* PasswordRecoveryViewController.swift in Sources */,
 				1953C36E22DF6F43008D2FD4 /* OnboardingViewController.swift in Sources */,
 				1953C36C22DF6F43008D2FD4 /* AppDelegate.swift in Sources */,
+				197181AF22E63CF6009161BE /* AlertView.swift in Sources */,
 				199E8AA722DFB93C0065E423 /* GradientView.swift in Sources */,
 				19A6FF7522E1852800D3B41E /* DesignableUIButton.swift in Sources */,
 				19A6FF7122E0D53600D3B41E /* LoginViewController.swift in Sources */,

@@ -14,6 +14,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTextField: DesignableTextField!
     @IBOutlet weak var submitBtn: DesignableUIButton!
     
+    @IBAction func passwordRecoveryUnwind(unwindSegue: UIStoryboardSegue){}
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameTextField.delegate = self
