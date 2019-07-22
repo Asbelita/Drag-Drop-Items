@@ -1,0 +1,6 @@
+module Pods_WhouseApp {
+  umbrella header "Pods-WhouseApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

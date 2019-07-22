@@ -43,9 +43,12 @@
 		19A6FFB722E18EC900D3B41E /* Roboto-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19A6FFAA22E18EC900D3B41E /* Roboto-RegularItalic.ttf */; };
 		19A6FFBB22E22FB300D3B41E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6FFBA22E22FB300D3B41E /* UIViewController+Extension.swift */; };
 		19A6FFBF22E248CF00D3B41E /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6FFBE22E248CF00D3B41E /* DesignableTextField.swift */; };
+		19A6FFC122E2659F00D3B41E /* PasswordRecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6FFC022E2659F00D3B41E /* PasswordRecoveryViewController.swift */; };
+		A4317DC475915625DDE08437 /* libPods-WhouseApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC36E401FF167C18DF395E0 /* libPods-WhouseApp.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11341356062D69C50E6FB49E /* Pods-WhouseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhouseApp.release.xcconfig"; path = "Target Support Files/Pods-WhouseApp/Pods-WhouseApp.release.xcconfig"; sourceTree = "<group>"; };
 		1953C36822DF6F43008D2FD4 /* WhouseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhouseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1953C36D22DF6F43008D2FD4 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +87,9 @@
 		19A6FFAA22E18EC900D3B41E /* Roboto-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-RegularItalic.ttf"; sourceTree = "<group>"; };
 		19A6FFBA22E22FB300D3B41E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		19A6FFBE22E248CF00D3B41E /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
+		19A6FFC022E2659F00D3B41E /* PasswordRecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryViewController.swift; sourceTree = "<group>"; };
+		BAC36E401FF167C18DF395E0 /* libPods-WhouseApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhouseApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA1C7D108A9607479BAE7EDD /* Pods-WhouseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhouseApp.debug.xcconfig"; path = "Target Support Files/Pods-WhouseApp/Pods-WhouseApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 			files = (
 				1953C38022DF72B8008D2FD4 /* Crashlytics.framework in Frameworks */,
 				1953C38122DF72B8008D2FD4 /* Fabric.framework in Frameworks */,
+				A4317DC475915625DDE08437 /* libPods-WhouseApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +113,8 @@
 				1953C36922DF6F43008D2FD4 /* Products */,
 				1953C37E22DF72B8008D2FD4 /* Crashlytics.framework */,
 				1953C37F22DF72B8008D2FD4 /* Fabric.framework */,
+				6A86D27EFE41F6A96B456341 /* Pods */,
+				821CBB8A4DD478157FBC12A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +135,7 @@
 				1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */,
 				1953C36D22DF6F43008D2FD4 /* OnboardingViewController.swift */,
 				19A6FF7022E0D53600D3B41E /* LoginViewController.swift */,
+				19A6FFC022E2659F00D3B41E /* PasswordRecoveryViewController.swift */,
 				1953C36F22DF6F43008D2FD4 /* Main.storyboard */,
 				1953C37222DF6F44008D2FD4 /* Assets.xcassets */,
 				1953C37422DF6F44008D2FD4 /* LaunchScreen.storyboard */,
@@ -199,6 +209,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		6A86D27EFE41F6A96B456341 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DA1C7D108A9607479BAE7EDD /* Pods-WhouseApp.debug.xcconfig */,
+				11341356062D69C50E6FB49E /* Pods-WhouseApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		821CBB8A4DD478157FBC12A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BAC36E401FF167C18DF395E0 /* libPods-WhouseApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,6 +233,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1953C37A22DF6F44008D2FD4 /* Build configuration list for PBXNativeTarget "WhouseApp" */;
 			buildPhases = (
+				8CE6E0199943C9A869C7921A /* [CP] Check Pods Manifest.lock */,
 				1953C36422DF6F43008D2FD4 /* Sources */,
 				1953C36522DF6F43008D2FD4 /* Frameworks */,
 				1953C36622DF6F43008D2FD4 /* Resources */,
@@ -308,6 +336,28 @@
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run 1e1b13c30c070c5219a306d6a666a6a67bffd4d2 e3933966202f7c4db8b8340f7bc80ae5d6d66af3e98e0b9904c940aa9141ddca\n";
 		};
+		8CE6E0199943C9A869C7921A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WhouseApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -317,6 +367,7 @@
 			files = (
 				19A6FFBF22E248CF00D3B41E /* DesignableTextField.swift in Sources */,
 				19A6FFBB22E22FB300D3B41E /* UIViewController+Extension.swift in Sources */,
+				19A6FFC122E2659F00D3B41E /* PasswordRecoveryViewController.swift in Sources */,
 				1953C36E22DF6F43008D2FD4 /* OnboardingViewController.swift in Sources */,
 				1953C36C22DF6F43008D2FD4 /* AppDelegate.swift in Sources */,
 				199E8AA722DFB93C0065E423 /* GradientView.swift in Sources */,
@@ -466,6 +517,7 @@
 		};
 		1953C37B22DF6F44008D2FD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA1C7D108A9607479BAE7EDD /* Pods-WhouseApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -491,6 +543,7 @@
 		};
 		1953C37C22DF6F44008D2FD4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11341356062D69C50E6FB49E /* Pods-WhouseApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

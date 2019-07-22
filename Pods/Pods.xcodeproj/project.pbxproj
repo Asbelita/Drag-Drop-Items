@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04FA8D50615DB0D33AEAD722F661D5B7 /* Pods-WhouseApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9267C8B59B9149C6937B113CDB557E28 /* Pods-WhouseApp-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0713DB83C6D35C7104DAFF8FBCEB595D /* KeyboardAvoidingViewLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CBCCA674A3312B82FCD61C826EC26B2 /* KeyboardAvoidingViewLoader.m */; };
+		4B80D9536C34061F1297DD941057EF59 /* KeyboardAvoidingView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52FD7AD0918CBB0388EF20EC610FB89B /* KeyboardAvoidingView-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4EDC9733904CCE348C14D408EAE44F60 /* KeyboardAvoidingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C82062B6BF2B37F0137221033E9ED719 /* KeyboardAvoidingView.swift */; };
+		5226ECBA7D3F3E2ECF1ABD0D336C9543 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 083B83FEC1397C316B7D3CB97F1321D2 /* Extensions.swift */; };
+		54D18D28F50907E4B7E3177EBF39BA28 /* KeyboardAvoidingViewLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 49D27B50EB6556B415BB9276E05B46EE /* KeyboardAvoidingViewLoader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5CF4790DCED1400E398669F30282717C /* APExtensions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD60FD77DD22BD2DA63824BB983AEF97 /* APExtensions-dummy.m */; };
+		61C7B6EC4DD7EAC22705B9A64DC0893F /* KeyboardAvoidingView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5C936E8C89C7E2B9D0BDB7C2DDEEEF /* KeyboardAvoidingView-dummy.m */; };
+		89125225ADF49F4F1E74388CB32BAAF8 /* ViewStateLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 896A3555F497EB0572A6C1AC53FF4B46 /* ViewStateLoader.m */; };
+		91AA559654E318A3119E62882326631F /* UIScrollView+ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BD2CF18C4612C97E8D87B9D4202DDA /* UIScrollView+ViewState.swift */; };
+		B25B08CF24857EFA9F4E18276FA5B238 /* APExtensions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DC304EDCB8180AC77CA710DF0E5943A /* APExtensions-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B27352A8AAF184D8089321399A9010AF /* UIResponder+ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F6EC1039C62E70A174346800FE68ED2 /* UIResponder+ViewState.swift */; };
+		C3273B060FAC564024D3DEBEC810B87B /* UIView+ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C35C655D4D1A7313EF5117B4DBD38F42 /* UIView+ViewState.swift */; };
+		CA9CFBB0D63D821AECEC8DF0F28544DF /* Pods-WhouseApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF91C76F6B9FB0FD89947CFEBCBD9C4 /* Pods-WhouseApp-dummy.m */; };
+		D3FD00FF9D3738E6D0E7DB288E0C87BA /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6652816727D7EA5ABBACE6D9631AE0 /* KeyboardManager.swift */; };
+		DFB17BB2FED899CE4470ADBB3AF56409 /* ViewStateLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 274DE6603E090D3921BF33038C381C27 /* ViewStateLoader.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EC04262F6B36D0984479558CB467E92A /* UIViewController+ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A2823638BA64FC40DCB4772CB009B6 /* UIViewController+ViewState.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4C8EBDDDE005E0C186A971FACFD4A83F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA9CE3DD48ABA60042E7CC0A84E35E9F;
+			remoteInfo = KeyboardAvoidingView;
+		};
+		AC434E319B2422DD905D8C57BCA332A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A900F754FB904D2EAED9F9E4487508B;
+			remoteInfo = APExtensions;
+		};
+		DD35895E4816A07A4FE1EABFD0C0704B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A900F754FB904D2EAED9F9E4487508B;
+			remoteInfo = APExtensions;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		083B83FEC1397C316B7D3CB97F1321D2 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = KeyboardAvoidingView/Classes/Extensions.swift; sourceTree = "<group>"; };
+		14C25724D9FBD576C24700E9B0A5E2C0 /* KeyboardAvoidingView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KeyboardAvoidingView.modulemap; sourceTree = "<group>"; };
+		16B1FBE16FF7B14217BF52BDC50FE3E1 /* Pods-WhouseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhouseApp.release.xcconfig"; sourceTree = "<group>"; };
+		1DC304EDCB8180AC77CA710DF0E5943A /* APExtensions-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APExtensions-umbrella.h"; sourceTree = "<group>"; };
+		274DE6603E090D3921BF33038C381C27 /* ViewStateLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ViewStateLoader.h; path = APExtensions/Classes/ViewState/ViewStateLoader.h; sourceTree = "<group>"; };
+		3328C57BB823A96905D7895D3487827F /* Pods-WhouseApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WhouseApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		3584D7E1DDD7172A210DA96E0D7A411E /* Pods-WhouseApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WhouseApp.modulemap"; sourceTree = "<group>"; };
+		3EA084F81BBAA14D58C0AA06A776CAA6 /* KeyboardAvoidingView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KeyboardAvoidingView.xcconfig; sourceTree = "<group>"; };
+		3ED0C1195C5682498B3FBC67C2B1D458 /* APExtensions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = APExtensions.xcconfig; sourceTree = "<group>"; };
+		49D27B50EB6556B415BB9276E05B46EE /* KeyboardAvoidingViewLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KeyboardAvoidingViewLoader.h; path = KeyboardAvoidingView/Classes/KeyboardAvoidingViewLoader.h; sourceTree = "<group>"; };
+		4F6EC1039C62E70A174346800FE68ED2 /* UIResponder+ViewState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIResponder+ViewState.swift"; path = "APExtensions/Classes/ViewState/UIResponder+ViewState.swift"; sourceTree = "<group>"; };
+		52FD7AD0918CBB0388EF20EC610FB89B /* KeyboardAvoidingView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeyboardAvoidingView-umbrella.h"; sourceTree = "<group>"; };
+		5D937002D824DB46295E28192E526C8F /* APExtensions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "APExtensions-prefix.pch"; sourceTree = "<group>"; };
+		6302CBFDEC8DC4EA2BA01FF3B47F992D /* Pods-WhouseApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WhouseApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		68A2823638BA64FC40DCB4772CB009B6 /* UIViewController+ViewState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+ViewState.swift"; path = "APExtensions/Classes/ViewState/UIViewController+ViewState.swift"; sourceTree = "<group>"; };
+		811119BC563AAA91283F0031C96EA57C /* libPods-WhouseApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-WhouseApp.a"; path = "libPods-WhouseApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81BD2CF18C4612C97E8D87B9D4202DDA /* UIScrollView+ViewState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+ViewState.swift"; path = "APExtensions/Classes/ViewState/UIScrollView+ViewState.swift"; sourceTree = "<group>"; };
+		833EEE2F15C44A9A0EFFD1C069E1E39C /* libKeyboardAvoidingView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libKeyboardAvoidingView.a; path = libKeyboardAvoidingView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		896A3555F497EB0572A6C1AC53FF4B46 /* ViewStateLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ViewStateLoader.m; path = APExtensions/Classes/ViewState/ViewStateLoader.m; sourceTree = "<group>"; };
+		8E4771857ACD2ED4C732DFF2EB308388 /* APExtensions.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = APExtensions.modulemap; sourceTree = "<group>"; };
+		9267C8B59B9149C6937B113CDB557E28 /* Pods-WhouseApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WhouseApp-umbrella.h"; sourceTree = "<group>"; };
+		9CBCCA674A3312B82FCD61C826EC26B2 /* KeyboardAvoidingViewLoader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KeyboardAvoidingViewLoader.m; path = KeyboardAvoidingView/Classes/KeyboardAvoidingViewLoader.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6096384872508CA30E5B006F06A9237 /* KeyboardAvoidingView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KeyboardAvoidingView-prefix.pch"; sourceTree = "<group>"; };
+		A8A91C886DAD86DBD7A67F258E337804 /* Pods-WhouseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WhouseApp.debug.xcconfig"; sourceTree = "<group>"; };
+		ACF91C76F6B9FB0FD89947CFEBCBD9C4 /* Pods-WhouseApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WhouseApp-dummy.m"; sourceTree = "<group>"; };
+		BD60FD77DD22BD2DA63824BB983AEF97 /* APExtensions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "APExtensions-dummy.m"; sourceTree = "<group>"; };
+		C35C655D4D1A7313EF5117B4DBD38F42 /* UIView+ViewState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+ViewState.swift"; path = "APExtensions/Classes/ViewState/UIView+ViewState.swift"; sourceTree = "<group>"; };
+		C82062B6BF2B37F0137221033E9ED719 /* KeyboardAvoidingView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardAvoidingView.swift; path = KeyboardAvoidingView/Classes/KeyboardAvoidingView.swift; sourceTree = "<group>"; };
+		F2B741E9FD1F2E713A56EDA513C256E8 /* libAPExtensions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libAPExtensions.a; path = libAPExtensions.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD5C936E8C89C7E2B9D0BDB7C2DDEEEF /* KeyboardAvoidingView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KeyboardAvoidingView-dummy.m"; sourceTree = "<group>"; };
+		FD6652816727D7EA5ABBACE6D9631AE0 /* KeyboardManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardManager.swift; path = KeyboardAvoidingView/Classes/KeyboardManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		51A635EDD76F67CAD2B575045CD32B3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4B73BB1FBF7F234AF69FC85EDD9E69A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C65024F67CB27F49E13EAF6055B86CCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08E0E6E57DD913931E0F99FD8AFE03B4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D7241B7719DB7C95950F224CBAB73FC /* Pods-WhouseApp */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4BBAA651875D524D1CB874E85F7CD589 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5B20DCF4AA567BE13D3F277466B438C6 /* APExtensions */,
+				85F41F533BEF1032C4790B3FC3582C6F /* KeyboardAvoidingView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4D2D65F71236A93605DAEF8E3EA280DA /* ViewState */ = {
+			isa = PBXGroup;
+			children = (
+				4F6EC1039C62E70A174346800FE68ED2 /* UIResponder+ViewState.swift */,
+				81BD2CF18C4612C97E8D87B9D4202DDA /* UIScrollView+ViewState.swift */,
+				C35C655D4D1A7313EF5117B4DBD38F42 /* UIView+ViewState.swift */,
+				68A2823638BA64FC40DCB4772CB009B6 /* UIViewController+ViewState.swift */,
+				274DE6603E090D3921BF33038C381C27 /* ViewStateLoader.h */,
+				896A3555F497EB0572A6C1AC53FF4B46 /* ViewStateLoader.m */,
+			);
+			name = ViewState;
+			sourceTree = "<group>";
+		};
+		5B20DCF4AA567BE13D3F277466B438C6 /* APExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				EF38EC426A42A58710406A2E8957A28A /* Support Files */,
+				4D2D65F71236A93605DAEF8E3EA280DA /* ViewState */,
+			);
+			name = APExtensions;
+			path = APExtensions;
+			sourceTree = "<group>";
+		};
+		740C0EB3FEE70C59C0A4975632FD73A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F2B741E9FD1F2E713A56EDA513C256E8 /* libAPExtensions.a */,
+				833EEE2F15C44A9A0EFFD1C069E1E39C /* libKeyboardAvoidingView.a */,
+				811119BC563AAA91283F0031C96EA57C /* libPods-WhouseApp.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85F41F533BEF1032C4790B3FC3582C6F /* KeyboardAvoidingView */ = {
+			isa = PBXGroup;
+			children = (
+				083B83FEC1397C316B7D3CB97F1321D2 /* Extensions.swift */,
+				C82062B6BF2B37F0137221033E9ED719 /* KeyboardAvoidingView.swift */,
+				49D27B50EB6556B415BB9276E05B46EE /* KeyboardAvoidingViewLoader.h */,
+				9CBCCA674A3312B82FCD61C826EC26B2 /* KeyboardAvoidingViewLoader.m */,
+				FD6652816727D7EA5ABBACE6D9631AE0 /* KeyboardManager.swift */,
+				996F18F3E9963CC2C37956BF25754083 /* Support Files */,
+			);
+			name = KeyboardAvoidingView;
+			path = KeyboardAvoidingView;
+			sourceTree = "<group>";
+		};
+		996F18F3E9963CC2C37956BF25754083 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				14C25724D9FBD576C24700E9B0A5E2C0 /* KeyboardAvoidingView.modulemap */,
+				3EA084F81BBAA14D58C0AA06A776CAA6 /* KeyboardAvoidingView.xcconfig */,
+				FD5C936E8C89C7E2B9D0BDB7C2DDEEEF /* KeyboardAvoidingView-dummy.m */,
+				A6096384872508CA30E5B006F06A9237 /* KeyboardAvoidingView-prefix.pch */,
+				52FD7AD0918CBB0388EF20EC610FB89B /* KeyboardAvoidingView-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KeyboardAvoidingView";
+			sourceTree = "<group>";
+		};
+		9D7241B7719DB7C95950F224CBAB73FC /* Pods-WhouseApp */ = {
+			isa = PBXGroup;
+			children = (
+				3584D7E1DDD7172A210DA96E0D7A411E /* Pods-WhouseApp.modulemap */,
+				6302CBFDEC8DC4EA2BA01FF3B47F992D /* Pods-WhouseApp-acknowledgements.markdown */,
+				3328C57BB823A96905D7895D3487827F /* Pods-WhouseApp-acknowledgements.plist */,
+				ACF91C76F6B9FB0FD89947CFEBCBD9C4 /* Pods-WhouseApp-dummy.m */,
+				9267C8B59B9149C6937B113CDB557E28 /* Pods-WhouseApp-umbrella.h */,
+				A8A91C886DAD86DBD7A67F258E337804 /* Pods-WhouseApp.debug.xcconfig */,
+				16B1FBE16FF7B14217BF52BDC50FE3E1 /* Pods-WhouseApp.release.xcconfig */,
+			);
+			name = "Pods-WhouseApp";
+			path = "Target Support Files/Pods-WhouseApp";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				4BBAA651875D524D1CB874E85F7CD589 /* Pods */,
+				740C0EB3FEE70C59C0A4975632FD73A1 /* Products */,
+				08E0E6E57DD913931E0F99FD8AFE03B4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF38EC426A42A58710406A2E8957A28A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8E4771857ACD2ED4C732DFF2EB308388 /* APExtensions.modulemap */,
+				3ED0C1195C5682498B3FBC67C2B1D458 /* APExtensions.xcconfig */,
+				BD60FD77DD22BD2DA63824BB983AEF97 /* APExtensions-dummy.m */,
+				5D937002D824DB46295E28192E526C8F /* APExtensions-prefix.pch */,
+				1DC304EDCB8180AC77CA710DF0E5943A /* APExtensions-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/APExtensions";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		09F777AEE316C95C1BED7FBAFC816A01 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04FA8D50615DB0D33AEAD722F661D5B7 /* Pods-WhouseApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1DEE74820A1F949F32B46901DFEFB9C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B25B08CF24857EFA9F4E18276FA5B238 /* APExtensions-umbrella.h in Headers */,
+				DFB17BB2FED899CE4470ADBB3AF56409 /* ViewStateLoader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA17A980C17CE30E309D74035133FAB1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B80D9536C34061F1297DD941057EF59 /* KeyboardAvoidingView-umbrella.h in Headers */,
+				54D18D28F50907E4B7E3177EBF39BA28 /* KeyboardAvoidingViewLoader.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		711752DEEA4B3E6941B0ABC21F569BA6 /* Pods-WhouseApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B03B61E68571294C476F9A4D678CB248 /* Build configuration list for PBXNativeTarget "Pods-WhouseApp" */;
+			buildPhases = (
+				09F777AEE316C95C1BED7FBAFC816A01 /* Headers */,
+				5C1BDB40F8FD38B29A0ACB96C6EB10AA /* Sources */,
+				A4B73BB1FBF7F234AF69FC85EDD9E69A /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D74436809C83CF465ADB2BF5479955BA /* PBXTargetDependency */,
+				A4DBD42847E22523AA1F3EF1AF892542 /* PBXTargetDependency */,
+			);
+			name = "Pods-WhouseApp";
+			productName = "Pods-WhouseApp";
+			productReference = 811119BC563AAA91283F0031C96EA57C /* libPods-WhouseApp.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7A900F754FB904D2EAED9F9E4487508B /* APExtensions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9FC89E9C8F2E67E2C5A1EE34A37A04C /* Build configuration list for PBXNativeTarget "APExtensions" */;
+			buildPhases = (
+				1DEE74820A1F949F32B46901DFEFB9C3 /* Headers */,
+				77B71F2CA8E3874269C2E333F9D7AD84 /* Sources */,
+				51A635EDD76F67CAD2B575045CD32B3D /* Frameworks */,
+				C40E876502167DBF5CFB31A38D31ED71 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APExtensions;
+			productName = APExtensions;
+			productReference = F2B741E9FD1F2E713A56EDA513C256E8 /* libAPExtensions.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EA9CE3DD48ABA60042E7CC0A84E35E9F /* KeyboardAvoidingView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E563E585403540E0AB8E29553A72E8E /* Build configuration list for PBXNativeTarget "KeyboardAvoidingView" */;
+			buildPhases = (
+				EA17A980C17CE30E309D74035133FAB1 /* Headers */,
+				35788C4A58D25FE59AE6AA93A441D641 /* Sources */,
+				C65024F67CB27F49E13EAF6055B86CCA /* Frameworks */,
+				7B09123EF1A237752989BF7D6CE22948 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D55D2696B09BE6185FFC8D75437C327B /* PBXTargetDependency */,
+			);
+			name = KeyboardAvoidingView;
+			productName = KeyboardAvoidingView;
+			productReference = 833EEE2F15C44A9A0EFFD1C069E1E39C /* libKeyboardAvoidingView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 740C0EB3FEE70C59C0A4975632FD73A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7A900F754FB904D2EAED9F9E4487508B /* APExtensions */,
+				EA9CE3DD48ABA60042E7CC0A84E35E9F /* KeyboardAvoidingView */,
+				711752DEEA4B3E6941B0ABC21F569BA6 /* Pods-WhouseApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7B09123EF1A237752989BF7D6CE22948 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/KeyboardAvoidingView/KeyboardAvoidingView.modulemap",
+				"${PODS_ROOT}/Headers/Public/KeyboardAvoidingView/KeyboardAvoidingView-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/KeyboardAvoidingView-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/KeyboardAvoidingView/KeyboardAvoidingView.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/KeyboardAvoidingView/KeyboardAvoidingView-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+		C40E876502167DBF5CFB31A38D31ED71 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/APExtensions/APExtensions.modulemap",
+				"${PODS_ROOT}/Headers/Public/APExtensions/APExtensions-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/APExtensions-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/APExtensions/APExtensions.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/APExtensions/APExtensions-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35788C4A58D25FE59AE6AA93A441D641 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5226ECBA7D3F3E2ECF1ABD0D336C9543 /* Extensions.swift in Sources */,
+				61C7B6EC4DD7EAC22705B9A64DC0893F /* KeyboardAvoidingView-dummy.m in Sources */,
+				4EDC9733904CCE348C14D408EAE44F60 /* KeyboardAvoidingView.swift in Sources */,
+				0713DB83C6D35C7104DAFF8FBCEB595D /* KeyboardAvoidingViewLoader.m in Sources */,
+				D3FD00FF9D3738E6D0E7DB288E0C87BA /* KeyboardManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C1BDB40F8FD38B29A0ACB96C6EB10AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA9CFBB0D63D821AECEC8DF0F28544DF /* Pods-WhouseApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		77B71F2CA8E3874269C2E333F9D7AD84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CF4790DCED1400E398669F30282717C /* APExtensions-dummy.m in Sources */,
+				B27352A8AAF184D8089321399A9010AF /* UIResponder+ViewState.swift in Sources */,
+				91AA559654E318A3119E62882326631F /* UIScrollView+ViewState.swift in Sources */,
+				C3273B060FAC564024D3DEBEC810B87B /* UIView+ViewState.swift in Sources */,
+				EC04262F6B36D0984479558CB467E92A /* UIViewController+ViewState.swift in Sources */,
+				89125225ADF49F4F1E74388CB32BAAF8 /* ViewStateLoader.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4DBD42847E22523AA1F3EF1AF892542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KeyboardAvoidingView;
+			target = EA9CE3DD48ABA60042E7CC0A84E35E9F /* KeyboardAvoidingView */;
+			targetProxy = 4C8EBDDDE005E0C186A971FACFD4A83F /* PBXContainerItemProxy */;
+		};
+		D55D2696B09BE6185FFC8D75437C327B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APExtensions;
+			target = 7A900F754FB904D2EAED9F9E4487508B /* APExtensions */;
+			targetProxy = DD35895E4816A07A4FE1EABFD0C0704B /* PBXContainerItemProxy */;
+		};
+		D74436809C83CF465ADB2BF5479955BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = APExtensions;
+			target = 7A900F754FB904D2EAED9F9E4487508B /* APExtensions */;
+			targetProxy = AC434E319B2422DD905D8C57BCA332A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18542EB7CC7B83F8C369F4463C2E35B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8A91C886DAD86DBD7A67F258E337804 /* Pods-WhouseApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhouseApp/Pods-WhouseApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		256ED99EFCD72DF7ED84B224CB1242C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA084F81BBAA14D58C0AA06A776CAA6 /* KeyboardAvoidingView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/KeyboardAvoidingView/KeyboardAvoidingView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/KeyboardAvoidingView/KeyboardAvoidingView.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = KeyboardAvoidingView;
+				PRODUCT_NAME = KeyboardAvoidingView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		81A1F6AB77B715C4F13FD724C38C2BBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA084F81BBAA14D58C0AA06A776CAA6 /* KeyboardAvoidingView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/KeyboardAvoidingView/KeyboardAvoidingView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/KeyboardAvoidingView/KeyboardAvoidingView.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = KeyboardAvoidingView;
+				PRODUCT_NAME = KeyboardAvoidingView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D377EC7D2A4E3342A0E313BF039E2CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16B1FBE16FF7B14217BF52BDC50FE3E1 /* Pods-WhouseApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WhouseApp/Pods-WhouseApp.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DA5E25E84988EC892D38F0606C71D272 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ED0C1195C5682498B3FBC67C2B1D458 /* APExtensions.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/APExtensions/APExtensions-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/APExtensions/APExtensions.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = APExtensions;
+				PRODUCT_NAME = APExtensions;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E934D26C9734E1D15EA6ABAEB21440C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ED0C1195C5682498B3FBC67C2B1D458 /* APExtensions.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/APExtensions/APExtensions-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/APExtensions/APExtensions.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = APExtensions;
+				PRODUCT_NAME = APExtensions;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E563E585403540E0AB8E29553A72E8E /* Build configuration list for PBXNativeTarget "KeyboardAvoidingView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				256ED99EFCD72DF7ED84B224CB1242C7 /* Debug */,
+				81A1F6AB77B715C4F13FD724C38C2BBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
+				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B03B61E68571294C476F9A4D678CB248 /* Build configuration list for PBXNativeTarget "Pods-WhouseApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18542EB7CC7B83F8C369F4463C2E35B6 /* Debug */,
+				D377EC7D2A4E3342A0E313BF039E2CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9FC89E9C8F2E67E2C5A1EE34A37A04C /* Build configuration list for PBXNativeTarget "APExtensions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E934D26C9734E1D15EA6ABAEB21440C4 /* Debug */,
+				DA5E25E84988EC892D38F0606C71D272 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

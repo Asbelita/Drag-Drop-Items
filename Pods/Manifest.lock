@@ -1,0 +1,20 @@
+PODS:
+  - APExtensions/ViewState (7.0.1)
+  - KeyboardAvoidingView (4.0.0):
+    - APExtensions/ViewState (>= 7.0.0)
+
+DEPENDENCIES:
+  - KeyboardAvoidingView (~> 4.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - APExtensions
+    - KeyboardAvoidingView
+
+SPEC CHECKSUMS:
+  APExtensions: 9a7a7b6ff5b9785b245962de89fbbdaf4c10f10e
+  KeyboardAvoidingView: edbfcb705eb522dc080e42d082cb3b28f79f9879
+
+PODFILE CHECKSUM: 3bc54416a08efa70ae224d71c9e1e181b0a88e73
+
+COCOAPODS: 1.7.4
