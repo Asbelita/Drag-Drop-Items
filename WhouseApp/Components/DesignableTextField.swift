@@ -56,6 +56,16 @@ class DesignableTextField: UITextField {
         }
     }
     
+    @IBInspectable var inset: CGFloat = 0
+    
+    override func textRect(forBounds bounds: CGRect) -> CGRect {
+        return bounds.insetBy(dx: inset, dy: 0)
+    }
+    
+    override func editingRect(forBounds bounds: CGRect) -> CGRect {
+        return textRect(forBounds: bounds)
+    }
+    
     func updateView() {
         if let image = leftImage {
             leftViewMode = UITextField.ViewMode.always

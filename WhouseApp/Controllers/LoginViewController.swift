@@ -16,6 +16,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func passwordRecoveryUnwind(unwindSegue: UIStoryboardSegue){}
     
+    @IBAction func registerUnwind(unwindSegue: UIStoryboardSegue){}
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         usernameTextField.delegate = self
@@ -30,7 +32,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         } else {
             textField.resignFirstResponder()
         }
-        
         return true
     }
 }

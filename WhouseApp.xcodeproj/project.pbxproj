@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19279E9122E8ABFE008E89C5 /* RegistrationStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19279E9022E8ABFE008E89C5 /* RegistrationStep2ViewController.swift */; };
+		19279E9322E8AD84008E89C5 /* RegistrationStep3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19279E9222E8AD84008E89C5 /* RegistrationStep3ViewController.swift */; };
+		19279E9522E8AD95008E89C5 /* RegistrationStep4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19279E9422E8AD95008E89C5 /* RegistrationStep4ViewController.swift */; };
+		19279E9722E8ADB5008E89C5 /* RegistrationStep5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19279E9622E8ADB5008E89C5 /* RegistrationStep5ViewController.swift */; };
 		1953C36C22DF6F43008D2FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */; };
 		1953C36E22DF6F43008D2FD4 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953C36D22DF6F43008D2FD4 /* OnboardingViewController.swift */; };
 		1953C37122DF6F43008D2FD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1953C36F22DF6F43008D2FD4 /* Main.storyboard */; };
@@ -16,6 +20,8 @@
 		1953C38122DF72B8008D2FD4 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1953C37F22DF72B8008D2FD4 /* Fabric.framework */; };
 		197181AD22E638FA009161BE /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 197181AC22E638FA009161BE /* AlertView.xib */; };
 		197181AF22E63CF6009161BE /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197181AE22E63CF6009161BE /* AlertView.swift */; };
+		197181B322E77E52009161BE /* RegistrationStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197181B222E77E52009161BE /* RegistrationStep1ViewController.swift */; };
+		197181B522E77FC2009161BE /* RegistrationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197181B422E77FC2009161BE /* RegistrationPageViewController.swift */; };
 		199E8AA722DFB93C0065E423 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E8AA622DFB93C0065E423 /* GradientView.swift */; };
 		199E8AA922DFCBE20065E423 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E8AA822DFCBE20065E423 /* Slide.swift */; };
 		199E8AAB22DFCC700065E423 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199E8AAA22DFCC700065E423 /* Slide.xib */; };
@@ -51,6 +57,10 @@
 
 /* Begin PBXFileReference section */
 		11341356062D69C50E6FB49E /* Pods-WhouseApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhouseApp.release.xcconfig"; path = "Target Support Files/Pods-WhouseApp/Pods-WhouseApp.release.xcconfig"; sourceTree = "<group>"; };
+		19279E9022E8ABFE008E89C5 /* RegistrationStep2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStep2ViewController.swift; sourceTree = "<group>"; };
+		19279E9222E8AD84008E89C5 /* RegistrationStep3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStep3ViewController.swift; sourceTree = "<group>"; };
+		19279E9422E8AD95008E89C5 /* RegistrationStep4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStep4ViewController.swift; sourceTree = "<group>"; };
+		19279E9622E8ADB5008E89C5 /* RegistrationStep5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStep5ViewController.swift; sourceTree = "<group>"; };
 		1953C36822DF6F43008D2FD4 /* WhouseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhouseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1953C36D22DF6F43008D2FD4 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +72,8 @@
 		1953C37F22DF72B8008D2FD4 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		197181AC22E638FA009161BE /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		197181AE22E63CF6009161BE /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		197181B222E77E52009161BE /* RegistrationStep1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStep1ViewController.swift; sourceTree = "<group>"; };
+		197181B422E77FC2009161BE /* RegistrationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPageViewController.swift; sourceTree = "<group>"; };
 		199E8AA622DFB93C0065E423 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		199E8AA822DFCBE20065E423 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		199E8AAA22DFCC700065E423 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
@@ -110,6 +122,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19279E8D22E793AA008E89C5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */,
+				1953C37222DF6F44008D2FD4 /* Assets.xcassets */,
+				1953C37422DF6F44008D2FD4 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		19279E8E22E793D2008E89C5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1953C36D22DF6F43008D2FD4 /* OnboardingViewController.swift */,
+				19A6FF7022E0D53600D3B41E /* LoginViewController.swift */,
+				19A6FFC022E2659F00D3B41E /* PasswordRecoveryViewController.swift */,
+				197181B222E77E52009161BE /* RegistrationStep1ViewController.swift */,
+				197181B422E77FC2009161BE /* RegistrationPageViewController.swift */,
+				19279E9022E8ABFE008E89C5 /* RegistrationStep2ViewController.swift */,
+				19279E9222E8AD84008E89C5 /* RegistrationStep3ViewController.swift */,
+				19279E9422E8AD95008E89C5 /* RegistrationStep4ViewController.swift */,
+				19279E9622E8ADB5008E89C5 /* RegistrationStep5ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		19279E8F22E793F2008E89C5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				199E8AA622DFB93C0065E423 /* GradientView.swift */,
+				19A6FF7422E1852800D3B41E /* DesignableUIButton.swift */,
+				19A6FFBE22E248CF00D3B41E /* DesignableTextField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		1953C35F22DF6F43008D2FD4 = {
 			isa = PBXGroup;
 			children = (
@@ -133,21 +181,15 @@
 		1953C36A22DF6F43008D2FD4 /* WhouseApp */ = {
 			isa = PBXGroup;
 			children = (
+				19279E8F22E793F2008E89C5 /* Components */,
+				19279E8D22E793AA008E89C5 /* App */,
 				197181AB22E638D6009161BE /* Alerts */,
 				19A6FFB922E22F7200D3B41E /* Extensions */,
-				19A6FFB822E18FCC00D3B41E /* Fonts */,
+				19A6FFB822E18FCC00D3B41E /* fonts */,
 				199E8AAC22DFCF520065E423 /* Slides */,
-				1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */,
-				1953C36D22DF6F43008D2FD4 /* OnboardingViewController.swift */,
-				19A6FF7022E0D53600D3B41E /* LoginViewController.swift */,
-				19A6FFC022E2659F00D3B41E /* PasswordRecoveryViewController.swift */,
+				19279E8E22E793D2008E89C5 /* Controllers */,
 				1953C36F22DF6F43008D2FD4 /* Main.storyboard */,
-				1953C37222DF6F44008D2FD4 /* Assets.xcassets */,
-				1953C37422DF6F44008D2FD4 /* LaunchScreen.storyboard */,
 				1953C37722DF6F44008D2FD4 /* Info.plist */,
-				199E8AA622DFB93C0065E423 /* GradientView.swift */,
-				19A6FF7422E1852800D3B41E /* DesignableUIButton.swift */,
-				19A6FFBE22E248CF00D3B41E /* DesignableTextField.swift */,
 			);
 			path = WhouseApp;
 			sourceTree = "<group>";
@@ -206,13 +248,13 @@
 			path = Roboto;
 			sourceTree = "<group>";
 		};
-		19A6FFB822E18FCC00D3B41E /* Fonts */ = {
+		19A6FFB822E18FCC00D3B41E /* fonts */ = {
 			isa = PBXGroup;
 			children = (
 				19A6FF9D22E18EC900D3B41E /* Roboto */,
 				19A6FF7622E18EB500D3B41E /* Montserrat */,
 			);
-			path = Fonts;
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		19A6FFB922E22F7200D3B41E /* Extensions */ = {
@@ -380,12 +422,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19279E9522E8AD95008E89C5 /* RegistrationStep4ViewController.swift in Sources */,
 				19A6FFBF22E248CF00D3B41E /* DesignableTextField.swift in Sources */,
+				19279E9322E8AD84008E89C5 /* RegistrationStep3ViewController.swift in Sources */,
+				197181B322E77E52009161BE /* RegistrationStep1ViewController.swift in Sources */,
+				197181B522E77FC2009161BE /* RegistrationPageViewController.swift in Sources */,
 				19A6FFBB22E22FB300D3B41E /* UIViewController+Extension.swift in Sources */,
 				19A6FFC122E2659F00D3B41E /* PasswordRecoveryViewController.swift in Sources */,
+				19279E9122E8ABFE008E89C5 /* RegistrationStep2ViewController.swift in Sources */,
 				1953C36E22DF6F43008D2FD4 /* OnboardingViewController.swift in Sources */,
 				1953C36C22DF6F43008D2FD4 /* AppDelegate.swift in Sources */,
 				197181AF22E63CF6009161BE /* AlertView.swift in Sources */,
+				19279E9722E8ADB5008E89C5 /* RegistrationStep5ViewController.swift in Sources */,
 				199E8AA722DFB93C0065E423 /* GradientView.swift in Sources */,
 				19A6FF7522E1852800D3B41E /* DesignableUIButton.swift in Sources */,
 				19A6FF7122E0D53600D3B41E /* LoginViewController.swift in Sources */,
