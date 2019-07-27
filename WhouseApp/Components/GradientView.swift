@@ -15,6 +15,54 @@ import UIKit
     @IBInspectable var startPoint: CGPoint = CGPoint(x: 0, y: 0)
     @IBInspectable var endPoint: CGPoint = CGPoint(x: 1, y: 1)
     
+    @IBInspectable var borderWidth: CGFloat = 0 {
+        didSet {
+            layer.borderWidth = borderWidth
+        }
+    }
+    
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        didSet {
+            layer.cornerRadius = cornerRadius
+        }
+    }
+    
+    @IBInspectable var shadowOffset: CGSize{
+        get{
+            return self.layer.shadowOffset
+        }
+        set{
+            self.layer.shadowOffset = newValue
+        }
+    }
+    
+    @IBInspectable var shadowColor: UIColor{
+        get{
+            return UIColor(cgColor: self.layer.shadowColor!)
+        }
+        set{
+            self.layer.shadowColor = newValue.cgColor
+        }
+    }
+    
+    @IBInspectable var shadowRadius: CGFloat{
+        get{
+            return self.layer.shadowRadius
+        }
+        set{
+            self.layer.shadowRadius = newValue
+        }
+    }
+    
+    @IBInspectable var shadowOpacity: Float{
+        get{
+            return self.layer.shadowOpacity
+        }
+        set{
+            self.layer.shadowOpacity = newValue
+        }
+    }
+    
     override class var layerClass: AnyClass {
         return CAGradientLayer.self
     }

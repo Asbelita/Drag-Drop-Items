@@ -3,10 +3,11 @@
 
 target 'WhouseApp' do
   # Comment the next line if you don't want to use dynamic frameworks
-  # use_frameworks!
+  use_frameworks!
 
   # Pods for WhouseApp
   pod "KeyboardAvoidingView", '~> 4.0'
+  pod 'UICircularProgressRing'
 
 
 end

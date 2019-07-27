@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7A900F754FB904D2EAED9F9E4487508B"
-               BuildableName = "libAPExtensions.a"
+               BuildableName = "APExtensions.framework"
                BlueprintName = "APExtensions"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

@@ -7,12 +7,35 @@
 //
 
 import UIKit
+import MapKit
 
 class RegistrationStep4ViewController: UIViewController {
 
+    @IBOutlet weak var mapView: MKMapView!
+    fileprivate let locationManager: CLLocationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // Check for Location Services
+        if (CLLocationManager.locationServicesEnabled()) {
+            locationManager.requestAlwaysAuthorization()
+            locationManager.requestWhenInUseAuthorization()
+        }
+        
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.distanceFilter = kCLDistanceFilterNone
+        
+        //Zoom to user location
+        if let userLocation = locationManager.location?.coordinate {
+            let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: 400, longitudinalMeters: 400)
+            mapView.setRegion(viewRegion, animated: false)
+        }
+        
+        DispatchQueue.main.async {
+            self.locationManager.startUpdatingLocation()
+        }
+        
+        mapView.showsUserLocation = true
         // Do any additional setup after loading the view.
     }
     

@@ -2,19 +2,23 @@ PODS:
   - APExtensions/ViewState (7.0.1)
   - KeyboardAvoidingView (4.0.0):
     - APExtensions/ViewState (>= 7.0.0)
+  - UICircularProgressRing (6.2.1)
 
 DEPENDENCIES:
   - KeyboardAvoidingView (~> 4.0)
+  - UICircularProgressRing
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - APExtensions
     - KeyboardAvoidingView
+    - UICircularProgressRing
 
 SPEC CHECKSUMS:
   APExtensions: 9a7a7b6ff5b9785b245962de89fbbdaf4c10f10e
   KeyboardAvoidingView: edbfcb705eb522dc080e42d082cb3b28f79f9879
+  UICircularProgressRing: b52543c79dbd89844e13f0053e3f565b7d7efc5c
 
-PODFILE CHECKSUM: 3bc54416a08efa70ae224d71c9e1e181b0a88e73
+PODFILE CHECKSUM: 1c15d73f7869ce0e65684823149f316730a04e9e
 
 COCOAPODS: 1.7.4

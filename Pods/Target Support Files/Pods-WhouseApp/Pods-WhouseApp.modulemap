@@ -1,4 +1,4 @@
-module Pods_WhouseApp {
+framework module Pods_WhouseApp {
   umbrella header "Pods-WhouseApp-umbrella.h"
 
   export *

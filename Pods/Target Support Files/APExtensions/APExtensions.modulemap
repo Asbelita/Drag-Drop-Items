@@ -1,4 +1,4 @@
-module APExtensions {
+framework module APExtensions {
   umbrella header "APExtensions-umbrella.h"
 
   export *

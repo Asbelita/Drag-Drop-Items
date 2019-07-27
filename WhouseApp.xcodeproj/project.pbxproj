@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,6 @@
 		19279E9522E8AD95008E89C5 /* RegistrationStep4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19279E9422E8AD95008E89C5 /* RegistrationStep4ViewController.swift */; };
 		19279E9722E8ADB5008E89C5 /* RegistrationStep5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19279E9622E8ADB5008E89C5 /* RegistrationStep5ViewController.swift */; };
 		1953C36C22DF6F43008D2FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */; };
-		1953C36E22DF6F43008D2FD4 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953C36D22DF6F43008D2FD4 /* OnboardingViewController.swift */; };
 		1953C37122DF6F43008D2FD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1953C36F22DF6F43008D2FD4 /* Main.storyboard */; };
 		1953C37322DF6F44008D2FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1953C37222DF6F44008D2FD4 /* Assets.xcassets */; };
 		1953C37622DF6F44008D2FD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1953C37422DF6F44008D2FD4 /* LaunchScreen.storyboard */; };
@@ -21,10 +20,8 @@
 		197181AD22E638FA009161BE /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 197181AC22E638FA009161BE /* AlertView.xib */; };
 		197181AF22E63CF6009161BE /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197181AE22E63CF6009161BE /* AlertView.swift */; };
 		197181B322E77E52009161BE /* RegistrationStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197181B222E77E52009161BE /* RegistrationStep1ViewController.swift */; };
-		197181B522E77FC2009161BE /* RegistrationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197181B422E77FC2009161BE /* RegistrationPageViewController.swift */; };
 		199E8AA722DFB93C0065E423 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E8AA622DFB93C0065E423 /* GradientView.swift */; };
-		199E8AA922DFCBE20065E423 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 199E8AA822DFCBE20065E423 /* Slide.swift */; };
-		199E8AAB22DFCC700065E423 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 199E8AAA22DFCC700065E423 /* Slide.xib */; };
+		19A47ECC22EA5DBF001B6E13 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A47ECB22EA5DBF001B6E13 /* RegistrationViewController.swift */; };
 		19A6FF7122E0D53600D3B41E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6FF7022E0D53600D3B41E /* LoginViewController.swift */; };
 		19A6FF7522E1852800D3B41E /* DesignableUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6FF7422E1852800D3B41E /* DesignableUIButton.swift */; };
 		19A6FF8A22E18EB500D3B41E /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19A6FF7722E18EB500D3B41E /* Montserrat-LightItalic.ttf */; };
@@ -52,7 +49,11 @@
 		19A6FFBB22E22FB300D3B41E /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6FFBA22E22FB300D3B41E /* UIViewController+Extension.swift */; };
 		19A6FFBF22E248CF00D3B41E /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6FFBE22E248CF00D3B41E /* DesignableTextField.swift */; };
 		19A6FFC122E2659F00D3B41E /* PasswordRecoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A6FFC022E2659F00D3B41E /* PasswordRecoveryViewController.swift */; };
-		A4317DC475915625DDE08437 /* libPods-WhouseApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAC36E401FF167C18DF395E0 /* libPods-WhouseApp.a */; };
+		19D9F90822EB70B100A8601D /* DesignableTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D9F90722EB70B100A8601D /* DesignableTextView.swift */; };
+		19D9F90D22EBB6BF00A8601D /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D9F90C22EBB6BF00A8601D /* OnboardViewController.swift */; };
+		19D9F90F22EBDC9800A8601D /* OnboardingSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D9F90E22EBDC9800A8601D /* OnboardingSearchViewController.swift */; };
+		19D9F91122EC15F100A8601D /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19D9F91022EC15F100A8601D /* CustomCellTableViewCell.swift */; };
+		1B3A154CCBAF542629FD5928 /* Pods_WhouseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7939947FEA4ACF8F5790A73D /* Pods_WhouseApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,7 +64,6 @@
 		19279E9622E8ADB5008E89C5 /* RegistrationStep5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStep5ViewController.swift; sourceTree = "<group>"; };
 		1953C36822DF6F43008D2FD4 /* WhouseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhouseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1953C36D22DF6F43008D2FD4 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		1953C37022DF6F43008D2FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1953C37222DF6F44008D2FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1953C37522DF6F44008D2FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,10 +73,8 @@
 		197181AC22E638FA009161BE /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		197181AE22E63CF6009161BE /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		197181B222E77E52009161BE /* RegistrationStep1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStep1ViewController.swift; sourceTree = "<group>"; };
-		197181B422E77FC2009161BE /* RegistrationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPageViewController.swift; sourceTree = "<group>"; };
 		199E8AA622DFB93C0065E423 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		199E8AA822DFCBE20065E423 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
-		199E8AAA22DFCC700065E423 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		19A47ECB22EA5DBF001B6E13 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		19A6FF7022E0D53600D3B41E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		19A6FF7422E1852800D3B41E /* DesignableUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableUIButton.swift; sourceTree = "<group>"; };
 		19A6FF7722E18EB500D3B41E /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
@@ -104,7 +102,11 @@
 		19A6FFBA22E22FB300D3B41E /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		19A6FFBE22E248CF00D3B41E /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		19A6FFC022E2659F00D3B41E /* PasswordRecoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordRecoveryViewController.swift; sourceTree = "<group>"; };
-		BAC36E401FF167C18DF395E0 /* libPods-WhouseApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WhouseApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19D9F90722EB70B100A8601D /* DesignableTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextView.swift; sourceTree = "<group>"; };
+		19D9F90C22EBB6BF00A8601D /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		19D9F90E22EBDC9800A8601D /* OnboardingSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSearchViewController.swift; sourceTree = "<group>"; };
+		19D9F91022EC15F100A8601D /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
+		7939947FEA4ACF8F5790A73D /* Pods_WhouseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhouseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1C7D108A9607479BAE7EDD /* Pods-WhouseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhouseApp.debug.xcconfig"; path = "Target Support Files/Pods-WhouseApp/Pods-WhouseApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +117,7 @@
 			files = (
 				1953C38022DF72B8008D2FD4 /* Crashlytics.framework in Frameworks */,
 				1953C38122DF72B8008D2FD4 /* Fabric.framework in Frameworks */,
-				A4317DC475915625DDE08437 /* libPods-WhouseApp.a in Frameworks */,
+				1B3A154CCBAF542629FD5928 /* Pods_WhouseApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,15 +137,16 @@
 		19279E8E22E793D2008E89C5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				1953C36D22DF6F43008D2FD4 /* OnboardingViewController.swift */,
 				19A6FF7022E0D53600D3B41E /* LoginViewController.swift */,
 				19A6FFC022E2659F00D3B41E /* PasswordRecoveryViewController.swift */,
 				197181B222E77E52009161BE /* RegistrationStep1ViewController.swift */,
-				197181B422E77FC2009161BE /* RegistrationPageViewController.swift */,
 				19279E9022E8ABFE008E89C5 /* RegistrationStep2ViewController.swift */,
 				19279E9222E8AD84008E89C5 /* RegistrationStep3ViewController.swift */,
 				19279E9422E8AD95008E89C5 /* RegistrationStep4ViewController.swift */,
 				19279E9622E8ADB5008E89C5 /* RegistrationStep5ViewController.swift */,
+				19A47ECB22EA5DBF001B6E13 /* RegistrationViewController.swift */,
+				19D9F90C22EBB6BF00A8601D /* OnboardViewController.swift */,
+				19D9F90E22EBDC9800A8601D /* OnboardingSearchViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -154,6 +157,8 @@
 				199E8AA622DFB93C0065E423 /* GradientView.swift */,
 				19A6FF7422E1852800D3B41E /* DesignableUIButton.swift */,
 				19A6FFBE22E248CF00D3B41E /* DesignableTextField.swift */,
+				19D9F90722EB70B100A8601D /* DesignableTextView.swift */,
+				19D9F91022EC15F100A8601D /* CustomCellTableViewCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -186,7 +191,6 @@
 				197181AB22E638D6009161BE /* Alerts */,
 				19A6FFB922E22F7200D3B41E /* Extensions */,
 				19A6FFB822E18FCC00D3B41E /* fonts */,
-				199E8AAC22DFCF520065E423 /* Slides */,
 				19279E8E22E793D2008E89C5 /* Controllers */,
 				1953C36F22DF6F43008D2FD4 /* Main.storyboard */,
 				1953C37722DF6F44008D2FD4 /* Info.plist */,
@@ -201,15 +205,6 @@
 				197181AE22E63CF6009161BE /* AlertView.swift */,
 			);
 			path = Alerts;
-			sourceTree = "<group>";
-		};
-		199E8AAC22DFCF520065E423 /* Slides */ = {
-			isa = PBXGroup;
-			children = (
-				199E8AA822DFCBE20065E423 /* Slide.swift */,
-				199E8AAA22DFCC700065E423 /* Slide.xib */,
-			);
-			path = Slides;
 			sourceTree = "<group>";
 		};
 		19A6FF7622E18EB500D3B41E /* Montserrat */ = {
@@ -277,7 +272,7 @@
 		821CBB8A4DD478157FBC12A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BAC36E401FF167C18DF395E0 /* libPods-WhouseApp.a */,
+				7939947FEA4ACF8F5790A73D /* Pods_WhouseApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -294,6 +289,7 @@
 				1953C36522DF6F43008D2FD4 /* Frameworks */,
 				1953C36622DF6F43008D2FD4 /* Resources */,
 				1953C37D22DF7250008D2FD4 /* ShellScript */,
+				690C32CDB0EB49BF90FCDFD3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -367,7 +363,6 @@
 				19A6FF8B22E18EB500D3B41E /* Montserrat-Medium.ttf in Resources */,
 				19A6FFB422E18EC900D3B41E /* Roboto-Bold.ttf in Resources */,
 				19A6FF9422E18EB500D3B41E /* Montserrat-RegularItalic.ttf in Resources */,
-				199E8AAB22DFCC700065E423 /* Slide.xib in Resources */,
 				19A6FFAF22E18EC900D3B41E /* Roboto-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -392,6 +387,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run 1e1b13c30c070c5219a306d6a666a6a67bffd4d2 e3933966202f7c4db8b8340f7bc80ae5d6d66af3e98e0b9904c940aa9141ddca\n";
+		};
+		690C32CDB0EB49BF90FCDFD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhouseApp/Pods-WhouseApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WhouseApp/Pods-WhouseApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WhouseApp/Pods-WhouseApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		8CE6E0199943C9A869C7921A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -425,19 +437,21 @@
 				19279E9522E8AD95008E89C5 /* RegistrationStep4ViewController.swift in Sources */,
 				19A6FFBF22E248CF00D3B41E /* DesignableTextField.swift in Sources */,
 				19279E9322E8AD84008E89C5 /* RegistrationStep3ViewController.swift in Sources */,
+				19D9F90822EB70B100A8601D /* DesignableTextView.swift in Sources */,
 				197181B322E77E52009161BE /* RegistrationStep1ViewController.swift in Sources */,
-				197181B522E77FC2009161BE /* RegistrationPageViewController.swift in Sources */,
 				19A6FFBB22E22FB300D3B41E /* UIViewController+Extension.swift in Sources */,
 				19A6FFC122E2659F00D3B41E /* PasswordRecoveryViewController.swift in Sources */,
 				19279E9122E8ABFE008E89C5 /* RegistrationStep2ViewController.swift in Sources */,
-				1953C36E22DF6F43008D2FD4 /* OnboardingViewController.swift in Sources */,
+				19A47ECC22EA5DBF001B6E13 /* RegistrationViewController.swift in Sources */,
+				19D9F90D22EBB6BF00A8601D /* OnboardViewController.swift in Sources */,
+				19D9F90F22EBDC9800A8601D /* OnboardingSearchViewController.swift in Sources */,
 				1953C36C22DF6F43008D2FD4 /* AppDelegate.swift in Sources */,
 				197181AF22E63CF6009161BE /* AlertView.swift in Sources */,
 				19279E9722E8ADB5008E89C5 /* RegistrationStep5ViewController.swift in Sources */,
+				19D9F91122EC15F100A8601D /* CustomCellTableViewCell.swift in Sources */,
 				199E8AA722DFB93C0065E423 /* GradientView.swift in Sources */,
 				19A6FF7522E1852800D3B41E /* DesignableUIButton.swift in Sources */,
 				19A6FF7122E0D53600D3B41E /* LoginViewController.swift in Sources */,
-				199E8AA922DFCBE20065E423 /* Slide.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

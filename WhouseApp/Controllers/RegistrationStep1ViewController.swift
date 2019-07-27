@@ -16,7 +16,6 @@ class RegistrationStep1ViewController: UIViewController, UITextFieldDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideKeyboardWhenTappedAround()
         datePicker = UIDatePicker()
         datePicker?.datePickerMode = .date
         datePicker?.backgroundColor = UIColor.white
@@ -57,18 +56,55 @@ class RegistrationStep1ViewController: UIViewController, UITextFieldDelegate, UI
         dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func selectImageFromPhotoLibrary(_ sender: UITapGestureRecognizer) {
+    //MARK:- Image Picker
+    @IBAction func imagePickerBtnAction(_ sender: UITapGestureRecognizer)
+    {
         
-        // UIImagePickerController is a view controller that lets a user pick media from their photo library.
-        let imagePickerController =  UIImagePickerController()
+        let alert = UIAlertController(title: "Choose an image from", message: nil, preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { _ in
+            self.openCamera()
+        }))
         
-        // Only allow photos to be picked, not taken.
-        imagePickerController.sourceType = .photoLibrary
+        alert.addAction(UIAlertAction(title: "Gallery", style: .default, handler: { _ in
+            self.openGallery()
+        }))
         
-        // Make sure ViewController is notified when the user picks an image.
-        imagePickerController.delegate = self
+        alert.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil))
         
-        present(imagePickerController, animated: true, completion: nil)
-        
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func openCamera()
+    {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.camera) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerController.SourceType.camera
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+        else
+        {
+            let alert  = UIAlertController(title: "Warning", message: "You don't have camera", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    func openGallery()
+    {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerController.SourceType.photoLibrary){
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.allowsEditing = true
+            imagePicker.sourceType = UIImagePickerController.SourceType.photoLibrary
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+        else
+        {
+            let alert  = UIAlertController(title: "Warning", message: "You don't have permission to access gallery.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
 }
