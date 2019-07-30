@@ -12,11 +12,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var usernameTextField: DesignableTextField!
     @IBOutlet weak var passwordTextField: DesignableTextField!
-    @IBOutlet weak var submitBtn: DesignableUIButton!
-    
-    @IBAction func passwordRecoveryUnwind(unwindSegue: UIStoryboardSegue){}
-    
-    @IBAction func registerUnwind(unwindSegue: UIStoryboardSegue){}
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +20,14 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.hideKeyboardWhenTappedAround()
     }
 
+    @IBAction func signIn(_ sender: UIButton) {
+        self.loadHomeScreen()
+    }
+    
+    @IBAction func passwordRecoveryUnwind(unwindSegue: UIStoryboardSegue){}
+    
+    @IBAction func registerUnwind(unwindSegue: UIStoryboardSegue){}
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         let nextTag = textField.tag + 1
         if let nextResponder = textField.superview?.viewWithTag(nextTag) {
@@ -33,5 +36,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             textField.resignFirstResponder()
         }
         return true
+    }
+    
+    func loadHomeScreen(){
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Navigation", bundle: nil)
+        let homeVC = storyBoard.instantiateViewController(withIdentifier: "navigationRoot") as! UITabBarController
+        self.present(homeVC, animated: true, completion: nil)
     }
 }

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="C17-3c-XOe">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mRg-8q-tsL">
+            <objects>
+                <tabBarController storyboardIdentifier="navigationRoot" id="C17-3c-XOe" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" id="rAe-GH-U8U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="ctaBlue"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="0cN-Vn-8aR" kind="relationship" relationship="viewControllers" id="vQ5-Vj-8hh"/>
+                        <segue destination="dKZ-5a-xt9" kind="relationship" relationship="viewControllers" id="zmE-M2-OXl"/>
+                        <segue destination="AT4-dU-fdj" kind="relationship" relationship="viewControllers" id="Vs1-0V-tSt"/>
+                        <segue destination="7d5-Wf-ppo" kind="relationship" relationship="viewControllers" id="CGd-xD-VHs"/>
+                        <segue destination="Xuk-2i-9PA" kind="relationship" relationship="viewControllers" id="mcT-Ah-1E3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DGC-y7-TQo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2284" y="1108"/>
+        </scene>
+        <!--SearchResults-->
+        <scene sceneID="bHK-NG-5LI">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SearchResults" id="0cN-Vn-8aR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="search_24" id="Wqd-Mo-7Um"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y2T-9B-9qG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1510" y="1108"/>
+        </scene>
+        <!--ActiveJobs-->
+        <scene sceneID="BBy-Eq-g3s">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ActiveJobs" id="dKZ-5a-xt9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Active Jobs" image="list_24" id="NFI-rr-SNZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zM-zs-WGb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1503" y="1158"/>
+        </scene>
+        <!--Chat-->
+        <scene sceneID="iHS-cV-z5W">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chat" id="AT4-dU-fdj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chat" image="chatBubble_24" id="8Wk-uB-yjL"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dhI-ic-YoP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1521" y="1211"/>
+        </scene>
+        <!--Properties-->
+        <scene sceneID="OkM-xr-wfb">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Properties" id="7d5-Wf-ppo" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Properties" image="property_24" id="g2s-kp-TMa"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A2X-bV-M5e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1510" y="1262"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="wLu-X1-oR2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="Xuk-2i-9PA" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings_24" id="g9Y-CK-CnV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4E-y5-pye" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1504" y="1317"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chatBubble_24" width="24" height="24"/>
+        <image name="list_24" width="24" height="24"/>
+        <image name="property_24" width="24" height="24"/>
+        <image name="search_24" width="24" height="24"/>
+        <image name="settings_24" width="24" height="24"/>
+        <namedColor name="ctaBlue">
+            <color red="0.0" green="0.59607843137254901" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

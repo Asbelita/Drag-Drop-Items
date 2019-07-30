@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6ed-6j-3mr">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Search-->
+        <scene sceneID="Zzi-Np-ic3">
+            <objects>
+                <navigationController id="6ed-6j-3mr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" image="search_24" id="67K-2a-2e9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qg3-p2-h5L">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="72W-RF-LTr" kind="relationship" relationship="rootViewController" id="7Mg-YK-5aY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="goF-ub-ikV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-636" y="-273"/>
+        </scene>
+        <!--Search Results-->
+        <scene sceneID="6bj-kZ-z2I">
+            <objects>
+                <viewController id="72W-RF-LTr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JNm-v5-7GY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="98u-9Q-HhO"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Search Results" id="Sq1-we-bH9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mjN-xE-wmk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101" y="-273"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="search_24" width="24" height="24"/>
+    </resources>
+</document>
