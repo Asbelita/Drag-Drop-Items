@@ -11,6 +11,12 @@
 		19279E9322E8AD84008E89C5 /* RegistrationStep3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19279E9222E8AD84008E89C5 /* RegistrationStep3ViewController.swift */; };
 		19279E9522E8AD95008E89C5 /* RegistrationStep4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19279E9422E8AD95008E89C5 /* RegistrationStep4ViewController.swift */; };
 		19279E9722E8ADB5008E89C5 /* RegistrationStep5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19279E9622E8ADB5008E89C5 /* RegistrationStep5ViewController.swift */; };
+		1940D46E22F0EB8A00807213 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D46D22F0EB8A00807213 /* SearchResultsViewController.swift */; };
+		1940D47022F0F43C00807213 /* SearchResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D46F22F0F43C00807213 /* SearchResultsTableViewCell.swift */; };
+		1940D47222F0FF7C00807213 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47122F0FF7C00807213 /* RatingControl.swift */; };
+		1940D47422F1196E00807213 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47322F1196E00807213 /* DesignableImageView.swift */; };
+		1940D47622F1EFCB00807213 /* TableResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47522F1EFCB00807213 /* TableResultsViewController.swift */; };
+		1940D47822F23E8100807213 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47722F23E8100807213 /* DesignableLabel.swift */; };
 		1953C36C22DF6F43008D2FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */; };
 		1953C37122DF6F43008D2FD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1953C36F22DF6F43008D2FD4 /* Main.storyboard */; };
 		1953C37322DF6F44008D2FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1953C37222DF6F44008D2FD4 /* Assets.xcassets */; };
@@ -68,6 +74,12 @@
 		19279E9222E8AD84008E89C5 /* RegistrationStep3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStep3ViewController.swift; sourceTree = "<group>"; };
 		19279E9422E8AD95008E89C5 /* RegistrationStep4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStep4ViewController.swift; sourceTree = "<group>"; };
 		19279E9622E8ADB5008E89C5 /* RegistrationStep5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStep5ViewController.swift; sourceTree = "<group>"; };
+		1940D46D22F0EB8A00807213 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		1940D46F22F0F43C00807213 /* SearchResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsTableViewCell.swift; sourceTree = "<group>"; };
+		1940D47122F0FF7C00807213 /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
+		1940D47322F1196E00807213 /* DesignableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
+		1940D47522F1EFCB00807213 /* TableResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableResultsViewController.swift; sourceTree = "<group>"; };
+		1940D47722F23E8100807213 /* DesignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
 		1953C36822DF6F43008D2FD4 /* WhouseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhouseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1953C37022DF6F43008D2FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -149,16 +161,11 @@
 		19279E8E22E793D2008E89C5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				19A6FF7022E0D53600D3B41E /* LoginViewController.swift */,
-				19A6FFC022E2659F00D3B41E /* PasswordRecoveryViewController.swift */,
-				197181B222E77E52009161BE /* RegistrationStep1ViewController.swift */,
-				19279E9022E8ABFE008E89C5 /* RegistrationStep2ViewController.swift */,
-				19279E9222E8AD84008E89C5 /* RegistrationStep3ViewController.swift */,
-				19279E9422E8AD95008E89C5 /* RegistrationStep4ViewController.swift */,
-				19279E9622E8ADB5008E89C5 /* RegistrationStep5ViewController.swift */,
-				19A47ECB22EA5DBF001B6E13 /* RegistrationViewController.swift */,
-				19D9F90C22EBB6BF00A8601D /* OnboardViewController.swift */,
-				19D9F90E22EBDC9800A8601D /* OnboardingSearchViewController.swift */,
+				1940D46C22F0EB6900807213 /* SearchResults */,
+				1940D46B22F0EAE000807213 /* Login */,
+				1940D46822F0E88B00807213 /* Registration */,
+				1940D46922F0EABE00807213 /* Onboarding */,
+				1940D46A22F0EAC900807213 /* OnboardingSearch */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -171,8 +178,59 @@
 				19A6FFBE22E248CF00D3B41E /* DesignableTextField.swift */,
 				19D9F90722EB70B100A8601D /* DesignableTextView.swift */,
 				19D9F91022EC15F100A8601D /* CustomCellTableViewCell.swift */,
+				1940D47122F0FF7C00807213 /* RatingControl.swift */,
+				1940D47322F1196E00807213 /* DesignableImageView.swift */,
+				1940D47722F23E8100807213 /* DesignableLabel.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		1940D46822F0E88B00807213 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				19A6FFC022E2659F00D3B41E /* PasswordRecoveryViewController.swift */,
+				197181B222E77E52009161BE /* RegistrationStep1ViewController.swift */,
+				19279E9022E8ABFE008E89C5 /* RegistrationStep2ViewController.swift */,
+				19279E9222E8AD84008E89C5 /* RegistrationStep3ViewController.swift */,
+				19279E9422E8AD95008E89C5 /* RegistrationStep4ViewController.swift */,
+				19279E9622E8ADB5008E89C5 /* RegistrationStep5ViewController.swift */,
+				19A47ECB22EA5DBF001B6E13 /* RegistrationViewController.swift */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		1940D46922F0EABE00807213 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				19D9F90C22EBB6BF00A8601D /* OnboardViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		1940D46A22F0EAC900807213 /* OnboardingSearch */ = {
+			isa = PBXGroup;
+			children = (
+				19D9F90E22EBDC9800A8601D /* OnboardingSearchViewController.swift */,
+			);
+			path = OnboardingSearch;
+			sourceTree = "<group>";
+		};
+		1940D46B22F0EAE000807213 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				19A6FF7022E0D53600D3B41E /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		1940D46C22F0EB6900807213 /* SearchResults */ = {
+			isa = PBXGroup;
+			children = (
+				1940D46D22F0EB8A00807213 /* SearchResultsViewController.swift */,
+				1940D46F22F0F43C00807213 /* SearchResultsTableViewCell.swift */,
+				1940D47522F1EFCB00807213 /* TableResultsViewController.swift */,
+			);
+			path = SearchResults;
 			sourceTree = "<group>";
 		};
 		1953C35F22DF6F43008D2FD4 = {
@@ -462,19 +520,25 @@
 				19A6FFBF22E248CF00D3B41E /* DesignableTextField.swift in Sources */,
 				19279E9322E8AD84008E89C5 /* RegistrationStep3ViewController.swift in Sources */,
 				19D9F90822EB70B100A8601D /* DesignableTextView.swift in Sources */,
+				1940D47022F0F43C00807213 /* SearchResultsTableViewCell.swift in Sources */,
+				1940D47622F1EFCB00807213 /* TableResultsViewController.swift in Sources */,
 				197181B322E77E52009161BE /* RegistrationStep1ViewController.swift in Sources */,
 				19A6FFBB22E22FB300D3B41E /* UIViewController+Extension.swift in Sources */,
+				1940D47222F0FF7C00807213 /* RatingControl.swift in Sources */,
 				19A6FFC122E2659F00D3B41E /* PasswordRecoveryViewController.swift in Sources */,
 				19279E9122E8ABFE008E89C5 /* RegistrationStep2ViewController.swift in Sources */,
 				19A47ECC22EA5DBF001B6E13 /* RegistrationViewController.swift in Sources */,
 				19D9F90D22EBB6BF00A8601D /* OnboardViewController.swift in Sources */,
+				1940D47422F1196E00807213 /* DesignableImageView.swift in Sources */,
 				19D9F90F22EBDC9800A8601D /* OnboardingSearchViewController.swift in Sources */,
 				1953C36C22DF6F43008D2FD4 /* AppDelegate.swift in Sources */,
+				1940D46E22F0EB8A00807213 /* SearchResultsViewController.swift in Sources */,
 				197181AF22E63CF6009161BE /* AlertView.swift in Sources */,
 				19279E9722E8ADB5008E89C5 /* RegistrationStep5ViewController.swift in Sources */,
 				19D9F91122EC15F100A8601D /* CustomCellTableViewCell.swift in Sources */,
 				199E8AA722DFB93C0065E423 /* GradientView.swift in Sources */,
 				19A6FF7522E1852800D3B41E /* DesignableUIButton.swift in Sources */,
+				1940D47822F23E8100807213 /* DesignableLabel.swift in Sources */,
 				19A6FF7122E0D53600D3B41E /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

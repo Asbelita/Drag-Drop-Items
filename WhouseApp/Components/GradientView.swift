@@ -14,6 +14,7 @@ import UIKit
     @IBInspectable var bottomColor: UIColor = UIColor.black
     @IBInspectable var startPoint: CGPoint = CGPoint(x: 0, y: 0)
     @IBInspectable var endPoint: CGPoint = CGPoint(x: 1, y: 1)
+    @IBInspectable var hasGradient: Bool = true
     
     @IBInspectable var borderWidth: CGFloat = 0 {
         didSet {
@@ -68,9 +69,12 @@ import UIKit
     }
     
     override func layoutSubviews() {
-        (layer as! CAGradientLayer).colors = [topColor.cgColor, bottomColor.cgColor]
-        (layer as! CAGradientLayer).startPoint = startPoint
-        (layer as! CAGradientLayer).endPoint = endPoint
+        if hasGradient {
+            (layer as! CAGradientLayer).colors = [topColor.cgColor, bottomColor.cgColor]
+            (layer as! CAGradientLayer).startPoint = startPoint
+            (layer as! CAGradientLayer).endPoint = endPoint
+        }
     }
+        
 
 }

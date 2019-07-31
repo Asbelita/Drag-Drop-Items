@@ -6,8 +6,7 @@ target 'WhouseApp' do
   use_frameworks!
 
   # Pods for WhouseApp
-  pod "KeyboardAvoidingView", '~> 4.0'
+  pod 'KeyboardAvoidingView', '~> 4.0'
   pod 'UICircularProgressRing'
-
 
 end

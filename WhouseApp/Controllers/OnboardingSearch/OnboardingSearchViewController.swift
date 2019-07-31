@@ -13,7 +13,6 @@ class OnboardingSearchViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var serviceTableList: UITableView!
     @IBOutlet weak var nearBtn: UIButton!
     @IBOutlet weak var anotherAddressBtn: UIButton!
-    @IBOutlet weak var zipView: UIView!
     @IBOutlet weak var zipHeight: NSLayoutConstraint!
     
     let list = ["Service 1", "Service 2", "Service 3", "Service 4","Service 5","Service 6","Service 7","Service 8","Service 9","Service 10","Service 11","Service 12","Service 13","Service 14","Service 15","Service 16"]
