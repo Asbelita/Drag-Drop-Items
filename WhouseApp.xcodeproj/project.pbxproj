@@ -17,6 +17,8 @@
 		1940D47422F1196E00807213 /* DesignableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47322F1196E00807213 /* DesignableImageView.swift */; };
 		1940D47622F1EFCB00807213 /* TableResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47522F1EFCB00807213 /* TableResultsViewController.swift */; };
 		1940D47822F23E8100807213 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47722F23E8100807213 /* DesignableLabel.swift */; };
+		1940D47B22F2572B00807213 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47A22F2572B00807213 /* PropertyTableViewCell.swift */; };
+		1940D47D22F2587300807213 /* PropertiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47C22F2587300807213 /* PropertiesTableViewController.swift */; };
 		1953C36C22DF6F43008D2FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */; };
 		1953C37122DF6F43008D2FD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1953C36F22DF6F43008D2FD4 /* Main.storyboard */; };
 		1953C37322DF6F44008D2FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1953C37222DF6F44008D2FD4 /* Assets.xcassets */; };
@@ -80,6 +82,8 @@
 		1940D47322F1196E00807213 /* DesignableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableImageView.swift; sourceTree = "<group>"; };
 		1940D47522F1EFCB00807213 /* TableResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableResultsViewController.swift; sourceTree = "<group>"; };
 		1940D47722F23E8100807213 /* DesignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
+		1940D47A22F2572B00807213 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
+		1940D47C22F2587300807213 /* PropertiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewController.swift; sourceTree = "<group>"; };
 		1953C36822DF6F43008D2FD4 /* WhouseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhouseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1953C37022DF6F43008D2FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -161,6 +165,7 @@
 		19279E8E22E793D2008E89C5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				1940D47922F256C000807213 /* Properties */,
 				1940D46C22F0EB6900807213 /* SearchResults */,
 				1940D46B22F0EAE000807213 /* Login */,
 				1940D46822F0E88B00807213 /* Registration */,
@@ -231,6 +236,15 @@
 				1940D47522F1EFCB00807213 /* TableResultsViewController.swift */,
 			);
 			path = SearchResults;
+			sourceTree = "<group>";
+		};
+		1940D47922F256C000807213 /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				1940D47A22F2572B00807213 /* PropertyTableViewCell.swift */,
+				1940D47C22F2587300807213 /* PropertiesTableViewController.swift */,
+			);
+			path = Properties;
 			sourceTree = "<group>";
 		};
 		1953C35F22DF6F43008D2FD4 = {
@@ -516,6 +530,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1940D47D22F2587300807213 /* PropertiesTableViewController.swift in Sources */,
 				19279E9522E8AD95008E89C5 /* RegistrationStep4ViewController.swift in Sources */,
 				19A6FFBF22E248CF00D3B41E /* DesignableTextField.swift in Sources */,
 				19279E9322E8AD84008E89C5 /* RegistrationStep3ViewController.swift in Sources */,
@@ -528,6 +543,7 @@
 				19A6FFC122E2659F00D3B41E /* PasswordRecoveryViewController.swift in Sources */,
 				19279E9122E8ABFE008E89C5 /* RegistrationStep2ViewController.swift in Sources */,
 				19A47ECC22EA5DBF001B6E13 /* RegistrationViewController.swift in Sources */,
+				1940D47B22F2572B00807213 /* PropertyTableViewCell.swift in Sources */,
 				19D9F90D22EBB6BF00A8601D /* OnboardViewController.swift in Sources */,
 				1940D47422F1196E00807213 /* DesignableImageView.swift in Sources */,
 				19D9F90F22EBDC9800A8601D /* OnboardingSearchViewController.swift in Sources */,

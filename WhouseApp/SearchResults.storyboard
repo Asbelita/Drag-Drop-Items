@@ -46,86 +46,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UJN-0j-0z3">
-                                <rect key="frame" x="0.0" y="141" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <connections>
                                     <segue destination="wMa-OB-dk0" kind="embed" id="mMG-l8-GKH"/>
                                 </connections>
                             </containerView>
-                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7q7-zo-0tf" customClass="GradientView" customModule="WhouseApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="414" height="53"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appName" translatesAutoresizingMaskIntoConstraints="NO" id="QhD-Er-q2n">
-                                        <rect key="frame" x="131.5" y="3" width="151" height="47"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Lo-9y-lU0">
-                                        <rect key="frame" x="10" y="10" width="70" height="33"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                        <color key="tintColor" name="ctaBlue"/>
-                                        <state key="normal" title="Filters" image="tune_18">
-                                            <color key="titleColor" name="ctaBlue"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" red="0.0" green="0.35816228657066773" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vey-eF-Jfz">
-                                        <rect key="frame" x="366" y="10" width="38" height="33"/>
-                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
-                                        <state key="normal" title="Map">
-                                            <color key="titleColor" name="ctaBlue"/>
-                                        </state>
-                                        <state key="highlighted">
-                                            <color key="titleColor" red="0.0" green="0.35816228657066773" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="vey-eF-Jfz" secondAttribute="trailing" constant="10" id="5VC-0E-ugt"/>
-                                    <constraint firstAttribute="bottom" secondItem="2Lo-9y-lU0" secondAttribute="bottom" constant="10" id="60D-KI-AFP"/>
-                                    <constraint firstItem="QhD-Er-q2n" firstAttribute="centerY" secondItem="7q7-zo-0tf" secondAttribute="centerY" id="HNY-5y-joP"/>
-                                    <constraint firstItem="2Lo-9y-lU0" firstAttribute="leading" secondItem="7q7-zo-0tf" secondAttribute="leading" constant="10" id="Jsm-Be-PQI"/>
-                                    <constraint firstAttribute="bottom" secondItem="vey-eF-Jfz" secondAttribute="bottom" constant="10" id="LvI-VM-WUk"/>
-                                    <constraint firstItem="vey-eF-Jfz" firstAttribute="top" secondItem="7q7-zo-0tf" secondAttribute="top" constant="10" id="Wco-kb-PnN"/>
-                                    <constraint firstItem="QhD-Er-q2n" firstAttribute="centerX" secondItem="7q7-zo-0tf" secondAttribute="centerX" id="ajs-Vl-v5J"/>
-                                    <constraint firstItem="2Lo-9y-lU0" firstAttribute="top" secondItem="7q7-zo-0tf" secondAttribute="top" constant="10" id="nVF-4c-fnY"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
-                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
-                                        <size key="value" width="0.0" height="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
-                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
-                                        <real key="value" value="0.5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hasGradient" value="NO"/>
-                                </userDefinedRuntimeAttributes>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="UJN-0j-0z3" firstAttribute="leading" secondItem="lyk-Wd-muR" secondAttribute="leading" id="2ar-AG-14u"/>
                             <constraint firstItem="UJN-0j-0z3" firstAttribute="bottom" secondItem="lyk-Wd-muR" secondAttribute="bottom" id="5c5-oe-Bjv"/>
-                            <constraint firstItem="7q7-zo-0tf" firstAttribute="top" secondItem="lyk-Wd-muR" secondAttribute="top" id="6YU-JX-BJc"/>
                             <constraint firstItem="UJN-0j-0z3" firstAttribute="trailing" secondItem="lyk-Wd-muR" secondAttribute="trailing" id="Fo7-Ep-Ddl"/>
-                            <constraint firstItem="7q7-zo-0tf" firstAttribute="trailing" secondItem="lyk-Wd-muR" secondAttribute="trailing" id="Hmn-T0-UmJ"/>
-                            <constraint firstItem="7q7-zo-0tf" firstAttribute="leading" secondItem="lyk-Wd-muR" secondAttribute="leading" id="hOC-HH-AqE"/>
-                            <constraint firstItem="UJN-0j-0z3" firstAttribute="top" secondItem="7q7-zo-0tf" secondAttribute="bottom" id="q1r-Au-R0K"/>
+                            <constraint firstItem="UJN-0j-0z3" firstAttribute="top" secondItem="lyk-Wd-muR" secondAttribute="top" id="pXd-UC-7vz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="lyk-Wd-muR"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Sq1-we-bH9"/>
+                    <navigationItem key="navigationItem" id="Sq1-we-bH9">
+                        <barButtonItem key="leftBarButtonItem" title="Filters" id="EPf-iT-LXn"/>
+                        <barButtonItem key="rightBarButtonItem" title="Map" width="23" style="plain" id="rHf-Qh-4sv"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="searchResultsView" destination="UJN-0j-0z3" id="bkn-eY-WM7"/>
                     </connections>
@@ -139,11 +78,11 @@
             <objects>
                 <viewController id="wMa-OB-dk0" customClass="TableResultsViewController" customModule="WhouseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I9a-I5-rrB">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="115" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9P-yh-yqP">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="109" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9P-yh-yqP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchResultTableCell" rowHeight="109" id="cPc-0h-5FK" customClass="SearchResultsTableViewCell" customModule="WhouseApp" customModuleProvider="target">
@@ -377,7 +316,7 @@
             <objects>
                 <viewController id="NeS-jC-d2Y" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x4f-Gh-3dU">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5zv-xq-1yg"/>
@@ -390,7 +329,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="appName" width="151" height="47"/>
         <image name="bars_18" width="18" height="18"/>
         <image name="english" width="16" height="16"/>
         <image name="euro_18" width="18" height="18"/>
@@ -400,11 +338,7 @@
         <image name="search_24" width="24" height="24"/>
         <image name="spanish" width="16" height="16"/>
         <image name="time_18" width="18" height="18"/>
-        <image name="tune_18" width="18" height="18"/>
         <image name="whVerified2" width="123" height="17"/>
-        <namedColor name="ctaBlue">
-            <color red="0.0" green="0.59607843137254901" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <namedColor name="successGreen">
             <color red="0.2627450980392157" green="0.76470588235294112" blue="0.70588235294117652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
