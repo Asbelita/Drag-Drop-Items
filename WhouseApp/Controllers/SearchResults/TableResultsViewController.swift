@@ -11,11 +11,31 @@ import UIKit
 class TableResultsViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var searchResults: UITableView!
-    let list = ["John Doe", "Morgan Freeman", "John Stewart", "Bill Barfield","Timothy Richardson","Davin Johansen","Mike Goodman","Michael Iacoletti","Richard McCain","Robert Stevenson","Jonathan Macklemore"]
+    var results = [User]()
+    let list = ["John Doe", "Morgan Freeman", "John Stewart", "Bill Barfield","Timothy Richardson","Davin Johansen","Mike Goodman","Michael Iacoletti","Richard McCain","Robert Stevenson","Jonathan Macklemore", "John Doe", "Morgan Freeman", "John Stewart", "Bill Barfield","Timothy Richardson","Davin Johansen","Mike Goodman","Michael Iacoletti","Richard McCain","Robert Stevenson","Jonathan Macklemore"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         searchResults.dataSource = self
+        prepareData()
+    }
+    
+    func prepareData(){
+        for item in list {
+            let user = User(
+                name: item,
+                profilePicture: UIImage(named: "profilePic")!,
+                rating: Int.random(in: 0...5),
+                reviewsAmount: Int.random(in: 0...20),
+                isVerified: Bool.random(),
+                maxResponseTime: Int.random(in: 0...60),
+                jobsAmount: Int.random(in: 1...500),
+                clientsAmount: Int.random(in: 1...100),
+                distance: Double.random(in: 0.0...5.0),
+                earned: Double.random(in: 1.0...1000.0),
+                isSuggested: Bool.random())
+            results += [user]
+        }
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -23,23 +43,34 @@ class TableResultsViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return list.count
+        return results.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = searchResults.dequeueReusableCell(withIdentifier: "SearchResultTableCell", for: indexPath) as! SearchResultsTableViewCell
-        cell.name.text = list[indexPath.row]
-        cell.rating.rating = Int.random(in: 0...5)
-        cell.reviews.text = "(\(String(Int.random(in: 1...17))))"
-        if(Bool.random()){
+        cell.name.text = results[indexPath.row].name
+        cell.jobsAmount.text = String(results[indexPath.row].jobsAmount)
+        cell.clientsAmount.text = String(results[indexPath.row].clientsAmount)
+        cell.distance.text = String(format: "%.1f", results[indexPath.row].distance)
+        cell.earned.text = String(format: "%.1f", results[indexPath.row].earned)
+        cell.profilePicture.image = results[indexPath.row].profilePicture
+        cell.responseTime.text = String(results[indexPath.row].maxResponseTime)
+        cell.rating.rating = results[indexPath.row].rating
+        cell.reviews.text = "(\(results[indexPath.row].reviewsAmount))"
+        
+        if(!results[indexPath.row].isVerified){
             cell.verified.isHidden = true
-            cell.flagsVerifiedConstraint.priority = UILayoutPriority.defaultLow
-            cell.flagsBottomConstraint.priority = UILayoutPriority.defaultHigh
+            cell.verifiedConstraint.priority = UILayoutPriority.defaultLow
+            cell.unverifiedConstraint.priority = UILayoutPriority.defaultHigh
+        }else{
+            cell.verified.isHidden = false
+            cell.verifiedConstraint.priority = UILayoutPriority.defaultHigh
+            cell.unverifiedConstraint.priority = UILayoutPriority.defaultLow
         }
-        if(!Bool.random())
-        {
-            cell.isSuggested.isHidden = true
-        }
+        cell.ratingStack.isHidden = results[indexPath.row].reviewsAmount == 0
+        cell.isSuggested.isHidden = !results[indexPath.row].isSuggested
+        cell.responseTimeStack.isHidden = results[indexPath.row].maxResponseTime == 0
+
         return cell
     }
 

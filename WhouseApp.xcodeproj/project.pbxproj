@@ -19,6 +19,7 @@
 		1940D47822F23E8100807213 /* DesignableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47722F23E8100807213 /* DesignableLabel.swift */; };
 		1940D47B22F2572B00807213 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47A22F2572B00807213 /* PropertyTableViewCell.swift */; };
 		1940D47D22F2587300807213 /* PropertiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47C22F2587300807213 /* PropertiesTableViewController.swift */; };
+		1940D48022F328B300807213 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47F22F328B300807213 /* User.swift */; };
 		1953C36C22DF6F43008D2FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */; };
 		1953C37122DF6F43008D2FD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1953C36F22DF6F43008D2FD4 /* Main.storyboard */; };
 		1953C37322DF6F44008D2FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1953C37222DF6F44008D2FD4 /* Assets.xcassets */; };
@@ -84,6 +85,7 @@
 		1940D47722F23E8100807213 /* DesignableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableLabel.swift; sourceTree = "<group>"; };
 		1940D47A22F2572B00807213 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
 		1940D47C22F2587300807213 /* PropertiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewController.swift; sourceTree = "<group>"; };
+		1940D47F22F328B300807213 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		1953C36822DF6F43008D2FD4 /* WhouseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhouseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1953C37022DF6F43008D2FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -247,6 +249,14 @@
 			path = Properties;
 			sourceTree = "<group>";
 		};
+		1940D47E22F3288200807213 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1940D47F22F328B300807213 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		1953C35F22DF6F43008D2FD4 = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +280,7 @@
 		1953C36A22DF6F43008D2FD4 /* WhouseApp */ = {
 			isa = PBXGroup;
 			children = (
+				1940D47E22F3288200807213 /* Models */,
 				19279E8F22E793F2008E89C5 /* Components */,
 				19279E8D22E793AA008E89C5 /* App */,
 				197181AB22E638D6009161BE /* Alerts */,
@@ -535,6 +546,7 @@
 				19A6FFBF22E248CF00D3B41E /* DesignableTextField.swift in Sources */,
 				19279E9322E8AD84008E89C5 /* RegistrationStep3ViewController.swift in Sources */,
 				19D9F90822EB70B100A8601D /* DesignableTextView.swift in Sources */,
+				1940D48022F328B300807213 /* User.swift in Sources */,
 				1940D47022F0F43C00807213 /* SearchResultsTableViewCell.swift in Sources */,
 				1940D47622F1EFCB00807213 /* TableResultsViewController.swift in Sources */,
 				197181B322E77E52009161BE /* RegistrationStep1ViewController.swift in Sources */,
