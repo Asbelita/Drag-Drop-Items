@@ -343,4 +343,5 @@
             <color red="0.2627450980392157" green="0.76470588235294112" blue="0.70588235294117652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
+    <color key="tintColor" name="ctaBlue"/>
 </document>
