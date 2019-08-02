@@ -33,7 +33,14 @@ class TableResultsViewController: UIViewController, UITableViewDataSource {
                 clientsAmount: Int.random(in: 1...100),
                 distance: Double.random(in: 0.0...5.0),
                 earned: Double.random(in: 1.0...1000.0),
-                isSuggested: Bool.random())
+                isSuggested: Bool.random(),
+                aboutMe: "Etiam et nisl et ex faucibus congue porttitor eu lorem. Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt.",
+                aboutServices: "Etiam et nisl et ex faucibus congue porttitor eu lorem. Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt.",
+                services: [
+                    Service(id: 1, name: "Housekeeping"),
+                    Service(id: 2, name: "Laundry"),
+                    Service(id: 3, name: "House Manager")
+                ])
             results += [user]
         }
     }

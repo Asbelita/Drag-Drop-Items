@@ -28,12 +28,17 @@ class DesignableUIButton: UIButton {
             backgroundColor = normalBackgroundColor
         }
     }
+    @IBInspectable var roundedButton: Bool = true
+    @IBInspectable var cornerRadious: CGFloat = 0
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
-        layer.cornerRadius = layer.frame.height / 2
         clipsToBounds = true
+        if(roundedButton){
+            layer.cornerRadius = layer.frame.height / 2
+        }else{
+            layer.cornerRadius = cornerRadious
+        }
         
     }
     

@@ -28,6 +28,12 @@ import UIKit
         }
     }
     
+    @IBInspectable var borderColor: UIColor = UIColor.black{
+        didSet {
+            layer.borderColor = borderColor.cgColor
+        }
+    }
+    
     @IBInspectable var shadowOffset: CGSize{
         get{
             return self.layer.shadowOffset

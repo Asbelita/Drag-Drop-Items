@@ -21,8 +21,11 @@ class User {
     var distance: Double
     var earned: Double
     var isSuggested: Bool
+    var aboutMe: String?
+    var aboutServices: String?
+    var services = [Service]()
  
-    init(name: String, profilePicture: UIImage, rating: Int, reviewsAmount: Int, isVerified: Bool, maxResponseTime: Int, jobsAmount: Int, clientsAmount: Int, distance: Double, earned: Double, isSuggested: Bool) {
+    init(name: String, profilePicture: UIImage, rating: Int, reviewsAmount: Int, isVerified: Bool, maxResponseTime: Int, jobsAmount: Int, clientsAmount: Int, distance: Double, earned: Double, isSuggested: Bool, aboutMe: String?, aboutServices: String?, services: [Service]) {
         self.name = name
         self.profilePicture = profilePicture
         self.rating = rating
@@ -34,5 +37,8 @@ class User {
         self.distance = distance
         self.earned = earned
         self.isSuggested = isSuggested
+        self.aboutMe = aboutMe
+        self.aboutServices = aboutServices
+        self.services = services
     }
 }
