@@ -72,4 +72,14 @@ class OnboardingSearchViewController: UIViewController, UITableViewDataSource {
         
 
     }
+    
+    @IBAction func search(_ sender: UIButton){
+        self.loadHomeScreen()
+    }
+    
+    func loadHomeScreen(){
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Navigation", bundle: nil)
+        let homeVC = storyBoard.instantiateViewController(withIdentifier: "navigationRoot") as! UITabBarController
+        self.present(homeVC, animated: true, completion: nil)
+    }
 }

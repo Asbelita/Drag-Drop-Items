@@ -1845,6 +1845,9 @@
                                                 <color key="value" name="ctaBlue"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="search:" destination="sXJ-68-Lv0" eventType="touchUpInside" id="giH-go-iPe"/>
+                                        </connections>
                                     </button>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="48" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Kn3-zf-JVV">
                                         <rect key="frame" x="0.0" y="54" width="374" height="489"/>
