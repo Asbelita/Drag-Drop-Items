@@ -14,7 +14,6 @@ class PublicProfileViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         if let profile = profile{
             navigationItem.titleView = setTitle(profile.name, andImage: profile.profilePicture)
             navigationItem.titleView?.sizeToFit()
