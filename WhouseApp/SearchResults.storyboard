@@ -85,12 +85,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchResultTableCell" rowHeight="109" id="cPc-0h-5FK" customClass="SearchResultsTableViewCell" customModule="WhouseApp" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchResultTableCell" rowHeight="109" id="cPc-0h-5FK" customClass="SearchResultsTableViewCell" customModule="WhouseApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="1" width="414" height="109"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cPc-0h-5FK" id="pWZ-vN-Jvr">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="108.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                             <subviews>
                                                 <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hKF-7D-neW">
                                                     <rect key="frame" x="254" y="14" width="140" height="81"/>
@@ -243,7 +243,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ur8-0S-Wv0">
-                                                                    <rect key="frame" x="0.0" y="17.5" width="103" height="18"/>
+                                                                    <rect key="frame" x="0.0" y="17.5" width="102.5" height="18"/>
                                                                     <subviews>
                                                                         <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UW3-Zj-F3Q" customClass="RatingControl" customModule="WhouseApp" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="90" height="18"/>
@@ -264,7 +264,7 @@
                                                                             </userDefinedRuntimeAttributes>
                                                                         </view>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(5)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcP-nb-VMr">
-                                                                            <rect key="frame" x="90" y="2.5" width="13" height="12.5"/>
+                                                                            <rect key="frame" x="90" y="2.5" width="12.5" height="12.5"/>
                                                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
                                                                             <color key="textColor" name="successGreen"/>
                                                                             <nil key="highlightedColor"/>
@@ -377,7 +377,7 @@
                                             <outlet property="unverifiedConstraint" destination="dKC-Gn-ub0" id="ZSu-jE-InI"/>
                                             <outlet property="verified" destination="Chj-9q-fyp" id="vXW-DB-0Eh"/>
                                             <outlet property="verifiedConstraint" destination="Lbs-LF-PIZ" id="5q0-GA-G07"/>
-                                            <segue destination="NeS-jC-d2Y" kind="show" id="TVb-jj-Hpx"/>
+                                            <segue destination="NeS-jC-d2Y" kind="show" identifier="showProfile" id="TVb-jj-Hpx"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -390,6 +390,7 @@
                             <constraint firstAttribute="bottom" secondItem="Q9P-yh-yqP" secondAttribute="bottom" id="hs8-wc-2Zr"/>
                             <constraint firstItem="Q9P-yh-yqP" firstAttribute="leading" secondItem="I9a-I5-rrB" secondAttribute="leading" id="zkr-9Y-Lr1"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="2aS-1x-uqW"/>
                     </view>
                     <connections>
                         <outlet property="searchResults" destination="Q9P-yh-yqP" id="kic-7y-cg0"/>
@@ -399,17 +400,17 @@
             </objects>
             <point key="canvasLocation" x="805.79710144927537" y="-273.54910714285711"/>
         </scene>
-        <!--John doe-->
+        <!--Public Profile View Controller-->
         <scene sceneID="59M-xq-X7m">
             <objects>
-                <viewController id="NeS-jC-d2Y" sceneMemberID="viewController">
+                <viewController id="NeS-jC-d2Y" customClass="PublicProfileViewController" customModule="WhouseApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x4f-Gh-3dU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="5zv-xq-1yg"/>
                     </view>
-                    <navigationItem key="navigationItem" title="John doe" id="vPF-MJ-fsR"/>
+                    <navigationItem key="navigationItem" id="vPF-MJ-fsR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K6v-Oh-2VH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

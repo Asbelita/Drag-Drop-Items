@@ -73,5 +73,23 @@ class TableResultsViewController: UIViewController, UITableViewDataSource {
 
         return cell
     }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        switch(segue.identifier ?? "") {
+            
+        case "showProfile":
+            let publicProfileViewController = segue.destination as! PublicProfileViewController
+            let selectedCell = sender as! SearchResultsTableViewCell
+            let indexPath = searchResults.indexPath(for: selectedCell)
+            let selectedProfile = results[indexPath!.row]
+            publicProfileViewController.profile = selectedProfile
+            
+        default:
+            fatalError("Unexpected Segue Identifier; \(String(describing: segue.identifier))")
+        }
+    }
 
 }
