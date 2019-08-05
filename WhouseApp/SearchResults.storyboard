@@ -437,7 +437,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="1447"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30c-2l-VR0" userLabel="ContainerView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1355"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1345"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eec-qI-fzL">
                                                 <rect key="frame" x="72" y="30" width="270" height="110"/>
@@ -1019,43 +1019,69 @@ From 2:00pm to 5:00pm</string>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAi-yT-Kbn">
-                                                <rect key="frame" x="20" y="978" width="374" height="140"/>
+                                                <rect key="frame" x="20" y="978" width="374" height="130"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHOTOS AND VIDEOS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pH-ws-fMO">
-                                                        <rect key="frame" x="0.0" y="0.0" width="183.5" height="20"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHOTOS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pH-ws-fMO">
+                                                        <rect key="frame" x="0.0" y="0.0" width="71.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
                                                         <color key="textColor" name="ctaBlue"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cleanedHouse" translatesAutoresizingMaskIntoConstraints="NO" id="9xW-CO-hlG">
-                                                        <rect key="frame" x="0.0" y="30" width="110" height="110"/>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dd7-Ck-AfI">
+                                                        <rect key="frame" x="0.0" y="30" width="304" height="100"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="110" id="RwO-5d-twm"/>
-                                                            <constraint firstAttribute="height" constant="110" id="pZa-rP-eW4"/>
+                                                            <constraint firstAttribute="height" constant="100" id="seb-Df-GgJ"/>
+                                                            <constraint firstAttribute="width" constant="304" id="uK3-55-ixQ"/>
                                                         </constraints>
-                                                    </imageView>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cleanedHouse" translatesAutoresizingMaskIntoConstraints="NO" id="mSm-b8-Y0H">
-                                                        <rect key="frame" x="120" y="30" width="110" height="110"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="110" id="p1R-Qa-bVp"/>
-                                                            <constraint firstAttribute="width" constant="110" id="yFg-fl-Avj"/>
-                                                        </constraints>
-                                                    </imageView>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="DVp-Yq-sdC">
+                                                            <size key="itemSize" width="100" height="100"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        </collectionViewFlowLayout>
+                                                        <cells>
+                                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="vmP-Xs-xj8" customClass="ImageCollectionViewCell" customModule="WhouseApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bMF-xI-OaX">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                                        </imageView>
+                                                                    </subviews>
+                                                                </view>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="bMF-xI-OaX" secondAttribute="trailing" id="81v-tb-GJV"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="bMF-xI-OaX" secondAttribute="bottom" id="Jqa-ND-8XB"/>
+                                                                    <constraint firstItem="bMF-xI-OaX" firstAttribute="leading" secondItem="vmP-Xs-xj8" secondAttribute="leading" id="MnN-o1-BtS"/>
+                                                                    <constraint firstItem="bMF-xI-OaX" firstAttribute="top" secondItem="vmP-Xs-xj8" secondAttribute="top" id="zct-Gy-ivL"/>
+                                                                </constraints>
+                                                                <connections>
+                                                                    <outlet property="Image" destination="bMF-xI-OaX" id="96p-fv-SiP"/>
+                                                                </connections>
+                                                            </collectionViewCell>
+                                                        </cells>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="NeS-jC-d2Y" id="8ow-BV-sQ5"/>
+                                                            <outlet property="delegate" destination="NeS-jC-d2Y" id="aTv-JS-Esu"/>
+                                                        </connections>
+                                                    </collectionView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
+                                                    <constraint firstItem="dd7-Ck-AfI" firstAttribute="top" secondItem="7pH-ws-fMO" secondAttribute="bottom" constant="10" id="4I5-H2-0Sc"/>
                                                     <constraint firstItem="7pH-ws-fMO" firstAttribute="leading" secondItem="aAi-yT-Kbn" secondAttribute="leading" id="77E-p4-UJA"/>
-                                                    <constraint firstAttribute="bottom" secondItem="9xW-CO-hlG" secondAttribute="bottom" id="GdA-1H-a0q"/>
-                                                    <constraint firstItem="9xW-CO-hlG" firstAttribute="leading" secondItem="aAi-yT-Kbn" secondAttribute="leading" id="ZA5-2P-lla"/>
-                                                    <constraint firstItem="9xW-CO-hlG" firstAttribute="top" secondItem="7pH-ws-fMO" secondAttribute="bottom" constant="10" id="bf1-sX-sZx"/>
+                                                    <constraint firstAttribute="bottom" secondItem="dd7-Ck-AfI" secondAttribute="bottom" id="YwO-sb-SKD"/>
                                                     <constraint firstItem="7pH-ws-fMO" firstAttribute="leading" secondItem="aAi-yT-Kbn" secondAttribute="leading" id="gJ8-um-Ea5"/>
-                                                    <constraint firstItem="mSm-b8-Y0H" firstAttribute="centerY" secondItem="9xW-CO-hlG" secondAttribute="centerY" id="gKt-O5-zjA"/>
-                                                    <constraint firstItem="mSm-b8-Y0H" firstAttribute="leading" secondItem="9xW-CO-hlG" secondAttribute="trailing" constant="10" id="iIN-g9-W6W"/>
+                                                    <constraint firstItem="dd7-Ck-AfI" firstAttribute="leading" secondItem="aAi-yT-Kbn" secondAttribute="leading" id="oxR-S5-f3o"/>
                                                     <constraint firstItem="7pH-ws-fMO" firstAttribute="top" secondItem="aAi-yT-Kbn" secondAttribute="top" id="vZ7-mz-MvU"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m8U-Xn-Pd0">
-                                                <rect key="frame" x="20" y="1148" width="374" height="187"/>
+                                                <rect key="frame" x="20" y="1138" width="374" height="187"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REVIEWS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Lt-d2-BPa">
                                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="20"/>
@@ -1118,6 +1144,9 @@ From 2:00pm to 5:00pm</string>
                                                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S4s-8l-fAI" customClass="RatingControl" customModule="WhouseApp" customModuleProvider="target">
                                                                 <rect key="frame" x="274" y="10" width="90" height="18"/>
                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="18" id="4rC-lT-HBN"/>
+                                                                </constraints>
                                                                 <userDefinedRuntimeAttributes>
                                                                     <userDefinedRuntimeAttribute type="size" keyPath="starSize">
                                                                         <size key="value" width="18" height="18"/>
@@ -1238,6 +1267,7 @@ From 2:00pm to 5:00pm</string>
                         <outlet property="clientsAmount" destination="euG-tk-3Qn" id="Kl6-hx-nMg"/>
                         <outlet property="distance" destination="ZbT-D0-r0K" id="yR0-c5-gQf"/>
                         <outlet property="earned" destination="wYu-Cs-Ka4" id="4CL-iV-i7z"/>
+                        <outlet property="imageCollectionHeightConstraint" destination="seb-Df-GgJ" id="pLj-8c-qQZ"/>
                         <outlet property="isSuggested" destination="w9q-ky-w5z" id="6dy-2g-W1p"/>
                         <outlet property="isVerified" destination="OWx-Rb-s4A" id="FJ1-7o-VbZ"/>
                         <outlet property="jobsAmount" destination="S9f-Hk-b5D" id="eWf-FJ-qY3"/>
@@ -1264,7 +1294,6 @@ From 2:00pm to 5:00pm</string>
         <image name="badgeHeart" width="64" height="64"/>
         <image name="badgeTime" width="64" height="64"/>
         <image name="bars_18" width="18" height="18"/>
-        <image name="cleanedHouse" width="110" height="110"/>
         <image name="english" width="16" height="16"/>
         <image name="euro_18" width="18" height="18"/>
         <image name="italian" width="16" height="16"/>

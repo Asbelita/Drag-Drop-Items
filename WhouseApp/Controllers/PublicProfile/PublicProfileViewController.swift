@@ -8,7 +8,9 @@
 
 import UIKit
 
-class PublicProfileViewController: UIViewController, UITableViewDataSource {
+class PublicProfileViewController: UIViewController, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    // Mark: -Outlets
     @IBOutlet weak var servicesTable: UITableView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var rating: RatingControl!
@@ -28,7 +30,10 @@ class PublicProfileViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var aboutMe: UITextView!
     @IBOutlet weak var aboutServices: UITextView!
     @IBOutlet weak var tableHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var imageCollectionHeightConstraint: NSLayoutConstraint!
     
+    
+    // Mark: - Properties
     var profile: User?
     
     override func viewDidLoad() {
@@ -68,9 +73,19 @@ class PublicProfileViewController: UIViewController, UITableViewDataSource {
             servicesTable.reloadData()
             tableHeightConstraint.constant = CGFloat(44 * profile.services.count)
             
+            profile.images = [
+                Image(id: 1, name: "image1", url: "", image: UIImage(named: "cleanedHouse")),
+                Image(id: 2, name: "image2", url: "", image: UIImage(named: "cleanedHouse")),
+                Image(id: 3, name: "image3", url: "", image: UIImage(named: "cleanedHouse")),
+                Image(id: 4, name: "image4", url: "", image: UIImage(named: "cleanedHouse")),
+                Image(id: 5, name: "image5", url: "", image: UIImage(named: "cleanedHouse")),
+            ]
+            let rows = CGFloat(profile.images.count) / 3.0
+            imageCollectionHeightConstraint.constant = 102.0 * rows.rounded(.up)
         }
     }
     
+    // Mark: - TableViewDataSource protocol
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return profile?.services.count ?? 0
     }
@@ -80,5 +95,27 @@ class PublicProfileViewController: UIViewController, UITableViewDataSource {
         cell.nameLabel.text = profile?.services[indexPath.row].name
         return cell
     }
+    
+     // MARK: - UICollectionViewDataSource protocol
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return profile?.images.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath as IndexPath) as! ImageCollectionViewCell
+        
+        cell.Image.image = profile?.images[indexPath.item]?.image
+        
+        return cell
+    }
+    
+    // MARK: - UICollectionViewDelegate protocol
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        // handle tap events
+        print("You selected cell #\(indexPath.item)!")
+    }
+    
+    
 
 }

@@ -40,7 +40,8 @@ class TableResultsViewController: UIViewController, UITableViewDataSource {
                     Service(id: 1, name: "Housekeeping"),
                     Service(id: 2, name: "Laundry"),
                     Service(id: 3, name: "House Manager")
-                ])
+                ],
+                images: [])
             results += [user]
         }
     }
