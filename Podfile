@@ -6,6 +6,8 @@ target 'WhouseApp' do
   use_frameworks!
 
   # Pods for WhouseApp
+  pod 'Fabric'
+  pod 'Crashlytics'
   pod 'KeyboardAvoidingView', '~> 4.0'
   pod 'UICircularProgressRing'
 

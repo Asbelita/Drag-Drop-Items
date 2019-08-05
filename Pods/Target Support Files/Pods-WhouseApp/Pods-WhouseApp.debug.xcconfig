@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/APExtensions" "${PODS_CONFIGURATION_BUILD_DIR}/KeyboardAvoidingView" "${PODS_CONFIGURATION_BUILD_DIR}/UICircularProgressRing"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/APExtensions" "${PODS_CONFIGURATION_BUILD_DIR}/KeyboardAvoidingView" "${PODS_CONFIGURATION_BUILD_DIR}/UICircularProgressRing" "${PODS_ROOT}/Crashlytics/iOS" "${PODS_ROOT}/Fabric/iOS"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/APExtensions/APExtensions.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/KeyboardAvoidingView/KeyboardAvoidingView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/UICircularProgressRing/UICircularProgressRing.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "APExtensions" -framework "Foundation" -framework "KeyboardAvoidingView" -framework "MessageUI" -framework "UICircularProgressRing" -framework "UIKit"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"c++" -l"z" -framework "APExtensions" -framework "Crashlytics" -framework "Fabric" -framework "Foundation" -framework "KeyboardAvoidingView" -framework "MessageUI" -framework "Security" -framework "SystemConfiguration" -framework "UICircularProgressRing" -framework "UIKit"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

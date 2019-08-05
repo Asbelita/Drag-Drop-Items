@@ -1,24 +1,33 @@
 PODS:
   - APExtensions/ViewState (7.0.1)
+  - Crashlytics (3.13.4):
+    - Fabric (~> 1.10.2)
+  - Fabric (1.10.2)
   - KeyboardAvoidingView (4.0.0):
     - APExtensions/ViewState (>= 7.0.0)
   - UICircularProgressRing (6.2.1)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - KeyboardAvoidingView (~> 4.0)
   - UICircularProgressRing
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - APExtensions
+    - Crashlytics
+    - Fabric
     - KeyboardAvoidingView
     - UICircularProgressRing
 
 SPEC CHECKSUMS:
   APExtensions: 9a7a7b6ff5b9785b245962de89fbbdaf4c10f10e
+  Crashlytics: 2dfd686bcb918dc10ee0e76f7f853fe42c7bd552
+  Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
   KeyboardAvoidingView: edbfcb705eb522dc080e42d082cb3b28f79f9879
   UICircularProgressRing: b52543c79dbd89844e13f0053e3f565b7d7efc5c
 
-PODFILE CHECKSUM: e000ca9604e6a8a3c8267665cbeafeb460fd9f5b
+PODFILE CHECKSUM: 3c6737a82805b37862fabec20dcfa3993a6102d4
 
 COCOAPODS: 1.7.4

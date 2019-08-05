@@ -406,8 +406,8 @@
 				1953C36422DF6F43008D2FD4 /* Sources */,
 				1953C36522DF6F43008D2FD4 /* Frameworks */,
 				1953C36622DF6F43008D2FD4 /* Resources */,
-				1953C37D22DF7250008D2FD4 /* ShellScript */,
 				690C32CDB0EB49BF90FCDFD3 /* [CP] Embed Pods Frameworks */,
+				19B0A3D322F5DFA400880F09 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -494,7 +494,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1953C37D22DF7250008D2FD4 /* ShellScript */ = {
+		19B0A3D322F5DFA400880F09 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -502,7 +502,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"\"$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)\"",
+				WhouseApp/Info.plist,
 			);
 			outputFileListPaths = (
 			);
@@ -510,7 +510,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 1e1b13c30c070c5219a306d6a666a6a67bffd4d2 e3933966202f7c4db8b8340f7bc80ae5d6d66af3e98e0b9904c940aa9141ddca\n";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 36c8cff0705029f87484b9e1e57718d1b7d1d1ab ca7713422ed83e7808d645676b859f866637ae36568c1b254b99b11cb38bb0ae\n";
 		};
 		690C32CDB0EB49BF90FCDFD3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -747,7 +747,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = NelumboDev.WhouseApp;
+				PRODUCT_BUNDLE_IDENTIFIER = WhouseApp.Beta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -773,7 +773,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = NelumboDev.WhouseApp;
+				PRODUCT_BUNDLE_IDENTIFIER = WhouseApp.Beta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
