@@ -15,8 +15,8 @@ class AlertView: UIView {
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
-    @IBOutlet weak var actionButton: UIButton!
     @IBOutlet var parentView: UIView!
+    @IBOutlet weak var actionBtn: DesignableUIButton!
     
     static let instance = AlertView()
     
@@ -53,14 +53,14 @@ class AlertView: UIView {
         switch alertType {
         case .success:
             img.image = UIImage(named: "success")
-            actionButton.backgroundColor = UIColor(named: "successGreen")
-            actionButton.setTitle("Ok", for: .normal)
-            topBar.layer.backgroundColor = UIColor(named: "successGreen")?.cgColor
+            actionBtn.normalBackgroundColor = UIColor.appColor(.successColor)
+            actionBtn.setTitle("Ok", for: .normal)
+            topBar.layer.backgroundColor = UIColor.appColor(.successColor).cgColor
         case .failure:
             img.image = UIImage(named: "error")
-            actionButton.backgroundColor = UIColor(named: "errorRed")
-            actionButton.setTitle("Ok", for: .normal)
-            topBar.layer.backgroundColor = UIColor(named: "errorRed")?.cgColor
+            actionBtn.normalBackgroundColor = UIColor.appColor(.errorColor)
+            actionBtn.setTitle("Ok", for: .normal)
+            topBar.layer.backgroundColor = UIColor.appColor(.errorColor).cgColor
         }
         
         UIApplication.shared.keyWindow?.addSubview(self.parentView)

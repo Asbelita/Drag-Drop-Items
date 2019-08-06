@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" name="ctaBlue"/>
+                        <color key="selectedImageTintColor" name="primaryColor"/>
                     </tabBar>
                     <connections>
                         <segue destination="0cN-Vn-8aR" kind="relationship" relationship="viewControllers" id="vQ5-Vj-8hh"/>
@@ -90,8 +90,8 @@
         <image name="property_24" width="24" height="24"/>
         <image name="search_24" width="24" height="24"/>
         <image name="settings_24" width="24" height="24"/>
-        <namedColor name="ctaBlue">
-            <color red="0.0" green="0.59607843137254901" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="primaryColor">
+            <color red="0.80000000000000004" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

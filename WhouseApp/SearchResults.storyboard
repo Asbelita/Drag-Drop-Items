@@ -90,19 +90,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="109" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9P-yh-yqP">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="119" estimatedRowHeight="-1" sectionHeaderHeight="1" sectionFooterHeight="1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9P-yh-yqP">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchResultTableCell" rowHeight="109" id="cPc-0h-5FK" customClass="SearchResultsTableViewCell" customModule="WhouseApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="1" width="414" height="109"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SearchResultTableCell" rowHeight="119" id="cPc-0h-5FK" customClass="SearchResultsTableViewCell" customModule="WhouseApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="1" width="414" height="119"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cPc-0h-5FK" id="pWZ-vN-Jvr">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="108.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="118.5"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
                                             <subviews>
                                                 <stackView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" alignment="bottom" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hKF-7D-neW">
-                                                    <rect key="frame" x="254" y="14" width="140" height="81"/>
+                                                    <rect key="frame" x="254" y="19" width="140" height="81"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="NIH-Ds-QFN">
                                                             <rect key="frame" x="3.5" y="0.0" width="136.5" height="18"/>
@@ -240,7 +240,7 @@
                                                     </constraints>
                                                 </stackView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CeN-fW-3N4">
-                                                    <rect key="frame" x="53.5" y="19.5" width="200.5" height="70"/>
+                                                    <rect key="frame" x="53.5" y="24.5" width="200.5" height="70"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="seL-uh-Sus">
                                                             <rect key="frame" x="53.5" y="0.0" width="147" height="51.5"/>
@@ -257,7 +257,7 @@
                                                                         <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UW3-Zj-F3Q" customClass="RatingControl" customModule="WhouseApp" customModuleProvider="target">
                                                                             <rect key="frame" x="0.0" y="0.0" width="90" height="18"/>
                                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                            <color key="tintColor" name="successGreen"/>
+                                                                            <color key="tintColor" name="primaryColor"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="height" constant="18" id="SET-Iq-P2K"/>
                                                                                 <constraint firstAttribute="width" constant="90" id="kl4-ic-ZGz"/>
@@ -275,7 +275,7 @@
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(16)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcP-nb-VMr">
                                                                             <rect key="frame" x="90" y="2.5" width="16.5" height="12.5"/>
                                                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="10"/>
-                                                                            <color key="textColor" name="successGreen"/>
+                                                                            <color key="textColor" name="primaryColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
@@ -324,7 +324,7 @@
                                                     </constraints>
                                                 </view>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePic" translatesAutoresizingMaskIntoConstraints="NO" id="G4S-4F-GWv" customClass="DesignableImageView" customModule="WhouseApp" customModuleProvider="target">
-                                                    <rect key="frame" x="10" y="11" width="87" height="87"/>
+                                                    <rect key="frame" x="10" y="16" width="87" height="87"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="87" id="PsL-16-a4Z"/>
                                                         <constraint firstAttribute="width" constant="87" id="frf-Eq-0T3"/>
@@ -337,7 +337,7 @@
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggested" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ku-0H-FWn" customClass="DesignableLabel" customModule="WhouseApp" customModuleProvider="target">
                                                     <rect key="frame" x="340" y="0.0" width="80" height="13.5"/>
-                                                    <color key="backgroundColor" name="successGreen"/>
+                                                    <color key="backgroundColor" name="primaryColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="80" id="0kj-Ft-BsP"/>
                                                     </constraints>
@@ -431,6 +431,9 @@
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
+                                        <color key="value" name="buttonPrimaryColor"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xTM-iz-Ki3">
@@ -460,7 +463,6 @@
                                                                             <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HaU-mq-e6c" customClass="RatingControl" customModule="WhouseApp" customModuleProvider="target">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="90" height="18"/>
                                                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                <color key="tintColor" name="ctaBlue"/>
                                                                                 <constraints>
                                                                                     <constraint firstAttribute="width" constant="90" id="D2X-fo-xhM"/>
                                                                                     <constraint firstAttribute="height" constant="18" id="ghc-7f-dfE"/>
@@ -477,7 +479,7 @@
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(5)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKu-sN-05q">
                                                                                 <rect key="frame" x="91" y="0.0" width="17.5" height="18"/>
                                                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
-                                                                                <color key="textColor" name="ctaBlue"/>
+                                                                                <color key="textColor" name="primaryColor"/>
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                         </subviews>
@@ -541,7 +543,7 @@
                                             </view>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Suggested" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w9q-ky-w5z" customClass="DesignableLabel" customModule="WhouseApp" customModuleProvider="target">
                                                 <rect key="frame" x="327" y="0.0" width="90" height="20"/>
-                                                <color key="backgroundColor" name="ctaBlue"/>
+                                                <color key="backgroundColor" name="primaryColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="KdH-Tz-E27"/>
                                                     <constraint firstAttribute="height" constant="20" id="spm-wY-tGY"/>
@@ -702,7 +704,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT ME" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isU-XM-owV">
                                                         <rect key="frame" x="0.0" y="0.0" width="91" height="20"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
-                                                        <color key="textColor" name="ctaBlue"/>
+                                                        <color key="textColor" name="primaryColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryu-cC-ygf">
@@ -736,7 +738,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT MY SERVICES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7id-Vd-CFd">
                                                         <rect key="frame" x="0.0" y="0.0" width="178" height="20"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
-                                                        <color key="textColor" name="ctaBlue"/>
+                                                        <color key="textColor" name="primaryColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -756,7 +758,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SERVICES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ubh-SQ-kbV">
                                                         <rect key="frame" x="0.0" y="0.0" width="82.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
-                                                        <color key="textColor" name="ctaBlue"/>
+                                                        <color key="textColor" name="primaryColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <tableView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="48" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YIg-uj-WRd">
@@ -825,7 +827,7 @@
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AVAILABLE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tdw-yc-9Be">
                                                         <rect key="frame" x="0.0" y="0.0" width="95.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
-                                                        <color key="textColor" name="ctaBlue"/>
+                                                        <color key="textColor" name="primaryColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon to Fri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAP-qB-hwL">
@@ -861,7 +863,7 @@ From 2:00pm to 5:00pm</string>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LANGUAGES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IaB-8a-uGx">
                                                         <rect key="frame" x="0.0" y="0.0" width="105.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
-                                                        <color key="textColor" name="ctaBlue"/>
+                                                        <color key="textColor" name="primaryColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y7a-sf-5NT" customClass="GradientView" customModule="WhouseApp" customModuleProvider="target">
@@ -879,7 +881,7 @@ From 2:00pm to 5:00pm</string>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" name="successGreen"/>
+                                                        <color key="backgroundColor" name="primaryColor"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="J4A-GZ-wsb" secondAttribute="trailing" constant="8" id="QTn-Am-45a"/>
                                                             <constraint firstItem="J4A-GZ-wsb" firstAttribute="top" secondItem="Y7a-sf-5NT" secondAttribute="top" constant="8" id="dqx-US-e3M"/>
@@ -908,7 +910,7 @@ From 2:00pm to 5:00pm</string>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" name="successGreen"/>
+                                                        <color key="backgroundColor" name="primaryColor"/>
                                                         <constraints>
                                                             <constraint firstItem="XAE-P1-vTm" firstAttribute="top" secondItem="nuf-Vx-gYr" secondAttribute="top" constant="8" id="JG7-Dn-Omg"/>
                                                             <constraint firstItem="XAE-P1-vTm" firstAttribute="leading" secondItem="nuf-Vx-gYr" secondAttribute="leading" constant="8" id="ScM-qa-dK7"/>
@@ -937,7 +939,7 @@ From 2:00pm to 5:00pm</string>
                                                                 </userDefinedRuntimeAttributes>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" name="successGreen"/>
+                                                        <color key="backgroundColor" name="primaryColor"/>
                                                         <constraints>
                                                             <constraint firstItem="bkt-L7-5ib" firstAttribute="top" secondItem="6Eg-Sx-o9e" secondAttribute="top" constant="8" id="hx9-O2-bFI"/>
                                                             <constraint firstAttribute="trailing" secondItem="bkt-L7-5ib" secondAttribute="trailing" constant="8" id="rFT-Mm-dWH"/>
@@ -971,7 +973,7 @@ From 2:00pm to 5:00pm</string>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BADGES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guE-Cl-Ch0">
                                                         <rect key="frame" x="0.0" y="0.0" width="71" height="20"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
-                                                        <color key="textColor" name="ctaBlue"/>
+                                                        <color key="textColor" name="primaryColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badgeHeart" translatesAutoresizingMaskIntoConstraints="NO" id="zlK-8Y-CVm">
@@ -1024,7 +1026,7 @@ From 2:00pm to 5:00pm</string>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PHOTOS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pH-ws-fMO">
                                                         <rect key="frame" x="0.0" y="0.0" width="71.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
-                                                        <color key="textColor" name="ctaBlue"/>
+                                                        <color key="textColor" name="primaryColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dd7-Ck-AfI">
@@ -1086,7 +1088,7 @@ From 2:00pm to 5:00pm</string>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="REVIEWS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Lt-d2-BPa">
                                                         <rect key="frame" x="0.0" y="0.0" width="78.5" height="20"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
-                                                        <color key="textColor" name="ctaBlue"/>
+                                                        <color key="textColor" name="primaryColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJf-hd-JFY" customClass="GradientView" customModule="WhouseApp" customModuleProvider="target">
@@ -1303,15 +1305,18 @@ From 2:00pm to 5:00pm</string>
         <image name="spanish" width="16" height="16"/>
         <image name="time_18" width="18" height="18"/>
         <image name="whVerified2" width="123" height="17"/>
+        <namedColor name="buttonPrimaryColor">
+            <color red="0.80000000000000004" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="ctaBlue">
             <color red="0.0" green="0.59607843137254901" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="ctaGreen">
             <color red="0.15686274509803921" green="0.65490196078431373" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="successGreen">
-            <color red="0.2627450980392157" green="0.76470588235294112" blue="0.70588235294117652" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="primaryColor">
+            <color red="0.80000000000000004" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
-    <color key="tintColor" name="ctaBlue"/>
+    <color key="tintColor" name="primaryColor"/>
 </document>

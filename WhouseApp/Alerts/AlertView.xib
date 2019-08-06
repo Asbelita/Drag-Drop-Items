@@ -22,7 +22,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertView" customModule="WhouseApp" customModuleProvider="target">
             <connections>
-                <outlet property="actionButton" destination="WAR-Bm-tR6" id="9aW-sG-mae"/>
+                <outlet property="actionBtn" destination="WAR-Bm-tR6" id="9ON-OK-MRw"/>
                 <outlet property="alertView" destination="S26-w3-waj" id="fbA-TJ-E7v"/>
                 <outlet property="img" destination="3Dj-Tw-sxg" id="31P-xo-wTE"/>
                 <outlet property="messageLabel" destination="dfH-Zi-RNy" id="aSq-u5-ht0"/>
@@ -81,9 +81,6 @@
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
                                     <real key="value" value="1"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="color" keyPath="normalBorderColor">
-                                    <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>

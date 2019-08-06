@@ -28,6 +28,7 @@
 		1953C38122DF72B8008D2FD4 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1953C37F22DF72B8008D2FD4 /* Fabric.framework */; };
 		19693C2022F8960200DFD07E /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19693C1F22F8960200DFD07E /* ImageCollectionViewCell.swift */; };
 		19693C2222F8986B00DFD07E /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19693C2122F8986B00DFD07E /* Image.swift */; };
+		19693C2422F8D08B00DFD07E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19693C2322F8D08B00DFD07E /* UIColor+Extension.swift */; };
 		197181AD22E638FA009161BE /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 197181AC22E638FA009161BE /* AlertView.xib */; };
 		197181AF22E63CF6009161BE /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197181AE22E63CF6009161BE /* AlertView.swift */; };
 		197181B322E77E52009161BE /* RegistrationStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197181B222E77E52009161BE /* RegistrationStep1ViewController.swift */; };
@@ -101,6 +102,7 @@
 		1953C37F22DF72B8008D2FD4 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		19693C1F22F8960200DFD07E /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		19693C2122F8986B00DFD07E /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		19693C2322F8D08B00DFD07E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		197181AC22E638FA009161BE /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		197181AE22E63CF6009161BE /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		197181B222E77E52009161BE /* RegistrationStep1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStep1ViewController.swift; sourceTree = "<group>"; };
@@ -370,6 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				19A6FFBA22E22FB300D3B41E /* UIViewController+Extension.swift */,
+				19693C2322F8D08B00DFD07E /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				1940D47D22F2587300807213 /* PropertiesTableViewController.swift in Sources */,
 				19279E9522E8AD95008E89C5 /* RegistrationStep4ViewController.swift in Sources */,
 				19A6FFBF22E248CF00D3B41E /* DesignableTextField.swift in Sources */,
+				19693C2422F8D08B00DFD07E /* UIColor+Extension.swift in Sources */,
 				19279E9322E8AD84008E89C5 /* RegistrationStep3ViewController.swift in Sources */,
 				19D9F90822EB70B100A8601D /* DesignableTextView.swift in Sources */,
 				1940D48022F328B300807213 /* User.swift in Sources */,

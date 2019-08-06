@@ -16,14 +16,13 @@ class DesignableUIButton: UIButton {
             layer.borderWidth = borderWidth
         }
     }
-    //Normal state bg and border
-    @IBInspectable var normalBorderColor: UIColor? {
+    @IBInspectable var normalBorderColor: UIColor = UIColor.white {
         didSet {
-            layer.borderColor = normalBorderColor?.cgColor
+            layer.borderColor = normalBorderColor.cgColor
         }
     }
     
-    @IBInspectable var normalBackgroundColor: UIColor? {
+    @IBInspectable var normalBackgroundColor: UIColor = UIColor.white {
         didSet {
             backgroundColor = normalBackgroundColor
         }
@@ -39,6 +38,8 @@ class DesignableUIButton: UIButton {
         }else{
             layer.cornerRadius = cornerRadious
         }
+        layer.borderColor = normalBorderColor.cgColor
+        backgroundColor = normalBackgroundColor
         
     }
     
