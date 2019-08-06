@@ -27,8 +27,17 @@ class DesignableUIButton: UIButton {
             backgroundColor = normalBackgroundColor
         }
     }
+    
+    @IBInspectable var highlightedBackgroundColor: UIColor = UIColor.white
     @IBInspectable var roundedButton: Bool = true
     @IBInspectable var cornerRadious: CGFloat = 0
+    
+    override open var isHighlighted: Bool {
+        didSet {
+            backgroundColor = isHighlighted ? highlightedBackgroundColor : normalBackgroundColor
+        }
+    }
+    
     
     override func layoutSubviews() {
         super.layoutSubviews()

@@ -71,8 +71,8 @@
                         <viewLayoutGuide key="safeArea" id="lyk-Wd-muR"/>
                     </view>
                     <navigationItem key="navigationItem" id="Sq1-we-bH9">
-                        <barButtonItem key="leftBarButtonItem" title="Filters" style="done" id="EPf-iT-LXn"/>
-                        <barButtonItem key="rightBarButtonItem" title="Map" width="23" style="done" id="rHf-Qh-4sv"/>
+                        <barButtonItem key="leftBarButtonItem" title="Filters" id="EPf-iT-LXn"/>
+                        <barButtonItem key="rightBarButtonItem" title="Map" width="23" id="rHf-Qh-4sv"/>
                     </navigationItem>
                     <connections>
                         <outlet property="searchResultsView" destination="UJN-0j-0z3" id="bkn-eY-WM7"/>
@@ -433,6 +433,9 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="roundedButton" value="NO"/>
                                     <userDefinedRuntimeAttribute type="color" keyPath="normalBackgroundColor">
                                         <color key="value" name="buttonPrimaryColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightedBackgroundColor">
+                                        <color key="value" name="buttonPrimaryHighlighted"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
@@ -1307,6 +1310,9 @@ From 2:00pm to 5:00pm</string>
         <image name="whVerified2" width="123" height="17"/>
         <namedColor name="buttonPrimaryColor">
             <color red="0.80000000000000004" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="buttonPrimaryHighlighted">
+            <color red="0.49803921568627452" green="0.12941176470588237" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="ctaBlue">
             <color red="0.0" green="0.59607843137254901" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
