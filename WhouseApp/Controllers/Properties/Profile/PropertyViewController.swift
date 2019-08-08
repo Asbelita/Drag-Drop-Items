@@ -17,13 +17,25 @@ class PropertyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.addLogoToNavbar()
         setData()
     }
     
     func setData(){
         if let property = property{
             name.text = property.name
-            picture.image = UIImage(named: "houseFull")
+            picture.image = property.image
         }
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        if segue.identifier == "embeedOptions" {
+            let destination = segue.destination as! PropertyOptionsTableViewController
+            destination.property = self.property
+        }
+        
     }
 }

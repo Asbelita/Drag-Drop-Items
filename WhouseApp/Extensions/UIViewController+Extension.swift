@@ -53,4 +53,10 @@ extension UIViewController {
         
         return navView
     }
+    
+    func addLogoToNavbar(){
+        let logo = UIImage(named: "appNameBlack")
+        let imageView = UIImageView(image: logo)
+        self.navigationItem.titleView = imageView
+    }
 }
