@@ -14,6 +14,7 @@ class OnboardViewController: UIViewController, UIPageViewControllerDataSource, U
     private var pendingIndex: Int?
     
     @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var skipButton: UIButton!
     
     private lazy var pages: [UIViewController] = {
         return [

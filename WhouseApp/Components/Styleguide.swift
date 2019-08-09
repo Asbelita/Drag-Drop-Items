@@ -10,6 +10,7 @@ import UIKit
 
 enum Color {
     static let black = UIColor.black
+    static let darkGray = UIColor.darkGray
     static let white = UIColor.white
     static let primary = UIColor.appColor(.primaryColor)
     static let secundary = UIColor.appColor(.secundaryColor)
@@ -33,20 +34,35 @@ extension TextStyle {
         color: Color.primary
     )
     
+    static let subtitle = TextStyle(
+        font: UIFont.appFont(.montserrat),
+        color: Color.black
+    )
+    
+    static let subLabel = TextStyle(
+        font: UIFont.appFont(.montserrat).withSize(12.0),
+        color: Color.darkGray
+    )
+    
+    static let subtitleBold = TextStyle(
+        font: UIFont.appFont(.montserratBold),
+        color: Color.black
+    )
+    
     static let screenTitle = TextStyle(
         font: UIFont.appFont(.montserratBold).withSize(18.0),
         color: Color.white)
 }
 
-//extension TextStyle {
-//
-//    enum Button {
-//        static let action = TextStyle(
-//            font: Font.withSize(16.0, weight: UIFontWeightMedium),
-//            color: Color.tint
-//        )
-//    }
-//}
+extension TextStyle {
+
+    enum Button {
+        static let stickyCTA = TextStyle(
+            font: UIFont.appFont(.montserratBold).withSize(20.0),
+            color: Color.white
+        )
+    }
+}
 
 enum customFonts {
     case montserrat
@@ -103,6 +119,7 @@ extension UIColor {
 enum appImages{
     case circleCheckedMd
     case circleUncheckedMd
+    case whVerified
 }
 extension UIImage {
     
@@ -112,6 +129,8 @@ extension UIImage {
             return UIImage(named: "circleUnchecked_18")!
         case .circleCheckedMd:
             return UIImage(named: "circleChecked_18")!
+        case .whVerified:
+            return UIImage(named: "whVerified")!
         }
     }
 }

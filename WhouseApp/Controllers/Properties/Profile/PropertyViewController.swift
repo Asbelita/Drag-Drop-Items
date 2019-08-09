@@ -9,11 +9,15 @@
 import UIKit
 
 class PropertyViewController: UIViewController {
-
-    var property: Property?
     
+    // MARK: - Outlets
     @IBOutlet weak var picture: UIImageView!
     @IBOutlet weak var name: UILabel!
+    
+    // MARK: - Static Outlets
+    @IBOutlet weak var jobRequestBtn: DesignableUIButton!
+    
+    var property: Property?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +25,12 @@ class PropertyViewController: UIViewController {
         setData()
     }
     
-    func setData(){
+    func setStyles() {
+        name.style(style: TextStyle.screenTitle)
+        jobRequestBtn.style(style: TextStyle.Button.stickyCTA)
+    }
+    
+    func setData() {
         if let property = property{
             name.text = property.name
             picture.image = property.image

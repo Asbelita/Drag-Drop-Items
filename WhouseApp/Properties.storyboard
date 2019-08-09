@@ -22,7 +22,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--My Properties-->
+        <!--Properties Table View Controller-->
         <scene sceneID="HFN-de-GbP">
             <objects>
                 <tableViewController id="u0l-d0-LWv" customClass="PropertiesTableViewController" customModule="WhouseApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -48,13 +48,13 @@
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzI-vS-8JS">
                                             <rect key="frame" x="107" y="11" width="251" height="20"/>
-                                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4069 Chain Bridge Rd" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NY7-GV-L9Q">
-                                            <rect key="frame" x="107" y="41" width="251" height="17.5"/>
-                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="14"/>
+                                            <rect key="frame" x="107" y="41" width="251" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -83,7 +83,7 @@
                             <outlet property="delegate" destination="u0l-d0-LWv" id="dI8-C6-yAU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My Properties" id="VPd-Xi-82C"/>
+                    <navigationItem key="navigationItem" id="VPd-Xi-82C"/>
                     <connections>
                         <outlet property="propertiesTable" destination="us5-Ef-ahC" id="sWK-mL-hk0"/>
                     </connections>
@@ -512,7 +512,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="381-Ie-xgN">
-                                <rect key="frame" x="0.0" y="88" width="414" height="554"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="555"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QmU-7l-6T8" userLabel="ContainerView">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="490"/>
@@ -580,9 +580,9 @@
                                 </constraints>
                             </scrollView>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ke4-e0-pRI" customClass="DesignableUIButton" customModule="WhouseApp" customModuleProvider="target">
-                                <rect key="frame" x="10" y="652" width="394" height="55"/>
+                                <rect key="frame" x="10" y="653" width="394" height="54"/>
                                 <color key="backgroundColor" name="buttonPrimaryColor"/>
-                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="15" maxX="0.0" maxY="15"/>
                                 <size key="titleShadowOffset" width="0.0" height="5"/>
                                 <state key="normal" title="SEND JOB REQUEST">
@@ -618,6 +618,7 @@
                     <navigationItem key="navigationItem" id="xIc-lK-x6F"/>
                     <size key="freeformSize" width="414" height="800"/>
                     <connections>
+                        <outlet property="jobRequestBtn" destination="Ke4-e0-pRI" id="uyw-4W-PBU"/>
                         <outlet property="name" destination="Kuk-40-che" id="ms7-2O-L1H"/>
                         <outlet property="picture" destination="elm-1e-IcS" id="WPJ-mT-h6w"/>
                     </connections>
@@ -647,7 +648,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Check in / Check out" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="p3V-Jp-oPG">
                                                     <rect key="frame" x="59" y="0.0" width="317" height="59.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -668,7 +669,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Manage Checklists" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XSZ-y0-H1l">
                                                     <rect key="frame" x="59" y="0.0" width="317" height="59.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -689,7 +690,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jNR-fj-KAg">
                                                     <rect key="frame" x="59" y="0.0" width="317" height="59.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -713,7 +714,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Active Jobs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="oCQ-Nd-N2q">
                                                     <rect key="frame" x="59" y="0.0" width="317" height="59.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -734,7 +735,7 @@
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Job Requests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mOW-XF-koQ">
                                                     <rect key="frame" x="59" y="0.0" width="317" height="59.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -756,6 +757,13 @@
                     <nil key="simulatedTopBarMetrics"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="414" height="400"/>
+                    <connections>
+                        <outlet property="activeJobsLabel" destination="oCQ-Nd-N2q" id="dNl-nK-KJO"/>
+                        <outlet property="checkInOutLabel" destination="p3V-Jp-oPG" id="hBR-8L-6IE"/>
+                        <outlet property="detailsLabel" destination="jNR-fj-KAg" id="pqZ-XT-2XE"/>
+                        <outlet property="jobRequestsLabel" destination="mOW-XF-koQ" id="S0J-x0-eQ8"/>
+                        <outlet property="manageChecklistsLabel" destination="XSZ-y0-H1l" id="Vyx-Nn-SNy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A5N-cx-Dwt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,12 +9,28 @@
 import UIKit
 
 class PropertyOptionsTableViewController: UITableViewController {
-
+    
+    // MARK: - Static Outlets
+    @IBOutlet weak var checkInOutLabel: UILabel!
+    @IBOutlet weak var manageChecklistsLabel: UILabel!
+    @IBOutlet weak var detailsLabel: UILabel!
+    @IBOutlet weak var activeJobsLabel: UILabel!
+    @IBOutlet weak var jobRequestsLabel: UILabel!
+    
     var property: Property?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setStyles()
     }
 
+    func setStyles(){
+        checkInOutLabel.style(style: TextStyle.subtitle)
+        manageChecklistsLabel.style(style: TextStyle.subtitle)
+        detailsLabel.style(style: TextStyle.subtitle)
+        activeJobsLabel.style(style: TextStyle.subtitle)
+        jobRequestsLabel.style(style: TextStyle.subtitle)
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {

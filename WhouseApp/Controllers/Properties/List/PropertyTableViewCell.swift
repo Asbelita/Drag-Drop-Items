@@ -16,6 +16,7 @@ class PropertyTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.setStyles()
         // Initialization code
     }
 
@@ -23,6 +24,11 @@ class PropertyTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func setStyles(){
+        address.style(style: TextStyle.bodySmall)
+        name.style(style: TextStyle.subtitleBold)
     }
 
 }

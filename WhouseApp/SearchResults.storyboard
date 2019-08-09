@@ -71,8 +71,7 @@
                         <viewLayoutGuide key="safeArea" id="lyk-Wd-muR"/>
                     </view>
                     <navigationItem key="navigationItem" id="Sq1-we-bH9">
-                        <barButtonItem key="leftBarButtonItem" title="Filters" id="EPf-iT-LXn"/>
-                        <barButtonItem key="rightBarButtonItem" title="Map" width="23" id="rHf-Qh-4sv"/>
+                        <barButtonItem key="leftBarButtonItem" title="Map" id="EPf-iT-LXn"/>
                     </navigationItem>
                     <connections>
                         <outlet property="searchResultsView" destination="UJN-0j-0z3" id="bkn-eY-WM7"/>
@@ -305,7 +304,7 @@
                                                                 </stackView>
                                                             </subviews>
                                                         </stackView>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whVerified2" translatesAutoresizingMaskIntoConstraints="NO" id="Chj-9q-fyp">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whVerified" translatesAutoresizingMaskIntoConstraints="NO" id="Chj-9q-fyp">
                                                             <rect key="frame" x="0.0" y="53" width="123" height="17"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="17" id="iaG-6p-QlE"/>
@@ -503,7 +502,7 @@
                                                                     </stackView>
                                                                 </subviews>
                                                             </stackView>
-                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whVerified2" translatesAutoresizingMaskIntoConstraints="NO" id="OWx-Rb-s4A" userLabel="Verified">
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whVerified" translatesAutoresizingMaskIntoConstraints="NO" id="OWx-Rb-s4A" userLabel="Verified">
                                                                 <rect key="frame" x="15" y="89" width="123" height="17"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="17" id="t99-HT-iMy"/>
@@ -710,7 +709,7 @@
                                                         <color key="textColor" name="primaryColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryu-cC-ygf">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryu-cC-ygf">
                                                         <rect key="frame" x="0.0" y="30" width="374" height="91"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</string>
@@ -1268,21 +1267,36 @@ From 2:00pm to 5:00pm</string>
                     <size key="freeformSize" width="414" height="1600"/>
                     <connections>
                         <outlet property="aboutMe" destination="ryu-cC-ygf" id="M1h-GU-GWE"/>
+                        <outlet property="aboutMeSectionTitle" destination="isU-XM-owV" id="39A-pl-xU1"/>
                         <outlet property="aboutServices" destination="ufi-Au-7vK" id="AT0-ee-bPs"/>
+                        <outlet property="aboutServicesSectionTitle" destination="7id-Vd-CFd" id="hL5-pN-ENG"/>
+                        <outlet property="badgesSectionTitle" destination="guE-Cl-Ch0" id="c9E-2U-dQ3"/>
                         <outlet property="clientsAmount" destination="euG-tk-3Qn" id="Kl6-hx-nMg"/>
+                        <outlet property="clientsAmountLabel" destination="o1W-fV-eRa" id="J6c-o3-n2u"/>
+                        <outlet property="currencyLabel" destination="dxQ-gk-P3u" id="ATV-Ks-ReI"/>
                         <outlet property="distance" destination="ZbT-D0-r0K" id="yR0-c5-gQf"/>
+                        <outlet property="distanceLabel" destination="yMd-dr-98y" id="gh8-aC-XRL"/>
                         <outlet property="earned" destination="wYu-Cs-Ka4" id="4CL-iV-i7z"/>
+                        <outlet property="earnedLabel" destination="vkn-0q-nE3" id="OA6-cN-TwD"/>
+                        <outlet property="earnedStack" destination="6Gs-Yc-UC8" id="eiT-aG-2pL"/>
                         <outlet property="imageCollectionHeightConstraint" destination="seb-Df-GgJ" id="pLj-8c-qQZ"/>
                         <outlet property="isSuggested" destination="w9q-ky-w5z" id="6dy-2g-W1p"/>
                         <outlet property="isVerified" destination="OWx-Rb-s4A" id="FJ1-7o-VbZ"/>
                         <outlet property="jobsAmount" destination="S9f-Hk-b5D" id="eWf-FJ-qY3"/>
+                        <outlet property="jobsAmountLabel" destination="vwX-s9-bOV" id="I6N-FD-7Cd"/>
+                        <outlet property="languagesSectionTitle" destination="IaB-8a-uGx" id="HWe-Uk-07N"/>
                         <outlet property="name" destination="aWG-Ju-q18" id="Auo-I8-ROK"/>
+                        <outlet property="photosSectionTitle" destination="7pH-ws-fMO" id="bfm-bY-AWn"/>
                         <outlet property="picture" destination="i1C-Uw-hxY" id="MFD-cq-dYh"/>
                         <outlet property="rating" destination="HaU-mq-e6c" id="JCR-CO-sXr"/>
                         <outlet property="ratingStack" destination="pcb-gV-8wv" id="5Zh-Ni-oYs"/>
                         <outlet property="responseTime" destination="kEJ-bh-tcW" id="DEq-CD-xRh"/>
+                        <outlet property="responseTimeLabel" destination="nK8-4j-Ebx" id="YhY-vo-3Q5"/>
                         <outlet property="responseTimeStack" destination="8ZP-OZ-ekn" id="reO-nR-H3Z"/>
                         <outlet property="reviews" destination="SKu-sN-05q" id="yfc-xH-QTE"/>
+                        <outlet property="reviewsSectionTitle" destination="8Lt-d2-BPa" id="mRH-R5-Myy"/>
+                        <outlet property="scheduleSectionTitle" destination="Tdw-yc-9Be" id="ChL-eL-xZC"/>
+                        <outlet property="servicesSectionTitle" destination="Ubh-SQ-kbV" id="tfJ-5H-EMR"/>
                         <outlet property="servicesTable" destination="YIg-uj-WRd" id="NKT-4F-gBu"/>
                         <outlet property="tableHeightConstraint" destination="ivM-OT-9yF" id="g5j-fH-ruz"/>
                         <outlet property="unverifiedConstraint" destination="EPU-Ul-1GI" id="6cn-px-MK6"/>
@@ -1307,7 +1321,7 @@ From 2:00pm to 5:00pm</string>
         <image name="search_24" width="24" height="24"/>
         <image name="spanish" width="16" height="16"/>
         <image name="time_18" width="18" height="18"/>
-        <image name="whVerified2" width="123" height="17"/>
+        <image name="whVerified" width="123" height="17"/>
         <namedColor name="buttonPrimaryColor">
             <color red="0.80000000000000004" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

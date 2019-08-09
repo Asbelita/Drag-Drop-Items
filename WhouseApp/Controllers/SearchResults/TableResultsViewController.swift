@@ -78,6 +78,7 @@ class TableResultsViewController: UIViewController, UITableViewDataSource {
         cell.ratingStack.isHidden = results[indexPath.row].reviewsAmount == 0
         cell.isSuggested.isHidden = !results[indexPath.row].isSuggested
         cell.responseTimeStack.isHidden = results[indexPath.row].maxResponseTime == 0
+        cell.earnedStack.isHidden = true
 
         return cell
     }

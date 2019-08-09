@@ -9,10 +9,14 @@
 import UIKit
 
 class PropertiesTableViewController: UITableViewController {
-    var properties = [Property]()
+    
+    // MARK: - Outlets
     @IBOutlet var propertiesTable: UITableView!
+    
+    
     var list = ["Home", "Ian's House", "Mr Richarson's House", "Phill's House","Sample Home Name"]
     
+    var properties = [Property]()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addLogoToNavbar()

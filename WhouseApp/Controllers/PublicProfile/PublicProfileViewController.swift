@@ -10,7 +10,24 @@ import UIKit
 
 class PublicProfileViewController: UIViewController, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
     
-    // Mark: -Outlets
+    // Mark: - Static Outlets
+    @IBOutlet weak var responseTimeLabel: UILabel!
+    @IBOutlet weak var jobsAmountLabel: UILabel!
+    @IBOutlet weak var clientsAmountLabel: UILabel!
+    @IBOutlet weak var earnedLabel: UILabel!
+    @IBOutlet weak var currencyLabel: UILabel!
+    @IBOutlet weak var aboutMeSectionTitle: UILabel!
+    @IBOutlet weak var aboutServicesSectionTitle: UILabel!
+    @IBOutlet weak var servicesSectionTitle: UILabel!
+    @IBOutlet weak var scheduleSectionTitle: UILabel!
+    @IBOutlet weak var languagesSectionTitle: UILabel!
+    @IBOutlet weak var badgesSectionTitle: UILabel!
+    @IBOutlet weak var photosSectionTitle: UILabel!
+    @IBOutlet weak var reviewsSectionTitle: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
+    
+    
+    // Mark: - Outlets
     @IBOutlet weak var servicesTable: UITableView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var rating: RatingControl!
@@ -31,6 +48,7 @@ class PublicProfileViewController: UIViewController, UITableViewDataSource, UICo
     @IBOutlet weak var aboutServices: UITextView!
     @IBOutlet weak var tableHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var imageCollectionHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var earnedStack: UIStackView!
     
     
     // Mark: - Properties
@@ -39,15 +57,39 @@ class PublicProfileViewController: UIViewController, UITableViewDataSource, UICo
     override func viewDidLoad() {
         super.viewDidLoad()
         servicesTable.dataSource = self
-        setData()
+        self.setStyles()
+        self.addLogoToNavbar()
+        self.setData()
     }
     
-    
+    func setStyles(){
+        
+        responseTimeLabel.style(style: TextStyle.subLabel)
+        responseTime.style(style: TextStyle.subLabel)
+        jobsAmountLabel.style(style: TextStyle.subLabel)
+        jobsAmount.style(style: TextStyle.subLabel)
+        clientsAmountLabel.style(style: TextStyle.subLabel)
+        clientsAmount.style(style: TextStyle.subLabel)
+        earnedLabel.style(style: TextStyle.subLabel)
+        earned.style(style: TextStyle.subLabel)
+        currencyLabel.style(style: TextStyle.subLabel)
+        aboutMeSectionTitle.style(style: TextStyle.sectionTitle)
+        aboutMe.style(style: TextStyle.bodySmall)
+        aboutServicesSectionTitle.style(style: TextStyle.sectionTitle)
+        aboutServices.style(style: TextStyle.bodySmall)
+        servicesSectionTitle.style(style: TextStyle.sectionTitle)
+        scheduleSectionTitle.style(style: TextStyle.sectionTitle)
+        languagesSectionTitle.style(style: TextStyle.sectionTitle)
+        badgesSectionTitle.style(style: TextStyle.sectionTitle)
+        photosSectionTitle.style(style: TextStyle.sectionTitle)
+        reviewsSectionTitle.style(style: TextStyle.sectionTitle)
+        
+    }
     func setData(){
         if let profile = profile{
             
-            navigationItem.titleView = setTitle(profile.name, andImage: profile.profilePicture)
-            navigationItem.titleView?.sizeToFit()
+//            navigationItem.titleView = setTitle(profile.name, andImage: profile.profilePicture)
+//            navigationItem.titleView?.sizeToFit()
             
             name.text = profile.name
             rating.rating = profile.rating
@@ -65,6 +107,7 @@ class PublicProfileViewController: UIViewController, UITableViewDataSource, UICo
                 unverifiedConstraint.priority = UILayoutPriority.defaultHigh
             }
             
+            earnedStack.isHidden = true
             ratingStack.isHidden = profile.reviewsAmount == 0
             isSuggested.isHidden = !profile.isSuggested
             responseTimeStack.isHidden = profile.maxResponseTime == 0

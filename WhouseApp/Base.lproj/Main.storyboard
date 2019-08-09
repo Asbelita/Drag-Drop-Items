@@ -106,6 +106,7 @@
                     </view>
                     <connections>
                         <outlet property="pageControl" destination="61l-iN-xdc" id="54r-qj-U6l"/>
+                        <outlet property="skipButton" destination="rsQ-2N-5bs" id="6fk-dr-NK6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p44-lV-KNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
