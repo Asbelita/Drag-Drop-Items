@@ -17,7 +17,15 @@ class PasswordRecoveryViewController: UIViewController {
     
     @IBAction func onSendEmail(_ sender: Any) {
         AlertView.instance.actionBtn.addTarget(self, action: #selector(btnAction), for: .touchUpInside)
-        AlertView.instance.showAlert(title: "Success!", message: "We have sent an email with instructions to recover your password", alertType: .success, view: self.view)
+        let alert = AlertView.Alert(
+            title: "Success",
+            message: "We have sent an email with instructions to recover your password",
+            icon: UIImage.appImage(.success),
+            btnCaption: "Ok",
+            primaryBgColor: UIColor.appColor(.successColor),
+            secundaryBgColor: UIColor.appColor(.successColorHighlighted)
+        )
+        AlertView.instance.showAlert(alert: alert)
     }
     
     @objc func btnAction(sender: DesignableUIButton!){

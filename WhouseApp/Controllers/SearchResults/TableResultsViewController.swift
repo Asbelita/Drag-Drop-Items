@@ -41,7 +41,35 @@ class TableResultsViewController: UIViewController, UITableViewDataSource {
                     Service(id: 2, name: "Laundry"),
                     Service(id: 3, name: "House Manager")
                 ],
-                images: [])
+                images: [],
+                badges: [
+                    Badge(id: 1,
+                          name: "Fusce condimentum cursus nibh",
+                          description: "Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt.",
+                          image: Image(id: 1, name: "popularBadge", url: "", image: UIImage.appImage(.popularBadge))
+                    ),
+                    Badge(id: 2,
+                          name: "Curabitur lobortis velit id mi tincidunt",
+                          description: "Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt.",
+                          image: Image(id: 1, name: "popularBadge", url: "", image: UIImage.appImage(.quickResponseBadge))
+                    ),
+                    Badge(id: 1,
+                          name: "Curabitur lobortis velit id mi tincidunt",
+                          description: "Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt.",
+                          image: Image(id: 1, name: "popularBadge", url: "", image: UIImage.appImage(.popularBadge))
+                    ),
+                    Badge(id: 2,
+                          name: "Curabitur lobortis",
+                          description: "Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt.",
+                          image: Image(id: 1, name: "popularBadge", url: "", image: UIImage.appImage(.quickResponseBadge))
+                    ),
+                    Badge(id: 1,
+                          name: "Curabitur lobortis velit id",
+                          description: "Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt.",
+                          image: Image(id: 1, name: "popularBadge", url: "", image: UIImage.appImage(.popularBadge))
+                    ),
+                ]
+            )
             results += [user]
         }
     }

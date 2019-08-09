@@ -46,22 +46,24 @@ class AlertView: UIView {
         case failure
     }
     
-    func showAlert(title: String, message: String, alertType: AlertType, view: UIView) {
-        self.titleLabel.text = title
-        self.messageLabel.text = message
+    struct Alert{
+        let title: String
+        let message: String
+        let icon: UIImage
+        let btnCaption: String
+        let primaryBgColor: UIColor
+        let secundaryBgColor: UIColor?
+    }
+    
+    func showAlert(alert: Alert) {
+        self.titleLabel.text = alert.title
+        self.messageLabel.text = alert.message
+        self.img.image = alert.icon
+        self.actionBtn.setTitle(alert.btnCaption, for: .normal)
+        self.actionBtn.normalBackgroundColor = alert.primaryBgColor
+        self.actionBtn.highlightedBackgroundColor = alert.secundaryBgColor ?? alert.primaryBgColor
+        self.topBar.layer.backgroundColor = alert.primaryBgColor.cgColor
         self.parentView.alpha = 0
-        switch alertType {
-        case .success:
-            img.image = UIImage(named: "success")
-            actionBtn.normalBackgroundColor = UIColor.appColor(.successColor)
-            actionBtn.setTitle("Ok", for: .normal)
-            topBar.layer.backgroundColor = UIColor.appColor(.successColor).cgColor
-        case .failure:
-            img.image = UIImage(named: "error")
-            actionBtn.normalBackgroundColor = UIColor.appColor(.errorColor)
-            actionBtn.setTitle("Ok", for: .normal)
-            topBar.layer.backgroundColor = UIColor.appColor(.errorColor).cgColor
-        }
         
         UIApplication.shared.keyWindow?.addSubview(self.parentView)
         
@@ -71,6 +73,11 @@ class AlertView: UIView {
     }
     
     @IBAction func onClickDone(_ sender: Any) {
-        parentView.removeFromSuperview()
+        UIView.animate(withDuration: 0.2, animations: {
+            self.parentView.alpha = 0
+        }){ _ in
+            self.parentView.removeFromSuperview()
+        }
+        
     }
 }

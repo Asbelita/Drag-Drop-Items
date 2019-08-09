@@ -300,7 +300,7 @@
                                                                     <constraint firstAttribute="trailing" secondItem="nYx-fX-rAW" secondAttribute="trailing" id="yIf-s6-1Wi"/>
                                                                 </constraints>
                                                                 <connections>
-                                                                    <outlet property="Image" destination="nYx-fX-rAW" id="iPu-KD-Zcg"/>
+                                                                    <outlet property="image" destination="nYx-fX-rAW" id="ohZ-9A-OLY"/>
                                                                 </connections>
                                                             </collectionViewCell>
                                                         </cells>

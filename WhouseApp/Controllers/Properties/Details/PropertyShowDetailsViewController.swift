@@ -115,7 +115,7 @@ class PropertyShowDetailsViewController: UIViewController, UICollectionViewDataS
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath as IndexPath) as! ImageCollectionViewCell
         
-        cell.Image.image = property?.images[indexPath.item]?.image
+        cell.image.image = property?.images[indexPath.item]?.image
         
         return cell
     }

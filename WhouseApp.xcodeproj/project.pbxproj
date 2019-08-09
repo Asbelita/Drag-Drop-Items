@@ -79,6 +79,8 @@
 		19EA98E222FB2A95007977A7 /* Styleguide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA98E122FB2A95007977A7 /* Styleguide.swift */; };
 		19EA98E422FB54AD007977A7 /* PropertyShowDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA98E322FB54AD007977A7 /* PropertyShowDetailsViewController.swift */; };
 		19EA98E822FC92D7007977A7 /* PropertyOptionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA98E722FC92D7007977A7 /* PropertyOptionsTableViewController.swift */; };
+		19EA98EF22FE0C6C007977A7 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA98EE22FE0C6C007977A7 /* Badge.swift */; };
+		19EA98F422FE116E007977A7 /* Image+CaptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA98F322FE116E007977A7 /* Image+CaptionCollectionViewCell.swift */; };
 		1B3A154CCBAF542629FD5928 /* Pods_WhouseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7939947FEA4ACF8F5790A73D /* Pods_WhouseApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -158,6 +160,8 @@
 		19EA98E122FB2A95007977A7 /* Styleguide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styleguide.swift; sourceTree = "<group>"; };
 		19EA98E322FB54AD007977A7 /* PropertyShowDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyShowDetailsViewController.swift; sourceTree = "<group>"; };
 		19EA98E722FC92D7007977A7 /* PropertyOptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyOptionsTableViewController.swift; sourceTree = "<group>"; };
+		19EA98EE22FE0C6C007977A7 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		19EA98F322FE116E007977A7 /* Image+CaptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+CaptionCollectionViewCell.swift"; sourceTree = "<group>"; };
 		7939947FEA4ACF8F5790A73D /* Pods_WhouseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhouseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1C7D108A9607479BAE7EDD /* Pods-WhouseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhouseApp.debug.xcconfig"; path = "Target Support Files/Pods-WhouseApp/Pods-WhouseApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,13 +193,14 @@
 		19279E8E22E793D2008E89C5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				19B0A3CC22F3603C00880F09 /* PublicProfile */,
-				1940D47922F256C000807213 /* Properties */,
-				1940D46C22F0EB6900807213 /* SearchResults */,
 				1940D46B22F0EAE000807213 /* Login */,
-				1940D46822F0E88B00807213 /* Registration */,
 				1940D46922F0EABE00807213 /* Onboarding */,
 				1940D46A22F0EAC900807213 /* OnboardingSearch */,
+				1940D47922F256C000807213 /* Properties */,
+				19B0A3CC22F3603C00880F09 /* PublicProfile */,
+				1940D46C22F0EB6900807213 /* SearchResults */,
+				19EA98F022FE10B1007977A7 /* Shared */,
+				1940D46822F0E88B00807213 /* Registration */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -207,13 +212,11 @@
 				19A6FF7422E1852800D3B41E /* DesignableUIButton.swift */,
 				19A6FFBE22E248CF00D3B41E /* DesignableTextField.swift */,
 				19D9F90722EB70B100A8601D /* DesignableTextView.swift */,
-				19D9F91022EC15F100A8601D /* CustomCellTableViewCell.swift */,
 				1940D47122F0FF7C00807213 /* RatingControl.swift */,
 				1940D47322F1196E00807213 /* DesignableImageView.swift */,
 				1940D47722F23E8100807213 /* DesignableLabel.swift */,
 				19EA98DF22FB2A3B007977A7 /* StyleguideHelpers.swift */,
 				19EA98E122FB2A95007977A7 /* Styleguide.swift */,
-				19693C1F22F8960200DFD07E /* ImageCollectionViewCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				19B0A3CF22F4CE6B00880F09 /* Service.swift */,
 				19693C2122F8986B00DFD07E /* Image.swift */,
 				19EA98DB22FA1A6C007977A7 /* Property.swift */,
+				19EA98EE22FE0C6C007977A7 /* Badge.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -424,6 +428,16 @@
 				19EA98E322FB54AD007977A7 /* PropertyShowDetailsViewController.swift */,
 			);
 			path = Details;
+			sourceTree = "<group>";
+		};
+		19EA98F022FE10B1007977A7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				19D9F91022EC15F100A8601D /* CustomCellTableViewCell.swift */,
+				19693C1F22F8960200DFD07E /* ImageCollectionViewCell.swift */,
+				19EA98F322FE116E007977A7 /* Image+CaptionCollectionViewCell.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		6A86D27EFE41F6A96B456341 /* Pods */ = {
@@ -641,8 +655,10 @@
 				19EA98E222FB2A95007977A7 /* Styleguide.swift in Sources */,
 				199E8AA722DFB93C0065E423 /* GradientView.swift in Sources */,
 				19A6FF7522E1852800D3B41E /* DesignableUIButton.swift in Sources */,
+				19EA98F422FE116E007977A7 /* Image+CaptionCollectionViewCell.swift in Sources */,
 				19B0A3CE22F3606600880F09 /* PublicProfileViewController.swift in Sources */,
 				1940D47822F23E8100807213 /* DesignableLabel.swift in Sources */,
+				19EA98EF22FE0C6C007977A7 /* Badge.swift in Sources */,
 				19A6FF7122E0D53600D3B41E /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

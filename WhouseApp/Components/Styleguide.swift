@@ -91,9 +91,12 @@ enum customColors {
     case primaryColor
     case secundaryColor
     case buttonPrimaryColor
+    case buttonPrimaryColorHighlighted
     case buttonSecundaryColor
     case successColor
     case errorColor
+    case successColorHighlighted
+    case errorColorHighlighted
 }
 
 extension UIColor {
@@ -108,10 +111,16 @@ extension UIColor {
             return UIColor(named: "buttonPrimaryColor", in: Bundle(for: AppDelegate.self), compatibleWith: nil)!
         case .buttonSecundaryColor:
             return UIColor(named: "buttonSecundaryColor", in: Bundle(for: AppDelegate.self), compatibleWith: nil)!
+        case .buttonPrimaryColorHighlighted:
+            return UIColor(named: "buttonPrimaryHighlighted", in: Bundle(for: AppDelegate.self), compatibleWith: nil)!
         case .successColor:
             return UIColor(named: "successGreen", in: Bundle(for: AppDelegate.self), compatibleWith: nil)!
         case .errorColor:
             return UIColor(named: "errorRed", in: Bundle(for: AppDelegate.self), compatibleWith: nil)!
+        case .successColorHighlighted:
+            return UIColor(named: "successGreenHighlighted", in: Bundle(for: AppDelegate.self), compatibleWith: nil)!
+        case .errorColorHighlighted:
+            return UIColor(named: "errorRedHighlighted", in: Bundle(for: AppDelegate.self), compatibleWith: nil)!
         }
     }
 }
@@ -120,6 +129,10 @@ enum appImages{
     case circleCheckedMd
     case circleUncheckedMd
     case whVerified
+    case success
+    case error
+    case popularBadge
+    case quickResponseBadge
 }
 extension UIImage {
     
@@ -131,6 +144,14 @@ extension UIImage {
             return UIImage(named: "circleChecked_18")!
         case .whVerified:
             return UIImage(named: "whVerified")!
+        case .success:
+            return UIImage(named: "success")!
+        case .error:
+            return UIImage(named: "error")!
+        case .popularBadge:
+            return UIImage(named: "badgeHeart")!
+        case .quickResponseBadge:
+            return UIImage(named: "badgeTime")!
         }
     }
 }

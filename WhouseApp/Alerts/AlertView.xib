@@ -41,7 +41,7 @@
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S26-w3-waj">
-                    <rect key="frame" x="40" y="320.5" width="334" height="255"/>
+                    <rect key="frame" x="40" y="342.5" width="334" height="211"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9t6-nm-imH">
                             <rect key="frame" x="0.0" y="0.0" width="334" height="10"/>
@@ -57,20 +57,20 @@
                                 <constraint firstAttribute="width" constant="80" id="qnU-jZ-EZr"/>
                             </constraints>
                         </imageView>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZY-vr-zi0" userLabel="TitleLabel">
-                            <rect key="frame" x="20" y="65" width="294" height="30"/>
-                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="24"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZY-vr-zi0" userLabel="TitleLabel">
+                            <rect key="frame" x="20" y="65" width="294" height="22"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="18"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfH-Zi-RNy" userLabel="MessageLabel">
-                            <rect key="frame" x="20" y="115" width="294" height="20"/>
-                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfH-Zi-RNy" userLabel="MessageLabel">
+                            <rect key="frame" x="20" y="107" width="294" height="19"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WAR-Bm-tR6" userLabel="ActionBtn" customClass="DesignableUIButton" customModule="WhouseApp" customModuleProvider="target">
-                            <rect key="frame" x="20" y="195" width="294" height="40"/>
+                            <rect key="frame" x="20" y="146" width="294" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="p9y-bR-j6b"/>
                             </constraints>
@@ -98,11 +98,10 @@
                         <constraint firstItem="dZY-vr-zi0" firstAttribute="top" secondItem="3Dj-Tw-sxg" secondAttribute="bottom" constant="25" id="Qh4-hp-o2l"/>
                         <constraint firstItem="3Dj-Tw-sxg" firstAttribute="centerY" secondItem="S26-w3-waj" secondAttribute="top" id="Xyo-gX-hvM"/>
                         <constraint firstItem="9t6-nm-imH" firstAttribute="leading" secondItem="S26-w3-waj" secondAttribute="leading" id="Zup-vZ-4BI"/>
-                        <constraint firstItem="WAR-Bm-tR6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dfH-Zi-RNy" secondAttribute="bottom" constant="20" id="aoN-ow-qLA"/>
+                        <constraint firstItem="WAR-Bm-tR6" firstAttribute="top" secondItem="dfH-Zi-RNy" secondAttribute="bottom" constant="20" id="aoN-ow-qLA"/>
                         <constraint firstAttribute="trailing" secondItem="dZY-vr-zi0" secondAttribute="trailing" constant="20" id="bf7-N1-lZY"/>
                         <constraint firstItem="dZY-vr-zi0" firstAttribute="leading" secondItem="S26-w3-waj" secondAttribute="leading" constant="20" id="ha2-6t-L4p"/>
-                        <constraint firstAttribute="bottom" secondItem="WAR-Bm-tR6" secondAttribute="bottom" constant="20" id="mJ4-7R-COd"/>
-                        <constraint firstAttribute="height" constant="255" id="s3O-Aj-o2u"/>
+                        <constraint firstAttribute="bottom" secondItem="WAR-Bm-tR6" secondAttribute="bottom" constant="25" id="mJ4-7R-COd"/>
                         <constraint firstItem="9t6-nm-imH" firstAttribute="top" secondItem="S26-w3-waj" secondAttribute="top" id="ugb-dg-Qp8"/>
                         <constraint firstItem="WAR-Bm-tR6" firstAttribute="leading" secondItem="S26-w3-waj" secondAttribute="leading" constant="20" id="wsE-oc-b2C"/>
                         <constraint firstAttribute="trailing" secondItem="WAR-Bm-tR6" secondAttribute="trailing" constant="20" id="xRR-Pu-fPY"/>

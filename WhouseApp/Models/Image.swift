@@ -12,7 +12,7 @@ class Image{
     var name: String?
     var id: Int?
     var url: String?
-    weak var image: UIImage?
+    var image: UIImage?
     
     init(id: Int?, name: String?, url: String?, image: UIImage?) {
         self.id = id

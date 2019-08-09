@@ -48,15 +48,27 @@ class PublicProfileViewController: UIViewController, UITableViewDataSource, UICo
     @IBOutlet weak var aboutServices: UITextView!
     @IBOutlet weak var tableHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var imageCollectionHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var badgeCollectionHeightConstraint: NSLayoutConstraint!
     @IBOutlet weak var earnedStack: UIStackView!
+    @IBOutlet weak var badges: UICollectionView!
+    @IBOutlet weak var photos: UICollectionView!
     
     
     // Mark: - Properties
     var profile: User?
-    
+    let badgesCollectionIdentifier = "badgeCell"
+    let photosCollectionIdentifier = "photoCell"
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         servicesTable.dataSource = self
+        
+        badges.dataSource = self
+        badges.delegate = self
+        
+        photos.dataSource = self
+        photos.delegate = self
+        
         self.setStyles()
         self.addLogoToNavbar()
         self.setData()
@@ -123,8 +135,10 @@ class PublicProfileViewController: UIViewController, UITableViewDataSource, UICo
                 Image(id: 4, name: "image4", url: "", image: UIImage(named: "cleanedHouse")),
                 Image(id: 5, name: "image5", url: "", image: UIImage(named: "cleanedHouse")),
             ]
-            let rows = CGFloat(profile.images.count) / 3.0
+            var rows = CGFloat(profile.images.count) / 3.0
             imageCollectionHeightConstraint.constant = 102.0 * rows.rounded(.up)
+            rows = CGFloat(profile.badges.count) / 4.0
+            badgeCollectionHeightConstraint.constant = 117.0 * rows.rounded(.up)
         }
     }
     
@@ -141,24 +155,42 @@ class PublicProfileViewController: UIViewController, UITableViewDataSource, UICo
     
      // MARK: - UICollectionViewDataSource protocol
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return profile?.images.count ?? 0
+        if collectionView == photos {
+            return profile?.images.count ?? 0
+        } else if collectionView == badges {
+            return profile?.badges.count ?? 0
+        }
+        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if collectionView == photos {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: photosCollectionIdentifier, for: indexPath as IndexPath) as! ImageCollectionViewCell
+            cell.image.image = profile?.images[indexPath.item]?.image
+            return cell
+        } else if collectionView == badges {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: badgesCollectionIdentifier, for: indexPath as IndexPath) as! Image_CaptionCollectionViewCell
+            cell.image.image = profile?.badges[indexPath.item]?.image.image
+            cell.caption.text = profile?.badges[indexPath.item]?.name
+            return cell
+        }
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath as IndexPath) as! ImageCollectionViewCell
-        
-        cell.Image.image = profile?.images[indexPath.item]?.image
-        
-        return cell
+        return UICollectionViewCell()
     }
     
     // MARK: - UICollectionViewDelegate protocol
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        // handle tap events
-        print("You selected cell #\(indexPath.item)!")
+        if collectionView == badges{
+            let alert = AlertView.Alert(
+                title: profile!.badges[indexPath.item]!.name,
+                message: profile!.badges[indexPath.item]!.description,
+                icon: profile!.badges[indexPath.item]!.image.image!,
+                btnCaption: "Ok",
+                primaryBgColor: UIColor.appColor(.buttonPrimaryColor),
+                secundaryBgColor: UIColor.appColor(.buttonPrimaryColorHighlighted)
+            )
+            AlertView.instance.showAlert(alert: alert)
+        }
     }
-    
-    
 
 }
