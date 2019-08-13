@@ -16,6 +16,7 @@ class RegistrationStep1ViewController: UIViewController, UITextFieldDelegate, UI
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        hideKeyboardWhenTappedAround()
         datePicker = UIDatePicker()
         datePicker?.datePickerMode = .date
         datePicker?.backgroundColor = UIColor.white

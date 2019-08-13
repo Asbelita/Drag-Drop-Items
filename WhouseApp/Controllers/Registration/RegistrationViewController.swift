@@ -29,7 +29,6 @@ class RegistrationViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        hideKeyboardWhenTappedAround()
         
         self.pvc = self.children[0] as? UIPageViewController
         self.progressPercentage = Double(100 / (self.pages.count - 1))

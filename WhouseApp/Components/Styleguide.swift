@@ -12,6 +12,7 @@ enum Color {
     static let black = UIColor.black
     static let darkGray = UIColor.darkGray
     static let white = UIColor.white
+    static let transparent = UIColor.clear
     static let primary = UIColor.appColor(.primaryColor)
     static let secundary = UIColor.appColor(.secundaryColor)
     static let tint = UIColor.appColor(.primaryColor)
@@ -92,7 +93,6 @@ enum customColors {
     case secundaryColor
     case buttonPrimaryColor
     case buttonPrimaryColorHighlighted
-    case buttonSecundaryColor
     case successColor
     case errorColor
     case successColorHighlighted
@@ -109,8 +109,6 @@ extension UIColor {
             return UIColor(named: "secundaryColor", in: Bundle(for: AppDelegate.self), compatibleWith: nil)!
         case .buttonPrimaryColor:
             return UIColor(named: "buttonPrimaryColor", in: Bundle(for: AppDelegate.self), compatibleWith: nil)!
-        case .buttonSecundaryColor:
-            return UIColor(named: "buttonSecundaryColor", in: Bundle(for: AppDelegate.self), compatibleWith: nil)!
         case .buttonPrimaryColorHighlighted:
             return UIColor(named: "buttonPrimaryHighlighted", in: Bundle(for: AppDelegate.self), compatibleWith: nil)!
         case .successColor:
@@ -128,6 +126,8 @@ extension UIColor {
 enum appImages{
     case circleCheckedMd
     case circleUncheckedMd
+    case circleChecked
+    case circleUnchecked
     case whVerified
     case success
     case error
@@ -142,6 +142,10 @@ extension UIImage {
             return UIImage(named: "circleUnchecked_18")!
         case .circleCheckedMd:
             return UIImage(named: "circleChecked_18")!
+        case .circleUnchecked:
+            return UIImage(named: "circleUnchecked")!
+        case .circleChecked:
+            return UIImage(named: "circleChecked")!
         case .whVerified:
             return UIImage(named: "whVerified")!
         case .success:

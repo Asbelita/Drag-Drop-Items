@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegistrationStep2ViewController: UIViewController, UITableViewDataSource {
+class RegistrationStep2ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var serviceTableList: UITableView!
 
@@ -17,7 +17,6 @@ class RegistrationStep2ViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        serviceTableList.dataSource = self
     }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -30,27 +29,25 @@ class RegistrationStep2ViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ServiceTableViewCell", for: indexPath) as! CustomCellTableViewCell
-        cell.checkBtn.addTarget(self, action: #selector(checkboxClicked(_:)), for: .touchUpInside)
-        cell.checkBtn.tag = indexPath.row
-        let service = checked[indexPath.row]
-        if service{
-            cell.checkBtn.setImage(#imageLiteral(resourceName: "circleChecked"), for: .normal)
-        }else{
-            cell.checkBtn.setImage(#imageLiteral(resourceName: "circleUnchecked"), for: .normal)
-        }
         cell.txtLabel.text = list[indexPath.row]
-        
+        if checked[indexPath.row] {
+            cell.checkIcon.image = UIImage.appImage(.circleChecked)
+        }else{
+            cell.checkIcon.image = UIImage.appImage(.circleUnchecked)
+        }
+        cell.icon.tintColor = UIColor.white
+        cell.checkIcon.tintColor = UIColor.white
+
         return cell
     }
     
-    @objc func checkboxClicked(_ sender: UIButton) {
-        checked[sender.tag] = !checked[sender.tag]
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        checked[indexPath.row] = !checked[indexPath.row]
         serviceTableList.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 }
