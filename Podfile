@@ -10,5 +10,6 @@ target 'WhouseApp' do
   pod 'Crashlytics'
   pod 'KeyboardAvoidingView', '~> 4.0'
   pod 'UICircularProgressRing'
+  pod 'MessageKit', :git => 'https://github.com/MessageKit/MessageKit', :branch => '3.0.0-swift5'
 
 end

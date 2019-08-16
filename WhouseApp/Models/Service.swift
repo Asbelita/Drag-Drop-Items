@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Service{
+struct Service{
     var name: String?
     var id: Int?
     

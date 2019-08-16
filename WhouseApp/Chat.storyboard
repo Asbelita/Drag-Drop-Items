@@ -6,25 +6,111 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Chat-->
+        <!--Chat List Table View Controller-->
         <scene sceneID="HoG-2Q-CQq">
             <objects>
-                <tableViewController id="B76-dz-rhW" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="k3Q-5W-aFc">
+                <tableViewController id="B76-dz-rhW" customClass="ChatListTableViewController" customModule="WhouseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="k3Q-5W-aFc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="F1t-8n-i6x">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="chatListCell" rowHeight="75" id="nge-hW-qyj" customClass="ChatTableViewCell" customModule="WhouseApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F1t-8n-i6x" id="xql-dc-Kel">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nge-hW-qyj" id="aXW-nT-Rbx">
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="74.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePic" translatesAutoresizingMaskIntoConstraints="NO" id="dkk-SK-dMy" customClass="DesignableImageView" customModule="WhouseApp" customModuleProvider="target">
+                                            <rect key="frame" x="20" y="11" width="53" height="53"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="53" id="bet-ic-7JF"/>
+                                                <constraint firstAttribute="width" constant="53" id="ktN-7S-ivo"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="26.5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsI-ab-FgZ">
+                                            <rect key="frame" x="83" y="15.5" width="39.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzU-wY-NgR">
+                                            <rect key="frame" x="328.5" y="15.5" width="39.5" height="19.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qNU-iQ-gCE">
+                                            <rect key="frame" x="83" y="39.5" width="285" height="20"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVn-fr-Khw">
+                                                    <rect key="frame" x="0.0" y="0.5" width="260" height="19.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PzN-XI-cJY" customClass="GradientView" customModule="WhouseApp" customModuleProvider="target">
+                                                    <rect key="frame" x="265" y="0.0" width="20" height="20"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIP-Bo-nM3">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="primaryColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="ByC-5e-BNY"/>
+                                                        <constraint firstItem="cIP-Bo-nM3" firstAttribute="top" secondItem="PzN-XI-cJY" secondAttribute="top" id="Edu-2S-rPH"/>
+                                                        <constraint firstAttribute="width" constant="20" id="FFt-va-bIY"/>
+                                                        <constraint firstAttribute="trailing" secondItem="cIP-Bo-nM3" secondAttribute="trailing" id="LlD-nM-pdc"/>
+                                                        <constraint firstAttribute="bottom" secondItem="cIP-Bo-nM3" secondAttribute="bottom" id="bwZ-7D-apO"/>
+                                                        <constraint firstItem="cIP-Bo-nM3" firstAttribute="leading" secondItem="PzN-XI-cJY" secondAttribute="leading" id="yTj-vj-JuB"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="hasGradient" value="NO"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="10"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="qNU-iQ-gCE" firstAttribute="centerY" secondItem="dkk-SK-dMy" secondAttribute="centerY" constant="12" id="0UK-gL-nmY"/>
+                                        <constraint firstItem="VsI-ab-FgZ" firstAttribute="centerY" secondItem="dkk-SK-dMy" secondAttribute="centerY" constant="-12" id="1Nx-iQ-vLU"/>
+                                        <constraint firstItem="wzU-wY-NgR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VsI-ab-FgZ" secondAttribute="trailing" constant="2" id="7m0-cs-fzp"/>
+                                        <constraint firstItem="wzU-wY-NgR" firstAttribute="trailing" secondItem="aXW-nT-Rbx" secondAttribute="trailingMargin" id="D7C-57-bBZ"/>
+                                        <constraint firstItem="qNU-iQ-gCE" firstAttribute="leading" secondItem="dkk-SK-dMy" secondAttribute="trailing" constant="10" id="MFC-L2-hVN"/>
+                                        <constraint firstItem="dkk-SK-dMy" firstAttribute="centerY" secondItem="aXW-nT-Rbx" secondAttribute="centerY" id="RXO-sk-idt"/>
+                                        <constraint firstItem="wzU-wY-NgR" firstAttribute="centerY" secondItem="VsI-ab-FgZ" secondAttribute="centerY" id="c9C-jZ-pYE"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="qNU-iQ-gCE" secondAttribute="trailing" id="fD5-VQ-NUQ"/>
+                                        <constraint firstItem="VsI-ab-FgZ" firstAttribute="leading" secondItem="dkk-SK-dMy" secondAttribute="trailing" constant="10" id="zEW-EC-34a"/>
+                                        <constraint firstItem="dkk-SK-dMy" firstAttribute="leading" secondItem="aXW-nT-Rbx" secondAttribute="leadingMargin" id="za7-Up-ksz"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <inset key="separatorInset" minX="83" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="date" destination="wzU-wY-NgR" id="ydK-zm-BAK"/>
+                                    <outlet property="hasNewMessages" destination="PzN-XI-cJY" id="Ntp-tH-SKt"/>
+                                    <outlet property="lastMessage" destination="WVn-fr-Khw" id="SJX-AU-nJj"/>
+                                    <outlet property="name" destination="VsI-ab-FgZ" id="Gxo-Ut-iRy"/>
+                                    <outlet property="newMessagesAmount" destination="cIP-Bo-nM3" id="vRt-IQ-CWE"/>
+                                    <outlet property="profilePicture" destination="dkk-SK-dMy" id="gu9-Cj-yc6"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -32,11 +118,11 @@
                             <outlet property="delegate" destination="B76-dz-rhW" id="k99-9s-XEr"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Chat" id="Hxn-HK-c4c"/>
+                    <navigationItem key="navigationItem" id="Hxn-HK-c4c"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ErY-p5-Aeh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="388" y="179"/>
+            <point key="canvasLocation" x="386.95652173913044" y="178.79464285714286"/>
         </scene>
         <!--Chats-->
         <scene sceneID="5JU-TY-ZR6">
@@ -59,5 +145,10 @@
     </scenes>
     <resources>
         <image name="chatBubble_24" width="24" height="24"/>
+        <image name="profilePic" width="255" height="255"/>
+        <namedColor name="primaryColor">
+            <color red="1" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
+    <color key="tintColor" name="primaryColor"/>
 </document>

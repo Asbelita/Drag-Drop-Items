@@ -69,9 +69,10 @@ class PublicProfileViewController: UIViewController, UITableViewDataSource, UICo
         photos.dataSource = self
         photos.delegate = self
         
+        self.setData()
         self.setStyles()
         self.addLogoToNavbar()
-        self.setData()
+        
     }
     
     func setStyles(){
@@ -127,14 +128,6 @@ class PublicProfileViewController: UIViewController, UITableViewDataSource, UICo
             aboutServices.text = profile.aboutServices
             servicesTable.reloadData()
             tableHeightConstraint.constant = CGFloat(44 * profile.services.count)
-            
-            profile.images = [
-                Image(id: 1, name: "image1", url: "", image: UIImage(named: "cleanedHouse")),
-                Image(id: 2, name: "image2", url: "", image: UIImage(named: "cleanedHouse")),
-                Image(id: 3, name: "image3", url: "", image: UIImage(named: "cleanedHouse")),
-                Image(id: 4, name: "image4", url: "", image: UIImage(named: "cleanedHouse")),
-                Image(id: 5, name: "image5", url: "", image: UIImage(named: "cleanedHouse")),
-            ]
             var rows = CGFloat(profile.images.count) / 3.0
             imageCollectionHeightConstraint.constant = 102.0 * rows.rounded(.up)
             rows = CGFloat(profile.badges.count) / 4.0

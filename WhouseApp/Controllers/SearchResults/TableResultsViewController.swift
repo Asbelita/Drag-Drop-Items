@@ -41,7 +41,13 @@ class TableResultsViewController: UIViewController, UITableViewDataSource {
                     Service(id: 2, name: "Laundry"),
                     Service(id: 3, name: "House Manager")
                 ],
-                images: [],
+                images: [
+                    Image(id: 1, name: "image1", url: "", image: UIImage(named: "cleanedHouse")),
+                    Image(id: 2, name: "image2", url: "", image: UIImage(named: "cleanedHouse")),
+                    Image(id: 3, name: "image3", url: "", image: UIImage(named: "cleanedHouse")),
+                    Image(id: 4, name: "image4", url: "", image: UIImage(named: "cleanedHouse")),
+                    Image(id: 5, name: "image5", url: "", image: UIImage(named: "cleanedHouse")),
+                ],
                 badges: [
                     Badge(id: 1,
                           name: "Fusce condimentum cursus nibh",

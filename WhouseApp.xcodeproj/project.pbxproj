@@ -20,6 +20,10 @@
 		1940D47B22F2572B00807213 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47A22F2572B00807213 /* PropertyTableViewCell.swift */; };
 		1940D47D22F2587300807213 /* PropertiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47C22F2587300807213 /* PropertiesTableViewController.swift */; };
 		1940D48022F328B300807213 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47F22F328B300807213 /* User.swift */; };
+		194AADD42305D762009D8816 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194AADD32305D761009D8816 /* ChatTableViewCell.swift */; };
+		194AADD62305DBD1009D8816 /* ChatListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194AADD52305DBD1009D8816 /* ChatListTableViewController.swift */; };
+		194AADD82305F789009D8816 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194AADD72305F789009D8816 /* Chat.swift */; };
+		194AADDB23071F90009D8816 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194AADDA23071F90009D8816 /* ChatViewController.swift */; };
 		1953C36C22DF6F43008D2FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */; };
 		1953C37122DF6F43008D2FD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1953C36F22DF6F43008D2FD4 /* Main.storyboard */; };
 		1953C37322DF6F44008D2FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1953C37222DF6F44008D2FD4 /* Assets.xcassets */; };
@@ -99,6 +103,10 @@
 		1940D47A22F2572B00807213 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
 		1940D47C22F2587300807213 /* PropertiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewController.swift; sourceTree = "<group>"; };
 		1940D47F22F328B300807213 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		194AADD32305D761009D8816 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		194AADD52305DBD1009D8816 /* ChatListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListTableViewController.swift; sourceTree = "<group>"; };
+		194AADD72305F789009D8816 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		194AADDA23071F90009D8816 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		1953C36822DF6F43008D2FD4 /* WhouseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhouseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1953C37022DF6F43008D2FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -193,6 +201,7 @@
 		19279E8E22E793D2008E89C5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				194AADD12305BEF6009D8816 /* Chat */,
 				1940D46B22F0EAE000807213 /* Login */,
 				1940D46922F0EABE00807213 /* Onboarding */,
 				1940D46A22F0EAC900807213 /* OnboardingSearch */,
@@ -287,8 +296,35 @@
 				19693C2122F8986B00DFD07E /* Image.swift */,
 				19EA98DB22FA1A6C007977A7 /* Property.swift */,
 				19EA98EE22FE0C6C007977A7 /* Badge.swift */,
+				194AADD72305F789009D8816 /* Chat.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		194AADD12305BEF6009D8816 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				194AADD923071D7C009D8816 /* Single */,
+				194AADD22305D744009D8816 /* List */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		194AADD22305D744009D8816 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				194AADD32305D761009D8816 /* ChatTableViewCell.swift */,
+				194AADD52305DBD1009D8816 /* ChatListTableViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		194AADD923071D7C009D8816 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				194AADDA23071F90009D8816 /* ChatViewController.swift */,
+			);
+			path = Single;
 			sourceTree = "<group>";
 		};
 		1953C35F22DF6F43008D2FD4 = {
@@ -622,11 +658,14 @@
 			files = (
 				19EA98E022FB2A3B007977A7 /* StyleguideHelpers.swift in Sources */,
 				1940D47D22F2587300807213 /* PropertiesTableViewController.swift in Sources */,
+				194AADDB23071F90009D8816 /* ChatViewController.swift in Sources */,
 				19279E9522E8AD95008E89C5 /* RegistrationStep4ViewController.swift in Sources */,
 				19EA98E822FC92D7007977A7 /* PropertyOptionsTableViewController.swift in Sources */,
 				19A6FFBF22E248CF00D3B41E /* DesignableTextField.swift in Sources */,
 				19279E9322E8AD84008E89C5 /* RegistrationStep3ViewController.swift in Sources */,
 				19D9F90822EB70B100A8601D /* DesignableTextView.swift in Sources */,
+				194AADD62305DBD1009D8816 /* ChatListTableViewController.swift in Sources */,
+				194AADD42305D762009D8816 /* ChatTableViewCell.swift in Sources */,
 				1940D48022F328B300807213 /* User.swift in Sources */,
 				1940D47022F0F43C00807213 /* SearchResultsTableViewCell.swift in Sources */,
 				1940D47622F1EFCB00807213 /* TableResultsViewController.swift in Sources */,
@@ -646,6 +685,7 @@
 				1940D47422F1196E00807213 /* DesignableImageView.swift in Sources */,
 				19D9F90F22EBDC9800A8601D /* OnboardingSearchViewController.swift in Sources */,
 				19EA98E422FB54AD007977A7 /* PropertyShowDetailsViewController.swift in Sources */,
+				194AADD82305F789009D8816 /* Chat.swift in Sources */,
 				1953C36C22DF6F43008D2FD4 /* AppDelegate.swift in Sources */,
 				1940D46E22F0EB8A00807213 /* SearchResultsViewController.swift in Sources */,
 				19693C2022F8960200DFD07E /* ImageCollectionViewCell.swift in Sources */,

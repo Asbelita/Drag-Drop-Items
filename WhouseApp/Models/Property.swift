@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Property{
+struct Property{
     
     var name: String?
     var id: Int?
@@ -28,7 +28,7 @@ class Property{
     var isAirnbnb: Bool
     var isBooking: Bool
     
-    internal init(name: String?, id: Int?, image: UIImage?, thumbnail: UIImage?, address: String?, ownerName: String?, ownerPhone: String?, ownerEmail: String?, notes: String?, type: String?, bedsAmount: String?, bedroomsAmount: String?, bathroomsAmount: String?, area: String?, isAirnbnb: Bool, isBooking: Bool) {
+    internal init(name: String?, id: Int?, image: UIImage?, thumbnail: UIImage?, address: String?, ownerName: String?, ownerPhone: String?, ownerEmail: String?, notes: String?, type: String?, bedsAmount: String?, bedroomsAmount: String?, bathroomsAmount: String?, area: String?, isAirnbnb: Bool, isBooking: Bool, images: [Image?] ) {
         self.name = name
         self.id = id
         self.image = image
@@ -45,5 +45,6 @@ class Property{
         self.area = area
         self.isAirnbnb = isAirnbnb
         self.isBooking = isBooking
+        self.images = images
     }
 }

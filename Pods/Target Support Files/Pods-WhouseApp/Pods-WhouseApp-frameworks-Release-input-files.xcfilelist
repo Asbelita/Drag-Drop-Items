@@ -1,4 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-WhouseApp/Pods-WhouseApp-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/APExtensions/APExtensions.framework
+${BUILT_PRODUCTS_DIR}/InputBarAccessoryView/InputBarAccessoryView.framework
 ${BUILT_PRODUCTS_DIR}/KeyboardAvoidingView/KeyboardAvoidingView.framework
+${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework
 ${BUILT_PRODUCTS_DIR}/UICircularProgressRing/UICircularProgressRing.framework

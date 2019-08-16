@@ -92,14 +92,6 @@ class PropertyShowDetailsViewController: UIViewController, UICollectionViewDataS
             area.text = (property.area ?? "0") + " m²"
             isAirbnb.image = property.isAirnbnb ? UIImage.appImage(appImages.circleCheckedMd) : UIImage.appImage(appImages.circleUncheckedMd)
             isBooking.image = property.isBooking ? UIImage.appImage(appImages.circleCheckedMd) : UIImage.appImage(appImages.circleUncheckedMd)
-            
-            property.images = [
-                Image(id: 1, name: "image1", url: "", image: UIImage(named: "cleanedHouse")),
-                Image(id: 2, name: "image2", url: "", image: UIImage(named: "cleanedHouse")),
-                Image(id: 3, name: "image3", url: "", image: UIImage(named: "cleanedHouse")),
-                Image(id: 4, name: "image4", url: "", image: UIImage(named: "cleanedHouse")),
-                Image(id: 5, name: "image5", url: "", image: UIImage(named: "cleanedHouse")),
-            ]
             let rows = CGFloat(property.images.count) / 3.0
             imageCollectionHeightConstraint.constant = 102.0 * rows.rounded(.up)
         }

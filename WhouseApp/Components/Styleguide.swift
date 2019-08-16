@@ -11,6 +11,7 @@ import UIKit
 enum Color {
     static let black = UIColor.black
     static let darkGray = UIColor.darkGray
+    static let lightGray = UIColor.lightGray
     static let white = UIColor.white
     static let transparent = UIColor.clear
     static let primary = UIColor.appColor(.primaryColor)
@@ -53,6 +54,21 @@ extension TextStyle {
     static let screenTitle = TextStyle(
         font: UIFont.appFont(.montserratBold).withSize(18.0),
         color: Color.white)
+    
+    static let chatListTitle = TextStyle(
+        font: UIFont.appFont(.robotoBold),
+        color: Color.black
+    )
+    
+    static let chatListBody = TextStyle(
+        font: UIFont.appFont(.roboto).withSize(12.0),
+        color: Color.lightGray
+    )
+    
+    static let chatListBadge = TextStyle(
+        font: UIFont.appFont(.roboto).withSize(12.0),
+        color: Color.white
+    )
 }
 
 extension TextStyle {
@@ -133,6 +149,7 @@ enum appImages{
     case error
     case popularBadge
     case quickResponseBadge
+    case mapMarker
 }
 extension UIImage {
     
@@ -156,6 +173,8 @@ extension UIImage {
             return UIImage(named: "badgeHeart")!
         case .quickResponseBadge:
             return UIImage(named: "badgeTime")!
+        case .mapMarker:
+            return UIImage(named: "mapMarker_18")!
         }
     }
 }

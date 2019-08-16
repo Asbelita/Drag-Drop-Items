@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Image{
+struct Image{
     var name: String?
     var id: Int?
     var url: String?

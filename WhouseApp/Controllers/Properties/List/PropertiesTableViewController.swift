@@ -25,22 +25,31 @@ class PropertiesTableViewController: UITableViewController {
     
     func setData(){
         for item in list {
-            let property = Property(name: item,
-                                    id: nil,
-                                    image: UIImage(named: "houseFull"),
-                                    thumbnail: UIImage(named: "house"),
-                                    address: "4069 Chain Bridge Rd\nFairfax, Va 22032\nUSA",
-                                    ownerName: "John Doe",
-                                    ownerPhone: "+1 23 7682425",
-                                    ownerEmail: "john.doe@mail.com",
-                                    notes: "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molli.",
-                                    type: "House",
-                                    bedsAmount: "5",
-                                    bedroomsAmount: "4",
-                                    bathroomsAmount: "4",
-                                    area: "120",
-                                    isAirnbnb: true,
-                                    isBooking: false)
+            let property = Property(
+                name: item,
+                id: nil,
+                image: UIImage(named: "houseFull"),
+                thumbnail: UIImage(named: "house"),
+                address: "4069 Chain Bridge Rd\nFairfax, Va 22032\nUSA",
+                ownerName: "John Doe",
+                ownerPhone: "+1 23 7682425",
+                ownerEmail: "john.doe@mail.com",
+                notes: "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molli.",
+                type: "House",
+                bedsAmount: "5",
+                bedroomsAmount: "4",
+                bathroomsAmount: "4",
+                area: "120",
+                isAirnbnb: true,
+                isBooking: false,
+                images: [
+                    Image(id: 1, name: "image1", url: "", image: UIImage(named: "cleanedHouse")),
+                    Image(id: 2, name: "image2", url: "", image: UIImage(named: "cleanedHouse")),
+                    Image(id: 3, name: "image3", url: "", image: UIImage(named: "cleanedHouse")),
+                    Image(id: 4, name: "image4", url: "", image: UIImage(named: "cleanedHouse")),
+                    Image(id: 5, name: "image5", url: "", image: UIImage(named: "cleanedHouse")),
+                ]
+            )
             properties += [property]
         }
     }

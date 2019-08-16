@@ -8,7 +8,7 @@
 
 import UIKit
 
-class User {
+struct User {
     
     var name: String
     var profilePicture: UIImage

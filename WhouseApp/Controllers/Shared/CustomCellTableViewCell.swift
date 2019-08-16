@@ -17,10 +17,12 @@ class CustomCellTableViewCell: UITableViewCell {
     var checked: Bool = false
     
     override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
         self.backgroundColor = Color.transparent
     }
     
     override func setHighlighted(_ highlighted: Bool, animated: Bool) {
+        super.setHighlighted(highlighted, animated: animated)
         if highlighted{
             self.backgroundColor = Color.secundary
         }else{
