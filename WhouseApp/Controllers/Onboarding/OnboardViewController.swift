@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OnboardViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
+class OnboardViewController: BaseViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     weak var pvc : UIPageViewController!
     var currentIndex: Int?
     private var pendingIndex: Int?

@@ -20,6 +20,14 @@
 		1940D47B22F2572B00807213 /* PropertyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47A22F2572B00807213 /* PropertyTableViewCell.swift */; };
 		1940D47D22F2587300807213 /* PropertiesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47C22F2587300807213 /* PropertiesTableViewController.swift */; };
 		1940D48022F328B300807213 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1940D47F22F328B300807213 /* User.swift */; };
+		194A199D230EF7E0000FEE5B /* APIServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A199C230EF7E0000FEE5B /* APIServiceProtocol.swift */; };
+		194A199F230EF811000FEE5B /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A199E230EF811000FEE5B /* Configuration.swift */; };
+		194A19A1230EFB54000FEE5B /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A19A0230EFB54000FEE5B /* APIManager.swift */; };
+		194A19A3230EFB74000FEE5B /* BaseAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A19A2230EFB74000FEE5B /* BaseAPIManager.swift */; };
+		194A19A5230EFED3000FEE5B /* ScrimView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A19A4230EFED3000FEE5B /* ScrimView.swift */; };
+		194A19A7230F0689000FEE5B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A19A6230F0689000FEE5B /* BaseViewController.swift */; };
+		194A19A9230F2A67000FEE5B /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A19A8230F2A67000FEE5B /* Login.swift */; };
+		194A19AB23106A78000FEE5B /* Dictionary+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194A19AA23106A78000FEE5B /* Dictionary+Helper.swift */; };
 		194AADD42305D762009D8816 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194AADD32305D761009D8816 /* ChatTableViewCell.swift */; };
 		194AADD62305DBD1009D8816 /* ChatListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194AADD52305DBD1009D8816 /* ChatListTableViewController.swift */; };
 		194AADD82305F789009D8816 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194AADD72305F789009D8816 /* Chat.swift */; };
@@ -103,6 +111,14 @@
 		1940D47A22F2572B00807213 /* PropertyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyTableViewCell.swift; sourceTree = "<group>"; };
 		1940D47C22F2587300807213 /* PropertiesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewController.swift; sourceTree = "<group>"; };
 		1940D47F22F328B300807213 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		194A199C230EF7E0000FEE5B /* APIServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServiceProtocol.swift; sourceTree = "<group>"; };
+		194A199E230EF811000FEE5B /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		194A19A0230EFB54000FEE5B /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		194A19A2230EFB74000FEE5B /* BaseAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIManager.swift; sourceTree = "<group>"; };
+		194A19A4230EFED3000FEE5B /* ScrimView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrimView.swift; sourceTree = "<group>"; };
+		194A19A6230F0689000FEE5B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		194A19A8230F2A67000FEE5B /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		194A19AA23106A78000FEE5B /* Dictionary+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Helper.swift"; sourceTree = "<group>"; };
 		194AADD32305D761009D8816 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
 		194AADD52305DBD1009D8816 /* ChatListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatListTableViewController.swift; sourceTree = "<group>"; };
 		194AADD72305F789009D8816 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
@@ -210,6 +226,7 @@
 				1940D46C22F0EB6900807213 /* SearchResults */,
 				19EA98F022FE10B1007977A7 /* Shared */,
 				1940D46822F0E88B00807213 /* Registration */,
+				194A19A6230F0689000FEE5B /* BaseViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -226,6 +243,7 @@
 				1940D47722F23E8100807213 /* DesignableLabel.swift */,
 				19EA98DF22FB2A3B007977A7 /* StyleguideHelpers.swift */,
 				19EA98E122FB2A95007977A7 /* Styleguide.swift */,
+				194A19A4230EFED3000FEE5B /* ScrimView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -297,8 +315,20 @@
 				19EA98DB22FA1A6C007977A7 /* Property.swift */,
 				19EA98EE22FE0C6C007977A7 /* Badge.swift */,
 				194AADD72305F789009D8816 /* Chat.swift */,
+				194A19A8230F2A67000FEE5B /* Login.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		194A199B230EF7B1000FEE5B /* API Managers */ = {
+			isa = PBXGroup;
+			children = (
+				194A199C230EF7E0000FEE5B /* APIServiceProtocol.swift */,
+				194A199E230EF811000FEE5B /* Configuration.swift */,
+				194A19A0230EFB54000FEE5B /* APIManager.swift */,
+				194A19A2230EFB74000FEE5B /* BaseAPIManager.swift */,
+			);
+			path = "API Managers";
 			sourceTree = "<group>";
 		};
 		194AADD12305BEF6009D8816 /* Chat */ = {
@@ -350,6 +380,7 @@
 		1953C36A22DF6F43008D2FD4 /* WhouseApp */ = {
 			isa = PBXGroup;
 			children = (
+				194A199B230EF7B1000FEE5B /* API Managers */,
 				1940D47E22F3288200807213 /* Models */,
 				19279E8F22E793F2008E89C5 /* Components */,
 				19279E8D22E793AA008E89C5 /* App */,
@@ -427,6 +458,7 @@
 			isa = PBXGroup;
 			children = (
 				19A6FFBA22E22FB300D3B41E /* UIViewController+Extension.swift */,
+				194A19AA23106A78000FEE5B /* Dictionary+Helper.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -671,10 +703,15 @@
 				1940D47622F1EFCB00807213 /* TableResultsViewController.swift in Sources */,
 				197181B322E77E52009161BE /* RegistrationStep1ViewController.swift in Sources */,
 				19693C2222F8986B00DFD07E /* Image.swift in Sources */,
+				194A19AB23106A78000FEE5B /* Dictionary+Helper.swift in Sources */,
 				19A6FFBB22E22FB300D3B41E /* UIViewController+Extension.swift in Sources */,
 				1940D47222F0FF7C00807213 /* RatingControl.swift in Sources */,
+				194A19A5230EFED3000FEE5B /* ScrimView.swift in Sources */,
+				194A19A9230F2A67000FEE5B /* Login.swift in Sources */,
 				19A6FFC122E2659F00D3B41E /* PasswordRecoveryViewController.swift in Sources */,
+				194A199D230EF7E0000FEE5B /* APIServiceProtocol.swift in Sources */,
 				19B0A3D222F4DAD600880F09 /* ServiceShowTableViewCell.swift in Sources */,
+				194A199F230EF811000FEE5B /* Configuration.swift in Sources */,
 				19B0A3D022F4CE6B00880F09 /* Service.swift in Sources */,
 				19279E9122E8ABFE008E89C5 /* RegistrationStep2ViewController.swift in Sources */,
 				19A47ECC22EA5DBF001B6E13 /* RegistrationViewController.swift in Sources */,
@@ -685,6 +722,7 @@
 				1940D47422F1196E00807213 /* DesignableImageView.swift in Sources */,
 				19D9F90F22EBDC9800A8601D /* OnboardingSearchViewController.swift in Sources */,
 				19EA98E422FB54AD007977A7 /* PropertyShowDetailsViewController.swift in Sources */,
+				194A19A3230EFB74000FEE5B /* BaseAPIManager.swift in Sources */,
 				194AADD82305F789009D8816 /* Chat.swift in Sources */,
 				1953C36C22DF6F43008D2FD4 /* AppDelegate.swift in Sources */,
 				1940D46E22F0EB8A00807213 /* SearchResultsViewController.swift in Sources */,
@@ -696,6 +734,8 @@
 				199E8AA722DFB93C0065E423 /* GradientView.swift in Sources */,
 				19A6FF7522E1852800D3B41E /* DesignableUIButton.swift in Sources */,
 				19EA98F422FE116E007977A7 /* Image+CaptionCollectionViewCell.swift in Sources */,
+				194A19A1230EFB54000FEE5B /* APIManager.swift in Sources */,
+				194A19A7230F0689000FEE5B /* BaseViewController.swift in Sources */,
 				19B0A3CE22F3606600880F09 /* PublicProfileViewController.swift in Sources */,
 				1940D47822F23E8100807213 /* DesignableLabel.swift in Sources */,
 				19EA98EF22FE0C6C007977A7 /* Badge.swift in Sources */,

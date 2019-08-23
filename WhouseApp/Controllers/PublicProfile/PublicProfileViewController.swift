@@ -55,7 +55,7 @@ class PublicProfileViewController: UIViewController, UITableViewDataSource, UICo
     
     
     // Mark: - Properties
-    var profile: User?
+    var profile: UserViewModel?
     let badgesCollectionIdentifier = "badgeCell"
     let photosCollectionIdentifier = "photoCell"
     override func viewDidLoad() {
@@ -142,7 +142,7 @@ class PublicProfileViewController: UIViewController, UITableViewDataSource, UICo
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = servicesTable.dequeueReusableCell(withIdentifier: "ServiceCell", for: indexPath) as! ServiceShowTableViewCell
-        cell.nameLabel.text = profile?.services[indexPath.row].name
+        cell.nameLabel.text = profile?.services[indexPath.row]?.name
         return cell
     }
     
@@ -163,7 +163,7 @@ class PublicProfileViewController: UIViewController, UITableViewDataSource, UICo
             return cell
         } else if collectionView == badges {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: badgesCollectionIdentifier, for: indexPath as IndexPath) as! Image_CaptionCollectionViewCell
-            cell.image.image = profile?.badges[indexPath.item]?.image.image
+            cell.image.image = profile?.badges[indexPath.item]?.image?.image
             cell.caption.text = profile?.badges[indexPath.item]?.name
             return cell
         }
@@ -177,7 +177,7 @@ class PublicProfileViewController: UIViewController, UITableViewDataSource, UICo
             let alert = AlertView.Alert(
                 title: profile!.badges[indexPath.item]!.name,
                 message: profile!.badges[indexPath.item]!.description,
-                icon: profile!.badges[indexPath.item]!.image.image!,
+                icon: profile!.badges[indexPath.item]!.image!.image!,
                 btnCaption: "Ok",
                 primaryBgColor: UIColor.appColor(.buttonPrimaryColor),
                 secundaryBgColor: UIColor.appColor(.buttonPrimaryColorHighlighted)

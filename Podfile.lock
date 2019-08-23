@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.8.2)
   - APExtensions/ViewState (7.0.1)
   - Crashlytics (3.13.4):
     - Fabric (~> 1.10.2)
@@ -13,6 +14,7 @@ PODS:
   - UICircularProgressRing (6.2.1)
 
 DEPENDENCIES:
+  - Alamofire
   - Crashlytics
   - Fabric
   - KeyboardAvoidingView (~> 4.0)
@@ -21,6 +23,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - APExtensions
     - Crashlytics
     - Fabric
@@ -39,6 +42,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/MessageKit/MessageKit
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   APExtensions: 9a7a7b6ff5b9785b245962de89fbbdaf4c10f10e
   Crashlytics: 2dfd686bcb918dc10ee0e76f7f853fe42c7bd552
   Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
@@ -47,6 +51,6 @@ SPEC CHECKSUMS:
   MessageKit: 3beb578737a5aa2bba25cc27c7b6d6faa09af5a7
   UICircularProgressRing: b52543c79dbd89844e13f0053e3f565b7d7efc5c
 
-PODFILE CHECKSUM: 2a181abe910100f5035f5d7c3772b3c507d4b821
+PODFILE CHECKSUM: 207969ed3cffd5805509e6542b0a20f780bc8f2b
 
 COCOAPODS: 1.7.4

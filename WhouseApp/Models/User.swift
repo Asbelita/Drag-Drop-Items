@@ -8,10 +8,9 @@
 
 import UIKit
 
-struct User {
+class User : Codable{
     
     var name: String
-    var profilePicture: UIImage
     var rating: Int
     var reviewsAmount: Int
     var isVerified: Bool
@@ -23,13 +22,9 @@ struct User {
     var isSuggested: Bool
     var aboutMe: String?
     var aboutServices: String?
-    var services = [Service]()
-    var images = [Image?]()
-    var badges = [Badge?]()
  
-    init(name: String, profilePicture: UIImage, rating: Int, reviewsAmount: Int, isVerified: Bool, maxResponseTime: Int, jobsAmount: Int, clientsAmount: Int, distance: Double, earned: Double, isSuggested: Bool, aboutMe: String?, aboutServices: String?, services: [Service], images: [Image?], badges: [Badge?]) {
+    init(name: String, rating: Int, reviewsAmount: Int, isVerified: Bool, maxResponseTime: Int, jobsAmount: Int, clientsAmount: Int, distance: Double, earned: Double, isSuggested: Bool, aboutMe: String?, aboutServices: String?) {
         self.name = name
-        self.profilePicture = profilePicture
         self.rating = rating
         self.reviewsAmount = reviewsAmount
         self.isVerified = isVerified
@@ -41,8 +36,12 @@ struct User {
         self.isSuggested = isSuggested
         self.aboutMe = aboutMe
         self.aboutServices = aboutServices
-        self.services = services
-        self.images = images
-        self.badges = badges
     }
+}
+
+class UserViewModel : User {
+    var profilePicture: UIImage?
+    var services = [Service?]()
+    var images = [ImageViewModel?]()
+    var badges = [BadgeViewModel?]()
 }

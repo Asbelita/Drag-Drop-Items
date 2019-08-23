@@ -16,7 +16,7 @@ class PropertiesTableViewController: UITableViewController {
     
     var list = ["Home", "Ian's House", "Mr Richarson's House", "Phill's House","Sample Home Name"]
     
-    var properties = [Property]()
+    var properties = [PropertyViewModel]()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addLogoToNavbar()
@@ -25,11 +25,9 @@ class PropertiesTableViewController: UITableViewController {
     
     func setData(){
         for item in list {
-            let property = Property(
+            let property = PropertyViewModel(
                 name: item,
                 id: nil,
-                image: UIImage(named: "houseFull"),
-                thumbnail: UIImage(named: "house"),
                 address: "4069 Chain Bridge Rd\nFairfax, Va 22032\nUSA",
                 ownerName: "John Doe",
                 ownerPhone: "+1 23 7682425",
@@ -41,15 +39,15 @@ class PropertiesTableViewController: UITableViewController {
                 bathroomsAmount: "4",
                 area: "120",
                 isAirnbnb: true,
-                isBooking: false,
-                images: [
-                    Image(id: 1, name: "image1", url: "", image: UIImage(named: "cleanedHouse")),
-                    Image(id: 2, name: "image2", url: "", image: UIImage(named: "cleanedHouse")),
-                    Image(id: 3, name: "image3", url: "", image: UIImage(named: "cleanedHouse")),
-                    Image(id: 4, name: "image4", url: "", image: UIImage(named: "cleanedHouse")),
-                    Image(id: 5, name: "image5", url: "", image: UIImage(named: "cleanedHouse")),
-                ]
+                isBooking: false
             )
+            property.image = UIImage(named: "houseFull")
+            property.thumbnail = UIImage(named: "house")
+            for _ in 0...4{
+                let image = ImageViewModel(id: 1, name: "image1", url: "")
+                image.image = UIImage(named: "cleanedHouse")
+                property.images += [image]
+            }
             properties += [property]
         }
     }

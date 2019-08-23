@@ -17,7 +17,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-              Fabric.with([Crashlytics.self])
+        Fabric.with([Crashlytics.self])
+        let user = UserDefaults.standard.object(forKey: "loginResponse")
+        if user != nil{
+//            let storyboard = UIStoryboard(name: "Navigation", bundle: nil)
+//            self.window?.rootViewController = storyboard.instantiateInitialViewController()
+        }
         return true
     }
 

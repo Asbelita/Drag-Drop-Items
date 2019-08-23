@@ -8,16 +8,18 @@
 
 import UIKit
 
-struct Image{
+class Image : Codable{
     var name: String?
     var id: Int?
     var url: String?
-    var image: UIImage?
     
-    init(id: Int?, name: String?, url: String?, image: UIImage?) {
+    init(id: Int?, name: String?, url: String?) {
         self.id = id
         self.name = name
         self.url = url
-        self.image = image
     }
+}
+
+class ImageViewModel : Image {
+    var image: UIImage?
 }

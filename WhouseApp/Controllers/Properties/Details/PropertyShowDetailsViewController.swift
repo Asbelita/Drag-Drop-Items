@@ -45,7 +45,7 @@ class PropertyShowDetailsViewController: UIViewController, UICollectionViewDataS
     @IBOutlet weak var detailsSectionTitle: UILabel!
     
     
-    var property: Property?
+    var property: PropertyViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
