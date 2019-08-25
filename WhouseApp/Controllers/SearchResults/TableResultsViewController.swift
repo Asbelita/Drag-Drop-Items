@@ -11,7 +11,7 @@ import UIKit
 class TableResultsViewController: UIViewController, UITableViewDataSource {
     
     @IBOutlet weak var searchResults: UITableView!
-    var results = [User]()
+    var results = [UserViewModel]()
     let list = ["John Doe", "Morgan Freeman", "John Stewart", "Bill Barfield","Timothy Richardson","Davin Johansen","Mike Goodman","Michael Iacoletti","Richard McCain","Robert Stevenson","Jonathan Macklemore", "John Doe", "Morgan Freeman", "John Stewart", "Bill Barfield","Timothy Richardson","Davin Johansen","Mike Goodman","Michael Iacoletti","Richard McCain","Robert Stevenson","Jonathan Macklemore"]
     
     override func viewDidLoad() {
@@ -22,9 +22,8 @@ class TableResultsViewController: UIViewController, UITableViewDataSource {
     
     func prepareData(){
         for item in list {
-            let user = User(
+            let user = UserViewModel(
                 name: item,
-                profilePicture: UIImage(named: "profilePic")!,
                 rating: Int.random(in: 0...5),
                 reviewsAmount: Int.random(in: 0...20),
                 isVerified: Bool.random(),
@@ -35,47 +34,28 @@ class TableResultsViewController: UIViewController, UITableViewDataSource {
                 earned: Double.random(in: 1.0...1000.0),
                 isSuggested: Bool.random(),
                 aboutMe: "Etiam et nisl et ex faucibus congue porttitor eu lorem. Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt.",
-                aboutServices: "Etiam et nisl et ex faucibus congue porttitor eu lorem. Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt.",
-                services: [
-                    Service(id: 1, name: "Housekeeping"),
-                    Service(id: 2, name: "Laundry"),
-                    Service(id: 3, name: "House Manager")
-                ],
-                images: [
-                    Image(id: 1, name: "image1", url: "", image: UIImage(named: "cleanedHouse")),
-                    Image(id: 2, name: "image2", url: "", image: UIImage(named: "cleanedHouse")),
-                    Image(id: 3, name: "image3", url: "", image: UIImage(named: "cleanedHouse")),
-                    Image(id: 4, name: "image4", url: "", image: UIImage(named: "cleanedHouse")),
-                    Image(id: 5, name: "image5", url: "", image: UIImage(named: "cleanedHouse")),
-                ],
-                badges: [
-                    Badge(id: 1,
-                          name: "Fusce condimentum cursus nibh",
-                          description: "Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt.",
-                          image: Image(id: 1, name: "popularBadge", url: "", image: UIImage.appImage(.popularBadge))
-                    ),
-                    Badge(id: 2,
-                          name: "Curabitur lobortis velit id mi tincidunt",
-                          description: "Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt.",
-                          image: Image(id: 1, name: "popularBadge", url: "", image: UIImage.appImage(.quickResponseBadge))
-                    ),
-                    Badge(id: 1,
-                          name: "Curabitur lobortis velit id mi tincidunt",
-                          description: "Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt.",
-                          image: Image(id: 1, name: "popularBadge", url: "", image: UIImage.appImage(.popularBadge))
-                    ),
-                    Badge(id: 2,
-                          name: "Curabitur lobortis",
-                          description: "Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt.",
-                          image: Image(id: 1, name: "popularBadge", url: "", image: UIImage.appImage(.quickResponseBadge))
-                    ),
-                    Badge(id: 1,
-                          name: "Curabitur lobortis velit id",
-                          description: "Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt.",
-                          image: Image(id: 1, name: "popularBadge", url: "", image: UIImage.appImage(.popularBadge))
-                    ),
-                ]
+                aboutServices: "Etiam et nisl et ex faucibus congue porttitor eu lorem. Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt."
             )
+            user.profilePicture = UIImage(named: "profilePic")!
+            user.services = [
+                Service(id: 1, name: "Housekeeping"),
+                Service(id: 2, name: "Laundry"),
+                Service(id: 3, name: "House Manager")
+            ]
+            for _ in 0...4{
+                let image = ImageViewModel(id: 1, name: "image1", url: "")
+                image.image = UIImage(named: "cleanedHouse")
+                user.images += [image]
+            }
+            for _ in 0...4{
+                let badge = BadgeViewModel(id: 1,
+                                  name: "Fusce condimentum",
+                                  description: "Fusce condimentum cursus nibh, non faucibus tellus imperdiet ut. Curabitur lobortis velit id mi tincidunt.")
+                badge.image = ImageViewModel(id: 1, name: "popularBadge", url: "")
+                badge.image?.image = UIImage.appImage(.popularBadge)
+                user.badges += [badge]
+                
+            }
             results += [user]
         }
     }

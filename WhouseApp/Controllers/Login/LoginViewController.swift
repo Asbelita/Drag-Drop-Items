@@ -8,7 +8,9 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
+class LoginViewController: BaseViewController, UITextFieldDelegate {
+
+    var apiClient : APIServiceProtocol = APIManager.sharedInstance
 
     @IBOutlet weak var usernameTextField: DesignableTextField!
     @IBOutlet weak var passwordTextField: DesignableTextField!
@@ -21,26 +23,56 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func signIn(_ sender: UIButton) {
-        self.loadHomeScreen()
+        let loginModel = Login(email: usernameTextField.text!, password: passwordTextField.text!)
+        self.login(model: loginModel)
     }
     
     @IBAction func passwordRecoveryUnwind(unwindSegue: UIStoryboardSegue){}
-    
     @IBAction func registerUnwind(unwindSegue: UIStoryboardSegue){}
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        let nextTag = textField.tag + 1
-        if let nextResponder = textField.superview?.viewWithTag(nextTag) {
-            nextResponder.becomeFirstResponder()
-        } else {
-            textField.resignFirstResponder()
-        }
-        return true
+    override func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return super.textFieldShouldReturn(textField)
     }
     
-    func loadHomeScreen(){
+    //Mark: Call Services
+    fileprivate func login(model: Login){
+        let success : APICompletionHandler = { [weak self] data in
+            self?.hideScrimView()
+            if let methods = data as? [Any] {
+                self?.handleLoginResponse(methods)
+            }
+        }
+        
+        let failure : APIFailureHandler = { [weak self] error in
+            self?.hideScrimView()
+            self?.handleLoginFailure()
+        }
+        
+        showScrimView()
+        apiClient.login(success, failureHandler: failure, parameters: model.dictionaryRepresentation)
+    }
+    
+    fileprivate func handleLoginResponse(_ response : [Any]) {
+        for item in response {
+            let loginResponse : LoginResponse = LoginResponse(fromDictionary: item as! Serialization)
+            UserDefaults.standard.set(loginResponse.token, forKey: "loginResponse")
+            UserDefaults.standard.synchronize()
+            self.loadHomeScreen()
+        }
+    }
+    
+    fileprivate func handleLoginFailure(){
+        self.showAlertError(title: "Oops!", message: "Wrong credentials, please try again", btnCaption: "Ok", action: #selector(btnAction))
+    }
+
+    fileprivate func loadHomeScreen(){
         let storyBoard: UIStoryboard = UIStoryboard(name: "Navigation", bundle: nil)
         let homeVC = storyBoard.instantiateViewController(withIdentifier: "navigationRoot") as! UITabBarController
         self.present(homeVC, animated: true, completion: nil)
+    }
+    
+    @objc func btnAction(sender: DesignableUIButton!){
+        self.passwordTextField.text = ""
+        self.usernameTextField.becomeFirstResponder()
     }
 }

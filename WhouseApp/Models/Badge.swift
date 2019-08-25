@@ -8,16 +8,18 @@
 
 import Foundation
 
-struct Badge {
+class Badge : Codable{
     var id: Int
     var name: String
     var description: String
-    var image: Image
     
-    internal init(id: Int, name: String, description: String, image: Image) {
+    internal init(id: Int, name: String, description: String) {
         self.id = id
         self.name = name
         self.description = description
-        self.image = image
     }
+}
+
+class BadgeViewModel : Badge {
+    var image: ImageViewModel?
 }

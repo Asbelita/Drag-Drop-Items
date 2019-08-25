@@ -17,7 +17,7 @@ class PropertyViewController: UIViewController {
     // MARK: - Static Outlets
     @IBOutlet weak var jobRequestBtn: DesignableUIButton!
     
-    var property: Property?
+    var property: PropertyViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()

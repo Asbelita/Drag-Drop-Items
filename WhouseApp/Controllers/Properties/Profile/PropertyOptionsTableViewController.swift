@@ -17,7 +17,7 @@ class PropertyOptionsTableViewController: UITableViewController {
     @IBOutlet weak var activeJobsLabel: UILabel!
     @IBOutlet weak var jobRequestsLabel: UILabel!
     
-    var property: Property?
+    var property: PropertyViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
