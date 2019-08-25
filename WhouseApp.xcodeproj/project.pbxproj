@@ -86,6 +86,8 @@
 		19EA98EF22FE0C6C007977A7 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA98EE22FE0C6C007977A7 /* Badge.swift */; };
 		19EA98F422FE116E007977A7 /* Image+CaptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EA98F322FE116E007977A7 /* Image+CaptionCollectionViewCell.swift */; };
 		1B3A154CCBAF542629FD5928 /* Pods_WhouseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7939947FEA4ACF8F5790A73D /* Pods_WhouseApp.framework */; };
+		7355780B230B86F000B2394F /* DragDrop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7355780A230B86F000B2394F /* DragDrop.storyboard */; };
+		7355780E230B883B00B2394F /* DragDropVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7355780D230B883B00B2394F /* DragDropVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -170,6 +172,8 @@
 		19EA98E722FC92D7007977A7 /* PropertyOptionsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyOptionsTableViewController.swift; sourceTree = "<group>"; };
 		19EA98EE22FE0C6C007977A7 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		19EA98F322FE116E007977A7 /* Image+CaptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+CaptionCollectionViewCell.swift"; sourceTree = "<group>"; };
+		7355780A230B86F000B2394F /* DragDrop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DragDrop.storyboard; sourceTree = "<group>"; };
+		7355780D230B883B00B2394F /* DragDropVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropVC.swift; sourceTree = "<group>"; };
 		7939947FEA4ACF8F5790A73D /* Pods_WhouseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhouseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1C7D108A9607479BAE7EDD /* Pods-WhouseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhouseApp.debug.xcconfig"; path = "Target Support Files/Pods-WhouseApp/Pods-WhouseApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,6 +205,7 @@
 		19279E8E22E793D2008E89C5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7355780C230B881100B2394F /* Drag-Drop */,
 				194AADD12305BEF6009D8816 /* Chat */,
 				1940D46B22F0EAE000807213 /* Login */,
 				1940D46922F0EABE00807213 /* Onboarding */,
@@ -365,6 +370,7 @@
 				19E3D9DC22F0BA7D0096AA98 /* Chat.storyboard */,
 				19E3D9D822F0B7BB0096AA98 /* SearchResults.storyboard */,
 				19E3D9DA22F0B9B40096AA98 /* ActiveJobs.storyboard */,
+				7355780A230B86F000B2394F /* DragDrop.storyboard */,
 			);
 			path = WhouseApp;
 			sourceTree = "<group>";
@@ -485,6 +491,14 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7355780C230B881100B2394F /* Drag-Drop */ = {
+			isa = PBXGroup;
+			children = (
+				7355780D230B883B00B2394F /* DragDropVC.swift */,
+			);
+			path = "Drag-Drop";
+			sourceTree = "<group>";
+		};
 		821CBB8A4DD478157FBC12A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -560,6 +574,7 @@
 				19A6FFB122E18EC900D3B41E /* Roboto-LightItalic.ttf in Resources */,
 				19A6FF9222E18EB500D3B41E /* Montserrat-MediumItalic.ttf in Resources */,
 				19A6FF8C22E18EB500D3B41E /* Montserrat-BoldItalic.ttf in Resources */,
+				7355780B230B86F000B2394F /* DragDrop.storyboard in Resources */,
 				1953C37322DF6F44008D2FD4 /* Assets.xcassets in Resources */,
 				1953C37122DF6F43008D2FD4 /* Main.storyboard in Resources */,
 				19A6FFAE22E18EC900D3B41E /* Roboto-MediumItalic.ttf in Resources */,
@@ -698,6 +713,7 @@
 				19EA98F422FE116E007977A7 /* Image+CaptionCollectionViewCell.swift in Sources */,
 				19B0A3CE22F3606600880F09 /* PublicProfileViewController.swift in Sources */,
 				1940D47822F23E8100807213 /* DesignableLabel.swift in Sources */,
+				7355780E230B883B00B2394F /* DragDropVC.swift in Sources */,
 				19EA98EF22FE0C6C007977A7 /* Badge.swift in Sources */,
 				19A6FF7122E0D53600D3B41E /* LoginViewController.swift in Sources */,
 			);
