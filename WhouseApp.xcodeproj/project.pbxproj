@@ -34,7 +34,6 @@
 		194AADDB23071F90009D8816 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 194AADDA23071F90009D8816 /* ChatViewController.swift */; };
 		1953C36C22DF6F43008D2FD4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */; };
 		1953C37122DF6F43008D2FD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1953C36F22DF6F43008D2FD4 /* Main.storyboard */; };
-		1953C37322DF6F44008D2FD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1953C37222DF6F44008D2FD4 /* Assets.xcassets */; };
 		1953C37622DF6F44008D2FD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1953C37422DF6F44008D2FD4 /* LaunchScreen.storyboard */; };
 		1953C38022DF72B8008D2FD4 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1953C37E22DF72B8008D2FD4 /* Crashlytics.framework */; };
 		1953C38122DF72B8008D2FD4 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1953C37F22DF72B8008D2FD4 /* Fabric.framework */; };
@@ -96,6 +95,9 @@
 		1B3A154CCBAF542629FD5928 /* Pods_WhouseApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7939947FEA4ACF8F5790A73D /* Pods_WhouseApp.framework */; };
 		7355780B230B86F000B2394F /* DragDrop.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7355780A230B86F000B2394F /* DragDrop.storyboard */; };
 		7355780E230B883B00B2394F /* DragDropVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7355780D230B883B00B2394F /* DragDropVC.swift */; };
+		73BEC503232B0610008E45DF /* PinTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BEC500232B0610008E45DF /* PinTask.swift */; };
+		73BEC504232B0610008E45DF /* TaskCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73BEC501232B0610008E45DF /* TaskCollectionCell.xib */; };
+		73BEC505232B0610008E45DF /* TaskCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BEC502232B0610008E45DF /* TaskCollectionCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,7 +130,6 @@
 		1953C36822DF6F43008D2FD4 /* WhouseApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhouseApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1953C37022DF6F43008D2FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1953C37222DF6F44008D2FD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1953C37522DF6F44008D2FD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1953C37722DF6F44008D2FD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1953C37E22DF72B8008D2FD4 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
@@ -190,6 +191,9 @@
 		19EA98F322FE116E007977A7 /* Image+CaptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+CaptionCollectionViewCell.swift"; sourceTree = "<group>"; };
 		7355780A230B86F000B2394F /* DragDrop.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DragDrop.storyboard; sourceTree = "<group>"; };
 		7355780D230B883B00B2394F /* DragDropVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragDropVC.swift; sourceTree = "<group>"; };
+		73BEC500232B0610008E45DF /* PinTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinTask.swift; sourceTree = "<group>"; };
+		73BEC501232B0610008E45DF /* TaskCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskCollectionCell.xib; sourceTree = "<group>"; };
+		73BEC502232B0610008E45DF /* TaskCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCollectionCell.swift; sourceTree = "<group>"; };
 		7939947FEA4ACF8F5790A73D /* Pods_WhouseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhouseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1C7D108A9607479BAE7EDD /* Pods-WhouseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhouseApp.debug.xcconfig"; path = "Target Support Files/Pods-WhouseApp/Pods-WhouseApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,7 +216,6 @@
 			isa = PBXGroup;
 			children = (
 				1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */,
-				1953C37222DF6F44008D2FD4 /* Assets.xcassets */,
 				1953C37422DF6F44008D2FD4 /* LaunchScreen.storyboard */,
 			);
 			path = App;
@@ -239,6 +242,9 @@
 		19279E8F22E793F2008E89C5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				73BEC500232B0610008E45DF /* PinTask.swift */,
+				73BEC501232B0610008E45DF /* TaskCollectionCell.xib */,
+				73BEC502232B0610008E45DF /* TaskCollectionCell.swift */,
 				199E8AA622DFB93C0065E423 /* GradientView.swift */,
 				19A6FF7422E1852800D3B41E /* DesignableUIButton.swift */,
 				19A6FFBE22E248CF00D3B41E /* DesignableTextField.swift */,
@@ -607,7 +613,6 @@
 				19A6FF9222E18EB500D3B41E /* Montserrat-MediumItalic.ttf in Resources */,
 				19A6FF8C22E18EB500D3B41E /* Montserrat-BoldItalic.ttf in Resources */,
 				7355780B230B86F000B2394F /* DragDrop.storyboard in Resources */,
-				1953C37322DF6F44008D2FD4 /* Assets.xcassets in Resources */,
 				1953C37122DF6F43008D2FD4 /* Main.storyboard in Resources */,
 				19A6FFAE22E18EC900D3B41E /* Roboto-MediumItalic.ttf in Resources */,
 				19A6FFAB22E18EC900D3B41E /* Roboto-Medium.ttf in Resources */,
@@ -632,6 +637,7 @@
 				19A6FF8B22E18EB500D3B41E /* Montserrat-Medium.ttf in Resources */,
 				19A6FFB422E18EC900D3B41E /* Roboto-Bold.ttf in Resources */,
 				19A6FF9422E18EB500D3B41E /* Montserrat-RegularItalic.ttf in Resources */,
+				73BEC504232B0610008E45DF /* TaskCollectionCell.xib in Resources */,
 				19A6FFAF22E18EC900D3B41E /* Roboto-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -705,6 +711,7 @@
 			files = (
 				19EA98E022FB2A3B007977A7 /* StyleguideHelpers.swift in Sources */,
 				1940D47D22F2587300807213 /* PropertiesTableViewController.swift in Sources */,
+				73BEC505232B0610008E45DF /* TaskCollectionCell.swift in Sources */,
 				194AADDB23071F90009D8816 /* ChatViewController.swift in Sources */,
 				19279E9522E8AD95008E89C5 /* RegistrationStep4ViewController.swift in Sources */,
 				19EA98E822FC92D7007977A7 /* PropertyOptionsTableViewController.swift in Sources */,
@@ -733,6 +740,7 @@
 				1940D47B22F2572B00807213 /* PropertyTableViewCell.swift in Sources */,
 				19D9F90D22EBB6BF00A8601D /* OnboardViewController.swift in Sources */,
 				19EA98DC22FA1A6C007977A7 /* Property.swift in Sources */,
+				73BEC503232B0610008E45DF /* PinTask.swift in Sources */,
 				19EA98DE22FA1F84007977A7 /* PropertyViewController.swift in Sources */,
 				1940D47422F1196E00807213 /* DesignableImageView.swift in Sources */,
 				19D9F90F22EBDC9800A8601D /* OnboardingSearchViewController.swift in Sources */,
@@ -905,7 +913,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = X6DA47C9VM;
+				DEVELOPMENT_TEAM = CD4X6XXD94;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -915,7 +923,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = WhouseApp.Beta;
+				PRODUCT_BUNDLE_IDENTIFIER = WhouseAppBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -931,7 +939,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = X6DA47C9VM;
+				DEVELOPMENT_TEAM = CD4X6XXD94;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -941,7 +949,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = WhouseApp.Beta;
+				PRODUCT_BUNDLE_IDENTIFIER = WhouseAppBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
