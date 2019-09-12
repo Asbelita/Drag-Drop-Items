@@ -46,6 +46,14 @@
             </objects>
             <point key="canvasLocation" x="-636" y="-273"/>
         </scene>
+        <!--DragDrop-->
+        <scene sceneID="Gc8-75-pSa">
+            <objects>
+                <viewControllerPlaceholder storyboardName="DragDrop" id="2lf-ff-cci" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2eI-Nx-O16" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-180" y="-683"/>
+        </scene>
         <!--Search Results View Controller-->
         <scene sceneID="6bj-kZ-z2I">
             <objects>
@@ -71,7 +79,11 @@
                         <viewLayoutGuide key="safeArea" id="lyk-Wd-muR"/>
                     </view>
                     <navigationItem key="navigationItem" id="Sq1-we-bH9">
-                        <barButtonItem key="leftBarButtonItem" title="Map" id="EPf-iT-LXn"/>
+                        <barButtonItem key="leftBarButtonItem" title="Map" id="EPf-iT-LXn">
+                            <connections>
+                                <segue destination="2lf-ff-cci" kind="show" id="frD-na-gSS"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="searchResultsView" destination="UJN-0j-0z3" id="bkn-eY-WM7"/>

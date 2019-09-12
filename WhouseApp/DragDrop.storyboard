@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j5e-G3-Uqv">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,81 +10,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Drag DropVC-->
-        <scene sceneID="Wvy-0a-mSj">
-            <objects>
-                <viewController id="qNj-vP-vnx" customClass="DragDropVC" customModule="WhouseApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2I6-Uq-C9R">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nCz-Oi-F9o">
-                                <rect key="frame" x="0.0" y="20" width="320" height="498"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photoTest" translatesAutoresizingMaskIntoConstraints="NO" id="gAy-F7-88C">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="498"/>
-                                        <viewLayoutGuide key="safeArea" id="oKr-Li-TwZ"/>
-                                    </imageView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="gAy-F7-88C" secondAttribute="bottom" id="IRJ-li-6mX"/>
-                                    <constraint firstItem="gAy-F7-88C" firstAttribute="leading" secondItem="nCz-Oi-F9o" secondAttribute="leading" id="VqF-xO-M5o"/>
-                                    <constraint firstAttribute="trailing" secondItem="gAy-F7-88C" secondAttribute="trailing" id="u9l-gG-4bV"/>
-                                    <constraint firstItem="gAy-F7-88C" firstAttribute="top" secondItem="nCz-Oi-F9o" secondAttribute="top" id="xZ8-Zm-Wqh"/>
-                                </constraints>
-                            </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ad6-rJ-fHN">
-                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="ad6-rJ-fHN" secondAttribute="height" multiplier="32:5" id="63q-vH-V77"/>
-                                </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GXS-uq-Tvc">
-                                    <size key="itemSize" width="50" height="50"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="lrJ-0r-oFz">
-                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </view>
-                                    </collectionViewCell>
-                                </cells>
-                            </collectionView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTz-7P-cft">
-                                <rect key="frame" x="135" y="244" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="ic_hand_up"/>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="ad6-rJ-fHN" firstAttribute="top" secondItem="nCz-Oi-F9o" secondAttribute="bottom" id="Jre-Oa-pSz"/>
-                            <constraint firstItem="nCz-Oi-F9o" firstAttribute="leading" secondItem="Pp3-3d-IFU" secondAttribute="leading" id="Rc6-sa-WeL"/>
-                            <constraint firstItem="nCz-Oi-F9o" firstAttribute="top" secondItem="Pp3-3d-IFU" secondAttribute="top" id="ip1-IQ-uAI"/>
-                            <constraint firstAttribute="trailing" secondItem="ad6-rJ-fHN" secondAttribute="trailing" id="q4F-9P-urH"/>
-                            <constraint firstItem="ad6-rJ-fHN" firstAttribute="leading" secondItem="2I6-Uq-C9R" secondAttribute="leading" id="rrW-VO-6oJ"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="ad6-rJ-fHN" secondAttribute="bottom" id="uza-gS-0Ze"/>
-                            <constraint firstItem="Pp3-3d-IFU" firstAttribute="trailing" secondItem="nCz-Oi-F9o" secondAttribute="trailing" id="xqL-ym-1AE"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Pp3-3d-IFU"/>
-                    </view>
-                    <connections>
-                        <outlet property="collectionView" destination="ad6-rJ-fHN" id="8GD-RI-o2C"/>
-                        <outlet property="dragIcon" destination="rTz-7P-cft" id="blr-h8-pkQ"/>
-                        <outlet property="dragView" destination="nCz-Oi-F9o" id="Rpj-qb-trF"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jgd-DO-Qff" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-833" y="20"/>
-        </scene>
         <!--Drag DropVC-->
         <scene sceneID="zel-Bd-lvY">
             <objects>
@@ -309,7 +234,6 @@
         <image name="ic_done" width="45" height="45"/>
         <image name="ic_hand_up" width="50" height="50"/>
         <image name="ic_more" width="45" height="45"/>
-        <image name="living" width="16" height="16"/>
-        <image name="photoTest" width="1512" height="2016"/>
+        <image name="living" width="1512" height="2016"/>
     </resources>
 </document>

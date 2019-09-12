@@ -98,6 +98,7 @@
 		73BEC503232B0610008E45DF /* PinTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BEC500232B0610008E45DF /* PinTask.swift */; };
 		73BEC504232B0610008E45DF /* TaskCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 73BEC501232B0610008E45DF /* TaskCollectionCell.xib */; };
 		73BEC505232B0610008E45DF /* TaskCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BEC502232B0610008E45DF /* TaskCollectionCell.swift */; };
+		73BEC507232B06F5008E45DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73BEC506232B06F4008E45DF /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -194,6 +195,7 @@
 		73BEC500232B0610008E45DF /* PinTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinTask.swift; sourceTree = "<group>"; };
 		73BEC501232B0610008E45DF /* TaskCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaskCollectionCell.xib; sourceTree = "<group>"; };
 		73BEC502232B0610008E45DF /* TaskCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskCollectionCell.swift; sourceTree = "<group>"; };
+		73BEC506232B06F4008E45DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		7939947FEA4ACF8F5790A73D /* Pods_WhouseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhouseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA1C7D108A9607479BAE7EDD /* Pods-WhouseApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhouseApp.debug.xcconfig"; path = "Target Support Files/Pods-WhouseApp/Pods-WhouseApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,6 +217,7 @@
 		19279E8D22E793AA008E89C5 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				73BEC506232B06F4008E45DF /* Assets.xcassets */,
 				1953C36B22DF6F43008D2FD4 /* AppDelegate.swift */,
 				1953C37422DF6F44008D2FD4 /* LaunchScreen.storyboard */,
 			);
@@ -612,6 +615,7 @@
 				19A6FFB122E18EC900D3B41E /* Roboto-LightItalic.ttf in Resources */,
 				19A6FF9222E18EB500D3B41E /* Montserrat-MediumItalic.ttf in Resources */,
 				19A6FF8C22E18EB500D3B41E /* Montserrat-BoldItalic.ttf in Resources */,
+				73BEC507232B06F5008E45DF /* Assets.xcassets in Resources */,
 				7355780B230B86F000B2394F /* DragDrop.storyboard in Resources */,
 				1953C37122DF6F43008D2FD4 /* Main.storyboard in Resources */,
 				19A6FFAE22E18EC900D3B41E /* Roboto-MediumItalic.ttf in Resources */,
